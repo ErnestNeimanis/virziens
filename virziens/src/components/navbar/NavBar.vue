@@ -1,14 +1,17 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import HomeBGVideo from './HomeBGVideo.vue'
+
+
 
 </script>
-
 <template>
-    <div class="w-full h-36 ">
-        <div class="relative w-full h-96 border-4 border-black overflow-hidden">
-            <video autoplay muted loop class="absolute top-0 left-0 objec-cover object-center z-0">
-                <source src="@/assets/videos/janepatikneskaties.mp4" type="video/mp4">
-            </video>
-        </div>
-
+    <div>
+        <nav class="flex justify-end flex-wrap">
+            <div v-for="n in 8" class="border px-6 font-extrabold text-white">
+                <span>item {{ n }}</span>
+            </div>
+        </nav>
     </div>
+   
 </template>
