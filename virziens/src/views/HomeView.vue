@@ -2,23 +2,18 @@
 import testimg from "@/assets/images/textimgcode.jpg"
 import  HomeBGVideo from "@/components/navbar/HomeBGVideo.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
+import Logo from "@/components/navbar/Logo.vue";
 </script>
 <template>
  
  <main class="relative">
         <HomeBGVideo class="fixed top-0 left-0 z-[-1]" />
 
-        <section class=" w-full h-96 ">
-          <div>
-            
-          </div>
-            <img src="@/assets/images/logo-nobg.png" alt="">
+        <section class=" w-full h-96 ">   
             <NavBar/>
-            <div class="w-full flex justify-center">
-                <h1 class="text-9xl text-white">Welcome to our shit</h1>
-            </div>
         </section>
-        <section class=" w-full h-96 bg-red-600">
+        <section class=" w-full h-96 ">
+           <Logo class="" />
 
         </section>
 
@@ -39,25 +34,6 @@ import NavBar from "@/components/navbar/NavBar.vue";
 
 
 
-
-
-<!-- <div class="">
-    <div class="bg-red-600">
- <h1 class=" bg-clip-text text-transparent text-9xl" :style="`background-image: url(${testimg});  animation: your-animation 50s infinite;`">
-        HELLO
-    </h1>
-    </div>
-
-  
-   
-
-</div>
-  <div class="bg-fixed bg-center bg-cover h-screen" :style="`background-image: url(${testimg});`">
-  <div class="container mx-auto px-4 py-32">
-    <h1 class="text-5xl font-bold text-white mb-4">Welcome to my website</h1>
-    <p class="text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor tellus enim, id aliquam risus sagittis et. Sed ut risus dolor.</p>
-  </div>
-</div> -->
 </template>
 
 <style>
