@@ -163,7 +163,7 @@ const videoRef = ref(null);
 <template>
     <div class=" w-full h-[60vw] min-h-[300px] max-h-[700px]   overflow-hidden">
 
-        <Logo class="fixed top-[-2] left-5 " />
+        <Logo class="fixed  left-5 -translate-y-[10px] " />
 
         <div :class="[blackBgTranslate,]"
             class="absolute top-0 left-0 w-full  h-full bg-black transition-transform duration-1000 z-[-4]">
