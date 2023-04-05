@@ -47,7 +47,7 @@ function shuffleArray(arr: any[]) {
     return arr;
 }
 
-function getUniqueRandomIntegers(n) {
+function getUniqueRandomIntegers(n:number) {
     const numbers = [];
 
     for (let i = 0; i < n; i++) {
@@ -56,7 +56,7 @@ function getUniqueRandomIntegers(n) {
 
     for (let i = 0; i < n; i++) {
         const j = Math.floor(Math.random() * (n - i)) + i;
-        const temp = numbers[i];
+        const temp:any = numbers[i];
         numbers[i] = numbers[j];
         numbers[j] = temp;
     }
