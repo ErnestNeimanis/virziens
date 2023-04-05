@@ -45,15 +45,21 @@ function updateResize() {
           </div>
 
         </section>
-           <section class=" w-full h-96 ">
+          <section class=" w-full  ">
         <img class="" src="@/assets/images/virziens-piramida.jpg" alt="">
         <div class="px-7">
           <h1 class="xl:text-9xl md:text-7xl xs:text-4xl uppercase font-extrabold -translate-y-52 text-white" >Vēl kaut kas</h1>
         </div>
 
         </section>
-           <section class=" w-full h-96 bg-black">
-        
+          <section class=" w-full h-96 pt-4 bg-black">
+            <div class="w-full">
+              <div class="flex justify-center items-center gap-4">
+                <div> <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE"> <i class="bi bi-facebook text-white text-3xl"></i> </a></div>
+  <div> <a href="https://www.instagram.com/dejustudijavirziens/?hl=de"> <i class="bi bi-instagram text-white text-3xl"></i> </a></div>
+              </div>
+            </div>
+
 
         </section>
 
