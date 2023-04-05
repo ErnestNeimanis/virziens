@@ -2,6 +2,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
+import Logo from './Logo.vue';
 
 const videoTranslate = ref("-translate-x-[100%]");
 const videoVisibility = ref("hidden")
@@ -160,22 +161,24 @@ const videoRef = ref(null);
 </script>
 
 <template>
-    <div class="relative w-full h-[60vw] min-h-[300px] max-h-[700px]   overflow-hidden">
+    <div class=" w-full h-[60vw] min-h-[300px] max-h-[700px]   overflow-hidden">
+
+        <Logo class="fixed top-[-2] left-5 " />
 
         <div :class="[blackBgTranslate,]"
-            class="absolute top-0 left-0 w-full  h-full bg-black transition-transform duration-1000 z-[-2]">
+            class="absolute top-0 left-0 w-full  h-full bg-black transition-transform duration-1000 z-[-4]">
 
         </div>
 
         <div :class="[videoTranslate, videoVisibility]" class="relative transition-transform duration-1000">
             <video ref="videoRef" autoplay muted loop
-                class="absolute w-full min-w-[500px] min-h-full  object-cover z-[-3] ">
+                class="absolute w-full min-w-[500px] min-h-full  object-cover z-[-5] ">
                 <source src="@/assets/videos/virziensdejo.mp4" type="video/mp4">
             </video>
         </div>
 
         <div
-            class="aboslute top-0 left-0 flex justify-center flex-col items-center w-full h-full  bg-black transparent-mode z-[0]">
+            class="aboslute top-0 left-0 flex justify-center flex-col items-center w-full h-full  bg-black transparent-mode ">
             <div class=" ">
                 <span :class="logoMainTextSize" class=" text-white christmas " style="">Virziens
                 </span>

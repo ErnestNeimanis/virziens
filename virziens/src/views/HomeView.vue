@@ -6,29 +6,29 @@ import Logo from "@/components/navbar/Logo.vue";
 </script>
 <template>
  
- <main class="relative">
+ <main class="">
         <HomeBGVideo class="fixed top-0 left-0 z-[-1]" />
+      <NavBar class="fixed w-full top-8 right-4 " />
 
-        <section class=" w-full h-96 ">   
-            <NavBar/>
+        <section class=" w-full h-[60vw]  max-h-[700px] ">   
+              
         </section>
-        <section class=" w-full h-96 ">
-           <Logo class="" />
+        <section class=" w-full h-96 bg-red-600">
+        
+
+        </section>
+           <section class=" w-full h-96 bg-red-600">
+        
+
+        </section>
+           <section class=" w-full h-96 bg-red-600">
+        
 
         </section>
 
    
 
-    <div class="relative flex justify-center items-center overflow-hidden ">
-
-
-        <div class=" text-9xl text-red-800 border">
-            Hello
-        </div>
-
-
-
-    </div>
+   
      </main>
 
 

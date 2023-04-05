@@ -6,9 +6,9 @@ import HomeBGVideo from './HomeBGVideo.vue'
 
 </script>
 <template>
-    <div>
-        <nav class="flex justify-end flex-wrap">
-            <div v-for="n in 8" class="border px-6 font-extrabold text-white">
+    <div class=" flex justify-end ">
+        <nav class="w-2/3 flex justify-center flex-wrap  gap-3">
+            <div v-for="n in 8" class="  font-extrabold text-white px-2">
                 <span>item {{ n }}</span>
             </div>
         </nav>
