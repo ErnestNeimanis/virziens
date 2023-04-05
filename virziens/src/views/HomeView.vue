@@ -40,13 +40,13 @@ function updateResize() {
           </div>
           <div class=" bg-white">
             <article class="text-3xl px-6 font-bold">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem doloribus, eligendi laudantium dolore optio voluptate ad sunt nulla dolor neque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto expedita, aperiam molestias ab aspernatur repellendus voluptas facilis reprehenderit accusantium obcaecati vel delectus vitae natus doloribus, fugiat ratione vero, dolorum magni soluta esse sunt blanditiis voluptatem! Sapiente maxime autem nesciunt.
             </article>
           </div>
 
         </section>
           <section class=" w-full  ">
-        <img class="" src="@/assets/images/virziens-piramida.jpg" alt="">
+        <img class="w-full" src="@/assets/images/virziens-piramida.jpg" alt="">
         <div class="px-7">
           <h1 class="xl:text-9xl md:text-7xl xs:text-4xl uppercase font-extrabold -translate-y-52 text-white" >Vēl kaut kas</h1>
         </div>
@@ -55,8 +55,8 @@ function updateResize() {
           <section class=" w-full h-96 pt-4 bg-black">
             <div class="w-full">
               <div class="flex justify-center items-center gap-4">
-                <div> <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE"> <i class="bi bi-facebook text-white text-3xl"></i> </a></div>
-  <div> <a href="https://www.instagram.com/dejustudijavirziens/?hl=de"> <i class="bi bi-instagram text-white text-3xl"></i> </a></div>
+                <div> <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE"> <i class="bi bi-facebook text-white hover:text-gray-400 text-3xl"></i> </a></div>
+  <div> <a href="https://www.instagram.com/dejustudijavirziens/?hl=de"> <i class="bi bi-instagram text-white text-3xl hover:text-gray-400"></i> </a></div>
               </div>
             </div>
 

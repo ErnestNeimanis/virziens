@@ -133,9 +133,9 @@ function delay(ms: number) {
 }
 
 async function startAnimations() {
-    await delay(1000);
+    await delay(1);
     blackBgOut();
-    await delay(1000);
+    await delay(7);
 
     logoBottomTextIn();
     await removelbtOpacity();
@@ -143,7 +143,7 @@ async function startAnimations() {
     logoBottomLinesIn();
     await delay(100)
     videoIn(); 
-    await delay(3000);
+    await delay(1500);
     bottomLogoOut();
     growLogo();
     await delay(1000);
