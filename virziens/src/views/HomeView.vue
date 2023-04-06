@@ -69,7 +69,11 @@ function parallax() {
   const scrollPercent = Math.floor((window.scrollY / scrollableHeight) * 100);
 
 
-console.log(scrollPercent)
+//console.log(scrollPercent)
+
+
+
+
 
 if(window.innerWidth < 800){
  translate.value = scrollPercent * 0.5
@@ -78,9 +82,7 @@ if(window.innerWidth < 800){
 } else{
    translate.value = scrollPercent * 0.8
 }
- 
-
- 
+  
 
 }
 
@@ -122,7 +124,7 @@ onBeforeUnmount(() => {
     </div>
 
        <div v-if="secondVidSectionVisible"   class="relative h-[60vw] w-full z-[-100]">
-        <div class="w-full fixed sm:bottom-0 ">
+        <div class="w-full fixed sm:bottom-0 bottom-12 ">
           <video class="w-full" autoplay muted loop>
             <source src="@/assets/videos/one-dancer.mp4" type="video/mp4"/>
           </video>
