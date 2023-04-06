@@ -48,7 +48,7 @@
 @keyframes fade-out {
   from {
 
-    background-color: rgb(242, 228, 228);
+    background-color: rgb(255, 247, 247);
   }
 
   to {
