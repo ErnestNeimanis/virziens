@@ -61,10 +61,10 @@ onBeforeUnmount(() => {
 <template>
   <main class="">
 
-    <div :style="{ transform: `translateY(${-translate}vw)` }" class=" bg-rose-100 transition-transform  w-full fixed top-0 left-0 z-[-1]">
+    <div :style="{ transform: `translateY(${-translate}vw)` }" class=" transition-transform  w-full fixed top-0 left-0 z-[-1]">
       <HomeBGVideo class=" " />
-      <div class="">
- <div class="mt-[350px]">
+      <div class=" ">
+ <div class="pt-[350px] bg-rose-100">
         <img src="@/assets/images/ba-stars.jpg" alt="" class="w-full">
       </div>
       </div>
