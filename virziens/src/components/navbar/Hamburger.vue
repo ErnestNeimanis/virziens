@@ -38,9 +38,11 @@ const size = 50;
 watch(active, animate);
 </script>
 <template>
-  <div
+
+<div class="bg-black p-1 rounded-md">
+ <div
     @click="(active = !active), active ? $emit('open') : $emit('close')"
-    class=" flex flex-col justify-evenly h-[30px] w-[30px]"
+    class=" flex flex-col justify-evenly h-[30px] w-[30px] "
   >
     <div
       :class="{ 'translate-y-2.5': step1, 'rotate-45': step2 }"
@@ -55,4 +57,6 @@ watch(active, animate);
       class="bg-white h-1/6 w-full transition duration-500"
     ></div>
   </div>
+</div>
+ 
 </template>

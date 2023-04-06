@@ -161,18 +161,18 @@ const videoRef = ref(null);
 </script>
 
 <template>
-    <div class=" w-full h-[60vw] min-h-[300px] max-h-[700px]   overflow-hidden">
+    <div class="relative w-full h-[60vw] min-h-[300px] max-h-[700px]   overflow-hidden">
 
         <Logo class="fixed  left-5 -translate-y-[10px] " />
 
         <div :class="[blackBgTranslate,]"
-            class="absolute top-0 left-0 w-full  h-full bg-black transition-transform duration-1000 z-[-4]">
+            class="absolute top-0 left-0 w-full  h-full bg-black transition-transform duration-1000 z-[-104]">
 
         </div>
 
         <div :class="[videoTranslate, videoVisibility]" class="relative transition-transform duration-1000">
             <video ref="videoRef" autoplay muted loop
-                class="absolute w-full min-w-[500px] min-h-full  object-cover z-[-5] ">
+                class="absolute w-full min-w-[500px] min-h-full  object-cover z-[-105] ">
                 <source src="@/assets/videos/virziensdejo.mp4" type="video/mp4">
             </video>
         </div>
