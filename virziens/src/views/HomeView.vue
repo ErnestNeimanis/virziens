@@ -9,6 +9,8 @@ import HomeSection1 from "@/components/home/HomeSection1.vue"
 import HomeSection2 from "@/components/home/HomeSection2.vue"
 import HomeSection3 from "@/components/home/HomeSection3.vue"
 import HomeSection4 from "@/components/home/HomeSection4.vue"
+import BGE1 from "@/components/home/BGE1.vue"
+import HTSection1 from "@/components/home/HTSection1.vue"
 
 const translate = ref(0)
 
@@ -21,25 +23,25 @@ const secondVidSectionVisible = ref(false)
 
 
 
-    function handleScroll() {
-      if(!secondVidSection.value) return
-      const elementPosition = secondVidSection.value.getBoundingClientRect();
+function handleScroll() {
+  if (!secondVidSection.value) return
+  const elementPosition = secondVidSection.value.getBoundingClientRect();
 
-      if (
- 
-        elementPosition.bottom < window.innerHeight 
-       
-      ) {
-        secondVidSectionVisible.value = true
-      }else{
-         secondVidSectionVisible.value = false
-      }
-    }
+  if (
 
-    onMounted(() => {
-      console.log(secondVidSection.value)
-      window.addEventListener('scroll', handleScroll);
-    });
+    elementPosition.bottom < window.innerHeight
+
+  ) {
+    secondVidSectionVisible.value = true
+  } else {
+    secondVidSectionVisible.value = false
+  }
+}
+
+onMounted(() => {
+  console.log(secondVidSection.value)
+  window.addEventListener('scroll', handleScroll);
+});
 
 // var screenHeight = window.innerHeight;
 
@@ -69,20 +71,19 @@ function parallax() {
   const scrollPercent = Math.floor((window.scrollY / scrollableHeight) * 100);
 
 
-//console.log(scrollPercent)
+  //console.log(scrollPercent)
 
 
 
 
+  if (window.innerWidth < 800) {
+    translate.value = scrollPercent * 0.5
+  } else if (window.innerWidth < 600) {
+    translate.value = scrollPercent * 0.1
+  } else {
+    translate.value = scrollPercent * 0.8
+  }
 
-if(window.innerWidth < 800){
- translate.value = scrollPercent * 0.5
-}else if(window.innerWidth < 600){
-   translate.value = scrollPercent * 0.1
-} else{
-   translate.value = scrollPercent * 0.8
-}
-  
 
 }
 
@@ -95,82 +96,71 @@ onBeforeUnmount(() => {
 
 })
 
-
+//:style="{ transform: `translateY(${-translate}%)` }"
 </script>
 <template>
   <main class="">
-
-    <div :style="{ transform: `translateY(${-translate}%)` }"  class="parallax-duration  w-full fixed top-0 left-0 z-[-100]">
-      
-      <HomeBGVideo class="z-[-100] " />
-
-      <div class=" ">
-        <div class="pt-[400px] bg-rose-100 w-[170vw] pr-[20vw]">
-          <div class="w-full h-[50px] bg-black">
-
-          </div>
-          <img src="@/assets/images/ba-stars.jpg" alt="" class="w-full">
-       
-        </div>
-        <div class="relative h-[50vh] bg-black z-[-3000]">
-
-        </div>
-      </div>
-
-   
-
-
-
-    </div>
-
-       <div v-if="secondVidSectionVisible"   class="relative h-[60vw] w-full z-[-100]">
-        <div class="w-full fixed sm:bottom-0 bottom-12 ">
-          <video class="w-full" autoplay muted loop>
-            <source src="@/assets/videos/one-dancer.mp4" type="video/mp4"/>
-          </video>
-        </div>
-      </div>
-
-
     <NavBar class=" fixed w-full top-8 right-4 z-[100]" />
+    <!-- <div v-if="secondVidSectionVisible"   class="relative h-[60vw] w-full z-[-100]">
+              <div class="w-full fixed sm:bottom-0 bottom-12 ">
+                <video class="w-full" autoplay muted loop>
+                  <source src="@/assets/videos/one-dancer.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div> -->
 
 
+    <div class="wrapper  h-[100vh] overflow-y-auto  ">
+     
+      <div class="h-full w-full background ">
+<HomeBGVideo class=" " />
+        <div class="w-full h-56 bg-red-100">
 
-    <HomeSection1 />
-    <HomeSection2 />
-    <section class="w-full min-h-[60vw]">
-      <div class=" h-full flex flex-col justify-center items-center md:gap-20">
-       
-       <p class="bg-white/30 px-9 xl:text-9xl md:text-7xl xs:text-4xl text-3xl text-black font-extrabold font-serif  ">Baiba Andersone jums iemācīs dejot kā neviens cits!</p>
-       
-       <div class="flex justify-end w-full px-20">
-  
-<button class="bg-black rounded-full hover:bg-black/30 mt-6  px-4 py-2 text-white uppercase font-extrabold">random poga</button>
-      
- 
-       </div>
-      
+        </div>
+        <BGE1 class="" />
       </div>
-    </section>
-    <div ref="secondVidSection">
- <HomeSection3 />
+      
+      <div class="foreground ">
+        <HomeSection1 />
+        <HomeSection2 />
+        <HTSection1 />
+
+        <div ref="secondVidSection">
+          <HomeSection3 />
+        </div>
+        <section class=" w-full h-[60vw]">
+        </section>
+
+        <HomeSection4 />
+      </div>
     </div>
-   
 
-      <section   class=" w-full h-[60vw]">
-
-        
-
-    </section>
-
-    <HomeSection4 />
-  
 
 
   </main>
 </template>
 
 <style>
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2)
+}
+
+
+.background,
+.foreground {
+  position: absolute;
+  height:100%;
+ 
+  z-index: -1;
+}
+
+
 .bg-image-s2 {
   background-image: url("@/assets/images/virziens-piramida.jpg");
   background-size: cover;
