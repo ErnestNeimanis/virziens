@@ -9,7 +9,7 @@
         mums </h1>
     </div>
     <div class="flex justify-start items-center h-full relative overflow-hidden ] ">
-      <div class="relative flex justify-center pt-16  bg-white/40 w-full  lg:min-h-[1200px] md:min-h-[900px] sm:min-h-[600px] min-h-[550px]  min-w-[300px] ">
+      <div class="relative flex justify-center pt-16  bg-white/30 w-full  lg:min-h-[1200px] md:min-h-[900px] sm:min-h-[600px] min-h-[450px]  min-w-[300px] ">
         <article class=" flex flex-col md:gap-16 gap-4  lg:text-3xl sm:text-2xl text-xl px-6 font-bold   h-full ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto expedita, aperiam molestias ab

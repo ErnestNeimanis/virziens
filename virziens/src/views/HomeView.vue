@@ -43,7 +43,9 @@ function parallax() {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
   const scrollPercent = Math.floor((window.scrollY / scrollableHeight) * 100);
 
-  translate.value = scrollPercent * 1.2
+  
+
+  translate.value = scrollPercent * 1.5
 
 }
 
@@ -61,10 +63,13 @@ onBeforeUnmount(() => {
 <template>
   <main class="">
 
-    <div :style="{ transform: `translateY(${-translate}vw)` }" class=" transition-transform  w-full fixed top-0 left-0 z-[-1]">
+    <div :style="{ transform: `translateY(${-translate}vw)` }" class="parallax-duration  w-full fixed top-0 left-0 z-[-1]">
       <HomeBGVideo class=" " />
       <div class=" ">
- <div class="pt-[350px] bg-rose-100">
+ <div class="pt-[250px] bg-rose-100 w-[160vw] pr-[20vw]">
+    <div class="w-full h-[100px] bg-black">
+
+    </div>
         <img src="@/assets/images/ba-stars.jpg" alt="" class="w-full">
       </div>
       </div>
@@ -103,7 +108,9 @@ onBeforeUnmount(() => {
 }
 
 
-
+.parallax-duration {
+  transition-duration: 100ms;
+}
 
 
 
