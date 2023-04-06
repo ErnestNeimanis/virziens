@@ -72,7 +72,7 @@ function updateResize() {
       <div v-else  class="z-[999]">
 
   <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4"  />
-<div :class="menuClass" class="transition-transform duration-500  flex flex-col w-9/10 h-screen bg-black  pt-6">
+<div :class="menuClass" class="transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 h-screen bg-black  pt-6">
         <nav class=" flex flex-col pl-[30%]  gap-3 ">
             <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
                 <span>SĀKUMS</span>
