@@ -26,7 +26,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
      
       <div class="h-full w-full background ">
 <HomeBGVideo class=" " />
-        <div class="w-full h-56 bg-red-100">
+        <div class="w-full h-64 bg-red-100">
 
         </div>
         <BGE1 class="" />
@@ -82,7 +82,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
   position: absolute;
   height:100%;
   width: 100%;
-  object-fit: cover;
+
  
   z-index: -1;
 }
