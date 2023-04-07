@@ -29,6 +29,8 @@ const logoBottomText = ref(['d', 'e', 'j', 'u', ' ', 's', 't', 'u', 'd', 'i', 'j
 
 const lbtOpacityArray = ref<string[]>([]);
 
+
+
 function setlbtOpacity() {
     for (let i = 0; i < logoBottomText.value.length; i++) {
         lbtOpacityArray.value[i] = "opacity-0"
@@ -126,6 +128,8 @@ function bottomLogoOut() {
 function growDot(){
 logoDotSize.value =  "dot-grow"
 }
+
+
 
 
 function delay(ms: number) {
@@ -268,6 +272,8 @@ animation-name: grow-dot;
     animation-duration: 5000ms;
     animation-fill-mode: forwards;
 }
+
+
 
 @keyframes grow-dot{
     from{

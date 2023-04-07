@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import testimg from "@/assets/images/textimgcode.jpg"
+
 import HomeBGVideo from "@/components/navbar/HomeBGVideo.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
 import Hamburger from "@/components/navbar/Hamburger.vue"
@@ -13,6 +13,39 @@ import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
 
 
+const secondVidSection = ref<HTMLAreaElement | null>(null);
+const secondVidSectionVisible = ref(false);
+
+const wrapper = ref<HTMLAreaElement | null>(null);
+
+const homeSection2 =  ref<HTMLAreaElement | null>(null);
+       
+function handleScroll() {
+ 
+  const element = homeSection2.value;
+  if (!element) return;
+  const elementPosition = element.getBoundingClientRect();
+  const halfViewportHeight = window.innerHeight / 2;
+
+  if (
+    elementPosition.top <= window.innerHeight - halfViewportHeight &&
+    elementPosition.bottom >= halfViewportHeight
+  ) {
+
+  } else {
+
+  }
+}
+window.addEventListener('scrol', ()=>{
+  console.log('click')
+})
+onMounted(() => {
+wrapper.value?.addEventListener('scroll',handleScroll)
+});
+onBeforeUnmount(() => {
+    window.removeEventListener('scroll', handleScroll);
+})
+
 
 </script>
 <template>
@@ -22,7 +55,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
 
 
 
-    <div class="wrapper  h-[100vh]  ">
+    <div ref="wrapper" class="wrapper  h-[100vh]  ">
      
       <div class="h-full w-full background ">
 <HomeBGVideo class=" " />
@@ -41,7 +74,10 @@ import HTSection1 from "@/components/home/HTSection1.vue"
       
       <div class="foreground ">
         <HomeSection1 />
-        <HomeSection2 />
+        <div ref="homeSection2">
+<HomeSection2  />
+        </div>
+        
         <HTSection1 />
 
         <div ref="secondVidSection">
@@ -110,4 +146,9 @@ import HTSection1 from "@/components/home/HTSection1.vue"
     background-position: 100% 50%;
   }
 }
+
+
+
+
+
 </style>
