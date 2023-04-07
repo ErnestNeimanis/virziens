@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import HomeBGVideo from './HomeBGVideo.vue'
 import Hamburger from './Hamburger.vue';
 
-const menuClass = ref("-translate-x-[100%]")
+const menuClass = ref("-translate-x-[100%] hidden")
 const menuOpen =  ref(false)
 
 const screenW = ref(window.innerWidth);
@@ -72,9 +72,9 @@ function updateResize() {
       <div v-else  class="z-[999]  ">
 
   <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4"  />
-<div :class="menuClass" v-bind:class="{hidden:!openMenu}" class="transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 bg-black h-screen pt-6">
-        <nav class=" flex flex-col pl-[30%]  gap-3  text-xl">
-            <div  class="w-full flex items-center text-xl  font-extrabold text-white px-2 cursor-pointer underline">
+<div :class="menuClass"  class=" transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 bg-black h-screen pt-6">
+        <nav class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl">
+            <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
                 <span>SĀKUMS</span>
             </div>
               <div  class="w-full flex items-center  font-extrabold text-white px-2 cursor-pointer underline">
