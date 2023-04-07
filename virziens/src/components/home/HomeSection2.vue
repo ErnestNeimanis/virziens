@@ -5,7 +5,7 @@
   <section class=" w-full   ">
 
     <div class="flex justify-center description-text  ">
-      <h1 class=" xl:text-9xl md:text-7xl xs:text-4xl text-3xl px-6 uppercase font-extrabold ">vieta kur dejas kļūst par dzīvesveidu </h1>
+      <h1 class=" xl:text-9xl md:text-7xl xs:text-4xl text-3xl px-6 uppercase font-extrabold text-center ">vieta kur dejas kļūst par dzīvesveidu </h1>
     </div>
     <div class="flex justify-start items-center h-full relative overflow-hidden ] ">
       <div class="relative flex justify-center items-center  bg-white/30 w-full  lg:min-h-[1200px] md:min-h-[900px] sm:min-h-[600px] min-h-[450px]  min-w-[300px] ">

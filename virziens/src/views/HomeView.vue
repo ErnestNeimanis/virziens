@@ -64,6 +64,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
   background-color: black;
   height: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   perspective: 10px;
  
@@ -73,9 +74,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
 .background {
   transform: translateZ(-10px) scale(2)
 }
-.foreground{
 
-}
 
 .background,
 .foreground {
