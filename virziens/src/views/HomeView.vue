@@ -86,7 +86,7 @@ onBeforeUnmount(() => {
         <div ref="secondVidSection">
           <HomeSection3 />
         </div>
-        <section class="  w-full sm:h-[60vw] h-[70vw]">
+        <section class="  w-full sm:h-[60vw] h-[90vw]">
         </section>
 
         <HomeSection4 />
