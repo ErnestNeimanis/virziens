@@ -63,6 +63,9 @@ onBeforeUnmount(() => {
 
         </div>
         <BGE1 class="" />
+        <div class="h-[10vw]">
+
+        </div>
 
           <div class="w-full ">
                 <video class="w-full" autoplay muted loop>
@@ -83,7 +86,7 @@ onBeforeUnmount(() => {
         <div ref="secondVidSection">
           <HomeSection3 />
         </div>
-        <section class=" w-full h-[60vw]">
+        <section class=" w-full sm:h-[60vw] h-[70vw]">
         </section>
 
         <HomeSection4 />

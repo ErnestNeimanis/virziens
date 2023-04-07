@@ -9,7 +9,7 @@
     </div>
     <div class="flex justify-start items-center h-full relative overflow-hidden ] ">
       <div class="relative flex  bg-white/30 w-full  lg:min-h-[1200px] md:min-h-[900px] sm:min-h-[600px] min-h-[450px]  min-w-[340px] ">
-        <article class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5x md:text-4xl sm:text-xl xs:text-base  px-6   h-full ">
+        <article class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-4xl sm:text-2xl xs:text-base  px-6   h-full ">
           <p class="font-semibold font-serif ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto expedita, aperiam molestias ab
             aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, tempora!
