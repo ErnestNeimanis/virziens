@@ -24,7 +24,7 @@ function closeMenu(){
   setTimeout(()=>{
     if(!menuOpen.value)
      menuClass.value = "hidden"
-  },1500)
+  },300)
 }
 
 const mobileView = computed(() => {
@@ -69,10 +69,10 @@ function updateResize() {
         </nav>
     </div>
    
-      <div v-else  class="z-[999]">
+      <div v-else  class="z-[999]  ">
 
   <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4"  />
-<div :class="menuClass" class="transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 bg-black  pt-6">
+<div :class="menuClass" v-bind:class="{hidden:!openMenu}" class="transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 bg-black h-screen pt-6">
         <nav class=" flex flex-col pl-[30%]  gap-3  text-xl">
             <div  class="w-full flex items-center text-xl  font-extrabold text-white px-2 cursor-pointer underline">
                 <span>SĀKUMS</span>
@@ -95,6 +95,8 @@ function updateResize() {
               <div  class="w-full flex items-center font-extrabold text-white px-2 cursor-pointer underline">
                 <span>KONTAKTI</span>
             </div>
+            
+          
         </nav>
     </div>
 
