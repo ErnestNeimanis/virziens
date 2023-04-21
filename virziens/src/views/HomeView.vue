@@ -13,6 +13,9 @@ import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
 
 
+
+
+
 const secondVidSection = ref<HTMLAreaElement | null>(null);
 const secondVidSectionVisible = ref(false);
 

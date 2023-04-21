@@ -10,12 +10,16 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@firebase/app": "^0.9.8",
+    "@firebase/firestore": "^3.10.1",
     "bootstrap-icons": "^1.10.4",
+    "firebase": "^9.20.0",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@types/firebase": "^3.2.1",
     "@types/node": "^18.14.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/tsconfig": "^0.1.3",
