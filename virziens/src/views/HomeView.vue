@@ -14,10 +14,12 @@ import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
 
 
-
+const apiTest =  ref("")
 async function testApi(){
+  console.log('logging for api test')
   const response = await axios.get("https://virziens-api.netlify.app/.netlify/functions/api")
-  console.log(response.data)
+  console.log(response.data.hello)
+  apiTest.value = response.data.hello
 }
 testApi();
 
@@ -57,6 +59,7 @@ onBeforeUnmount(() => {
 
 </script>
 <template>
+  <div>testing api {{ apiTest }}</div>
  
     <NavBar class=" fixed w-full top-8 right-4 z-[100]" />
 
