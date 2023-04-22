@@ -11,7 +11,15 @@ import HomeSection3 from "@/components/home/HomeSection3.vue"
 import HomeSection4 from "@/components/home/HomeSection4.vue"
 import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
+import axios from "axios"
 
+
+
+async function testApi(){
+  const response = await axios.get("https://virziens-api.netlify.app/.netlify/functions/api")
+  console.log(response.data)
+}
+testApi();
 
 const secondVidSection = ref<HTMLAreaElement | null>(null);
 const secondVidSectionVisible = ref(false);

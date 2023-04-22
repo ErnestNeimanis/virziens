@@ -5,9 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "allowImportingTsExtensions": true ,
   },
-
   "references": [
     {
       "path": "./tsconfig.node.json"
