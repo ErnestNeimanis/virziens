@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
 <template>
   <div>testing api {{ apiTest }}</div>
  
-    <NavBar class=" fixed w-full top-8 right-4 z-[100]" />
+    <NavBar class=" fixed  top-8 right-4 z-[100] w-2/3" />
 
 
 

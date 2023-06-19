@@ -31,7 +31,7 @@ const navMenu = ref<NavItem[]>([
    {
     name: 'schedule',
     title: 'Grafiks',
-    link: "/"
+    link: "/schedule"
   },
    {
     name: 'gallery',
@@ -86,14 +86,14 @@ function updateResize() {
 </script>
 <template>
   <div v-if="!mobileView" class=" flex justify-end ">
-    <nav class="w-2/3 flex justify-end flex-wrap  gap-3 pr-8 pt-4">
-      <nav class="w-2/3 flex justify-end flex-wrap  gap-3 ">
+    <nav :="$attrs" class="w-2/3 flex justify-end flex-wrap  gap-3 pr-8 pt-4">
+    
         <RouterLink v-for="item in navMenu" :to="item.link">
           <div class="menu-item">
             <span>{{ item.title }}</span>
           </div>
         </RouterLink>
-      </nav>
+    
     </nav>
   </div>
 
@@ -101,8 +101,8 @@ function updateResize() {
 
     <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4" />
     <div :class="menuClass"
-      class=" transition-transform duration-500 rounded-tr-md flex flex-col w-9/10 bg-black h-screen pt-6">
-      <nav class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl ">
+      class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-6">
+      <nav class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl  ">
         <div class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
           <span>SĀKUMS</span>
         </div>
