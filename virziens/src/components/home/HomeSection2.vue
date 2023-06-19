@@ -1,6 +1,17 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
+const firstTextContent = ref<string>(`
+Jūrmalas deju studija Virziens aicina pievienoties mūsu kolektīvam ne tikai bērnus un jauniešus, bet arī pieaugušos un seniorus. Pie mums iespējams dejot gan hobija nolūkos, gan arī deju apgūt profesionālā līmenī.
+
+`)
+
+const secondTextContent = ref<string>(`
+Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu dārgās dzimtenes iedzīvotājus. 
+
+
+`)
+
 const firstText = ref<HTMLElement | null>(null)
 const firstTextAnimationClass = ref("first-text")
 
@@ -74,21 +85,15 @@ onMounted(() => {
         <article
           class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-4xl sm:text-2xl xs:text-base  px-6   h-full ">
           <p :class="firstTextAnimationClass" ref="firstText" class=" font-semibold font-serif ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto expedita, aperiam molestias ab
-            aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, tempora!
+          {{ firstTextContent }}
 
           </p>
 
           <p :class="secondTextAnimationClass" ref="secondText"
             class="  transition-all  w-full text-right text-white rounded-lg px-6 font-extrabold bg-white/15 "
             style="transition-duration: 800ms;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestias.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptas sit fuga nostrum hic esse, facilis magnam
-            mollitia. Modi, atque.
-            Lorem
-
+           {{ secondTextContent }}
           </p>
-
 
         </article>
         <img class="background-pattern  absolute top-0 w-full z-[-1] -translate-y-[40vw]"
