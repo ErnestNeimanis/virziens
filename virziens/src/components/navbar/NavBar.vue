@@ -85,8 +85,8 @@ function updateResize() {
 
 </script>
 <template>
-  <div v-if="!mobileView" class=" flex justify-end ">
-    <nav :="$attrs" class="w-2/3 flex justify-end flex-wrap  gap-3 pr-8 pt-4">
+  <div v-if="!mobileView" class="w-full flex justify-end  fixed  top-8 right-4 z-[100]">
+    <nav :="$attrs" class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
     
         <RouterLink v-for="item in navMenu" :to="item.link">
           <div class="menu-item">
@@ -97,12 +97,12 @@ function updateResize() {
     </nav>
   </div>
 
-  <div v-else class="z-[999]  ">
+  <div v-else class="z-[999] w-full  fixed  top-8 right-4">
 
     <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4" />
     <div :class="menuClass"
       class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-6">
-      <nav class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl  ">
+      <nav  class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl  ">
         <div class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
           <span>SĀKUMS</span>
         </div>
@@ -139,5 +139,9 @@ function updateResize() {
 
 .menu-item {
   @apply bg-black hover:bg-black/30 transition-colors button-hover-duration  rounded-sm font-extrabold text-xl text-white px-2 cursor-pointer hover:underline
+}
+
+.menu-item-mobile {
+  @apply w-full flex items-center font-extrabold text-white px-2 cursor-pointer underline
 }
 </style>

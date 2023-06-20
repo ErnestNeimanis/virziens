@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
 <template>
   <div>testing api {{ apiTest }}</div>
  
-    <NavBar class=" fixed  top-8 right-4 z-[100] w-2/3" />
+    <NavBar class=" fixed   z-[100] w-2/3" />
 
 
 
@@ -79,7 +79,7 @@ onBeforeUnmount(() => {
         </div>
 
           <div class="w-full ">
-                <video class="w-full" autoplay muted loop>
+                <video class="w-full" autoplay muted loop playsinline="true">
                   <source src="@/assets/videos/one-dancer.mp4" type="video/mp4"/>
                 </video>
               </div>
