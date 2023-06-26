@@ -10,12 +10,12 @@ interface Image {
   ref:Ref <HTMLImageElement | null>
 }
 
-const imgArray = ref<Image[]>([
-  {
-    path: dejoBerni1,
-    ref:  ref<HTMLImageElement | null>(null)
-  },
-])
+// const imgArray = ref<Image[]>([
+//   {
+//     path: dejoBerni1,
+//     ref:  ref<HTMLImageElement | null>(null)
+//   },
+// ])
 
 
 
