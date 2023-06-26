@@ -52,7 +52,7 @@ async function vibrate(ms:number = 100){
 </script>
 <template>
         <section class="w-full h-[100vh] max-h-[150vw]   overflow-hidden">
-      <div class=" h-full flex flex-col justify-center items-center md:gap-20">
+      <div class=" h-full flex flex-col md:gap-20">
 
       
 

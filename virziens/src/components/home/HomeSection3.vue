@@ -109,15 +109,19 @@ function rotate(){
 
 </script>
 <template>
-    <section ref="parentSection" class="relative w-full h-[50vw] overflow-clip ">
+    <section ref="parentSection" class="relative w-full h-[50vw] overflow-clip  ">
 
+<div class="absolute top-0 flex justify-center items-center z-[1] w-full h-full ">
+          <h1 class="uppercase -translate-y-[6vw] text-white text-[13vw] font-extrabold">Bērni</h1>
+        </div>
+      <div class="flex min-w-full h-full overflow-hidden relative">
 
-      <div class="flex min-w-full h-full overflow-hidden ">
+        
 
-        <div class="flex -translate-x-[400px]">
+        <div class="flex">
 
           <img :style="{ transform: `translateX(${translateX}px)` }"  class="img-switch-transition    object-cover " :src="dejoBerni1" alt=""/>
-            <img :style="{ transform: `translateX(${translateX}px)` }"  class="img-switch-transition    object-cover " :src="dejoBerni1" alt=""/>
+            <!-- <img :style="{ transform: `translateX(${translateX}px)` }"  class="img-switch-transition    object-cover " :src="dejoBerni1" alt=""/> -->
 
            <!-- <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
           <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/> -->
