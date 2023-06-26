@@ -1,5 +1,28 @@
 <script setup lang="ts">
-import { onBeforeMount, onBeforeUnmount, onMounted, ref } from 'vue';
+import { onBeforeMount, onBeforeUnmount, onMounted, ref, type Ref } from 'vue';
+
+import dejoBerni1 from "@/assets/images/Dejo berni 1.jpeg"
+import dejoBerni2 from "@/assets/images/Dejo berni 2.jpeg"
+import dejoBerni3 from "@/assets/images/Dejo berni 3.jpeg"
+
+interface Image {
+  path: string;
+  ref:Ref <HTMLImageElement | null>
+}
+
+const imgArray = ref<Image[]>([
+  {
+    path: dejoBerni1,
+    ref:  ref<HTMLImageElement | null>(null)
+  },
+])
+
+
+
+const translateX = ref(0);
+
+
+
 
 const parentSection = ref(null)
 
@@ -79,22 +102,32 @@ myCallbackFunction: (entry: IntersectionObserverEntry)
 }
 
 
+function rotate(){
+  
+}
+
 
 </script>
 <template>
-    <section ref="parentSection" class="relative w-full h-[60vw] ">
-        
-          <img  class="img-switch-transition  absolute top-0 min-w-full " src="@/assets/images/brown-dancers-halfpyramid.jpg" alt="">
-           <img  :class="img1opacity" class="img-switch-transition  absolute top-0 min-w-full " src="@/assets/images/virziens-piramida.jpg" alt="">
-       
+    <section ref="parentSection" class="relative w-full h-[50vw] overflow-clip ">
+
+
+      <div class="flex min-w-full h-full overflow-hidden ">
+
+        <div class="flex -translate-x-[400px]">
+
+           <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
+          <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
+        </div>
+
       
+      
+      </div>
         
-
-
-
-        <div class="relative w-full h-full flex justify-center items-center z-[1] ">
+        
+        <div class="absolute w-full h-full flex justify-center items-center z-[1] ">
             <div class="">
-                <h1 class="xl:text-9xl md:text-7xl xs:text-4xl uppercase font-extrabold  text-white">Vēl kaut kas
+                <h1 class="text-[17vw] uppercase font-extrabold  text-white">Bērni
                 </h1>
             </div>
         </div>
@@ -103,6 +136,7 @@ myCallbackFunction: (entry: IntersectionObserverEntry)
     </section>
 </template>
 <style>
+
 .img-switch-transition{
     transition: opacity;
     transition-duration: 2.5s;

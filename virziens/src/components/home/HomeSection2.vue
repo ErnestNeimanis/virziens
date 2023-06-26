@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import baibaExploding from '@/assets/images/ba-stars.jpg'
 
 const firstTextContent = ref<string>(`
 Jūrmalas deju studija Virziens aicina pievienoties mūsu kolektīvam ne tikai bērnus un jauniešus, bet arī pieaugušos un seniorus. Pie mums iespējams dejot gan hobija nolūkos, gan arī deju apgūt profesionālā līmenī.
@@ -7,10 +8,12 @@ Jūrmalas deju studija Virziens aicina pievienoties mūsu kolektīvam ne tikai b
 `)
 
 const secondTextContent = ref<string>(`
-Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu dārgās dzimtenes iedzīvotājus. 
+"Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu dārgās dzimtenes iedzīvotājus," stāsta trenere Baiba Andersone.
 
 
 `)
+
+
 
 const firstText = ref<HTMLElement | null>(null)
 const firstTextAnimationClass = ref("first-text")
@@ -73,31 +76,30 @@ onMounted(() => {
 })
 </script>
 <template>
-  <section class=" w-full   ">
+  <section class=" w-full h-full  "  >
 
     <div class="flex justify-center description-text  ">
-      <h1 class=" xl:text-9xl md:text-7xl xs:text-4xl text-3xl px-6 uppercase font-extrabold text-center  ">vieta kur
-        dejas kļūst par dzīvesveidu </h1>
+      <h1 class=" text-[7vw] px-6 uppercase font-extrabold text-center  ">vieta, kur
+        deja kļūst par dzīvesveidu </h1>
     </div>
-    <div class="flex justify-start items-center h-full relative overflow-hidden ] ">
+    <div class="flex justify-start items-center  relative overflow-hidden    background-container">
       <div
-        class="relative flex  bg-white/30 w-full  lg:min-h-[1200px] md:min-h-[900px] sm:min-h-[600px] min-h-[450px]  min-w-[340px] ">
+        class="relative flex   ">
         <article
           class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-4xl sm:text-2xl xs:text-base  px-6   h-full ">
           <p :class="firstTextAnimationClass" ref="firstText" class=" font-semibold font-serif ">
-          {{ firstTextContent }}
+         
 
           </p>
 
           <p :class="secondTextAnimationClass" ref="secondText"
-            class="  transition-all  w-full text-right text-white rounded-lg px-6 font-extrabold bg-white/15 "
+            class="  transition-all mb-[3.5vw] w-full text-center my-24  rounded-lg px-6 py-2 font-extrabold bg-white/40 "
             style="transition-duration: 800ms;">
            {{ secondTextContent }}
           </p>
 
         </article>
-        <img class="background-pattern  absolute top-0 w-full z-[-1] -translate-y-[40vw]"
-          src="@/assets/images/two-brown-dancers.jpg" alt="">
+       
       </div>
 
 
@@ -107,9 +109,9 @@ onMounted(() => {
 
 <style scoped>
 .description-text {
-  background-color: white;
+  background-color: rgb(254 226 226 );
   animation-name: fade-out;
-  animation-duration: 9s;
+  animation-duration: 7s;
   animation-fill-mode: forwards;
 }
 
@@ -145,10 +147,23 @@ onMounted(() => {
 @keyframes fade-out {
   from {
 
-    background-color: rgb(255, 247, 247);
+    background-color:  rgb(254 226 226 );
   }
 
   to {
     background-color: transparent;
   }
-}</style>
+
+
+
+}
+
+  .background-container {
+  background-image: url('@/assets/images/ba-stars.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+}
+</style>

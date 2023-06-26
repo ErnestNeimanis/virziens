@@ -14,8 +14,8 @@ import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
 
 
-const apiTest =  ref("")
-async function testApi(){
+const apiTest = ref("")
+async function testApi() {
   console.log('logging for api test')
   const response = await axios.get("https://virziens-api.netlify.app/.netlify/functions/api")
   console.log(response.data.hello)
@@ -28,10 +28,10 @@ const secondVidSectionVisible = ref(false);
 
 const wrapper = ref<HTMLAreaElement | null>(null);
 
-const homeSection2 =  ref<HTMLAreaElement | null>(null);
-       
+const homeSection2 = ref<HTMLAreaElement | null>(null);
+
 function handleScroll() {
- 
+
   const element = homeSection2.value;
   if (!element) return;
   const elementPosition = element.getBoundingClientRect();
@@ -46,67 +46,64 @@ function handleScroll() {
 
   }
 }
-window.addEventListener('scrol', ()=>{
+window.addEventListener('scrol', () => {
   console.log('click')
 })
 onMounted(() => {
-wrapper.value?.addEventListener('scroll',handleScroll)
+  wrapper.value?.addEventListener('scroll', handleScroll)
 });
 onBeforeUnmount(() => {
-    window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('scroll', handleScroll);
 })
 
 
 </script>
 <template>
-  <div>testing api {{ apiTest }}</div>
- 
-    <NavBar class=" fixed   z-[100] w-2/3" />
+  <!-- <div>testing api {{ apiTest }}</div> -->
+
+  <NavBar class=" fixed   z-[100] w-2/3" />
 
 
 
 
-    <div ref="wrapper" class="wrapper  h-[100vh]  ">
-     
-      <div class="h-full w-full background ">
-<HomeBGVideo class=" " />
-        <div class="w-full h-64 bg-red-100">
+  <div ref="wrapper" class="wrapper  h-[100vh]  ">
 
-        </div>
-        <BGE1 class="" />
-        <div class="h-[10vw]">
-
-        </div>
-
-          <div class="w-full ">
-                <video class="w-full" autoplay muted loop playsinline="true">
-                  <source src="@/assets/videos/one-dancer.mp4" type="video/mp4"/>
-                </video>
-              </div>
+    <div class="h-full w-full background bg-red-100">
+      <HomeBGVideo class=" " />
+      <div class="w-full h-[20vh] bg-red-100">
 
       </div>
-      
-      <div class="foreground ">
-        <HomeSection1 />
-        <div ref="homeSection2">
-<HomeSection2  />
-        </div>
-        
-        <HTSection1 />
+      <BGE1 class="" />
+      <div class="h-[10vw]">
 
-        <div ref="secondVidSection">
-          <HomeSection3 />
-        </div>
-        <section class="  w-full sm:h-[60vw] h-[90vw]">
-        </section>
-
-        <HomeSection4 />
       </div>
+
+      <div class="w-full ">
+        <video class="w-full" autoplay muted loop playsinline="true">
+          <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
+        </video>
+      </div>
+
     </div>
 
+    <div class="foreground  ">
+      
+      <HomeSection1 />
+      <div ref="homeSection2">
+        <HomeSection2 />
+      </div>
 
+      <HTSection1 />
 
+      <div ref="secondVidSection">
+        <HomeSection3 />
+      </div>
+      <section class="  w-full sm:h-[60vw] h-[90vw]">
+      </section>
 
+      <HomeSection4 />
+    </div>
+  </div>
 </template>
 
 <style>
@@ -117,8 +114,8 @@ onBeforeUnmount(() => {
   overflow-x: hidden;
   scroll-behavior: smooth;
   perspective: 10px;
- 
-   
+
+
 }
 
 .background {
@@ -129,10 +126,10 @@ onBeforeUnmount(() => {
 .background,
 .foreground {
   position: absolute;
-  height:100%;
+  height: 100%;
   width: 100%;
 
- 
+
   z-index: -1;
 }
 
@@ -160,9 +157,4 @@ onBeforeUnmount(() => {
     background-position: 100% 50%;
   }
 }
-
-
-
-
-
 </style>
