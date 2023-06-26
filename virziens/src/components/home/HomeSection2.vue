@@ -79,7 +79,7 @@ onMounted(() => {
   <section class=" w-full h-full  "  >
 
     <div class="flex justify-center description-text  ">
-      <h1 class=" text-[7vw] px-6 uppercase font-extrabold text-center  ">vieta, kur
+      <h1 class=" text-[2.5rem] px-6 uppercase font-extrabold text-center  ">vieta, kur
         deja kļūst par dzīvesveidu </h1>
     </div>
     <div class="flex justify-start items-center  relative overflow-hidden    background-container">
@@ -93,7 +93,7 @@ onMounted(() => {
           </p>
 
           <p :class="secondTextAnimationClass" ref="secondText"
-            class="  transition-all mb-[3.5vw] w-full text-center my-24  rounded-lg px-6 py-2 font-extrabold bg-white/40 "
+            class="  transition-all mb-[3.5vw] w-full text-center   rounded-lg px-6 my-52 font-extrabold bg-white/40 "
             style="transition-duration: 800ms;">
            {{ secondTextContent }}
           </p>

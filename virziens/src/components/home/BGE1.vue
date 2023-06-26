@@ -3,10 +3,12 @@
 </script>
 <template>
        <div class=" ">
-        <div class=" bg-rose-100 ">
+        <div class=" ">
          
-          <img src="@/assets/images/pie-mums-dejo.jpeg" alt="" class="w-full img">
        
+            <img  src="@/assets/images/red-dancer-one-foot-crop.jpeg" class="img w-full " alt="">
+         
+      
         </div>
         
       </div>
@@ -17,4 +19,4 @@
  .img {
   transform: scale(1.2);
  }
-</style>
+</style>    

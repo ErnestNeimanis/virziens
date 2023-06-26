@@ -70,11 +70,11 @@ onBeforeUnmount(() => {
 
     <div class="h-full w-full background bg-red-100">
       <HomeBGVideo class=" " />
-      <div class="w-full h-[20vh] bg-red-100">
+      <div class="w-full h-[30vw] bg-red-100">
 
       </div>
       <BGE1 class="" />
-      <div class="h-[10vw]">
+      <div class="h-[80vw]">
 
       </div>
 
@@ -86,7 +86,7 @@ onBeforeUnmount(() => {
 
     </div>
 
-    <div class="foreground  ">
+    <div class="foreground  hidde">
       
       <HomeSection1 />
       <div ref="homeSection2">
