@@ -9,9 +9,11 @@ import HomeSection1 from "@/components/home/HomeSection1.vue"
 import HomeSection2 from "@/components/home/HomeSection2.vue"
 import HomeSection3 from "@/components/home/HomeSection3.vue"
 import HomeSection4 from "@/components/home/HomeSection4.vue"
+import HomeSection5 from "@/components/home/HomeSection5.vue"
 import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
+
 
 
 const apiTest = ref("")
@@ -83,7 +85,6 @@ onBeforeUnmount(() => {
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
       </div>
-
     </div>
 
     <div class="foreground  hidde">
@@ -102,6 +103,7 @@ onBeforeUnmount(() => {
       </section>
 
       <HomeSection4 />
+      <HomeSection5/>
     </div>
   </div>
 </template>

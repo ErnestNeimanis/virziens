@@ -56,8 +56,8 @@ async function vibrate(ms:number = 100){
 
       
 
-        <div class="flex justify-center bg-white/10 px-9 xl:text-9xl md:text-7xl xs:text-4xl text-3xl text-black font-extrabold font-serif w-full h-12 ">
-          <span class="uppercase">Pie Mums dejo:</span>
+        <div class="flex justify-center mt-12 px-9 xl:text-9xl md:text-7xl xs:text-4xl text-3xl text-white font-extrabold font-serif w-full h-12 ">
+          <span class="uppercase">Augstprātības kalngals</span>
           
          </div>
 
