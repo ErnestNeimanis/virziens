@@ -3,10 +3,10 @@
 </script>
 <template>
        <div class=" ">
-        <div class=" ">
+        <div class="overflow-clip ">
          
        
-            <img  src="@/assets/images/white-brown-dancer.jpeg" class="img w-full " alt="">
+            <img  src="@/assets/images/white-brown-dancer-original.jpeg" class="img w-full lg:-translate-y-[26vw] md:-translate-y-[25vw] " alt="">
          
       
         </div>
