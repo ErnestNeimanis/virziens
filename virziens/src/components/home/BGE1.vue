@@ -6,7 +6,7 @@
         <div class=" ">
          
        
-            <img  src="@/assets/images/red-dancer-one-foot-crop.jpeg" class="img w-full " alt="">
+            <img  src="@/assets/images/white-brown-dancer.jpeg" class="img w-full " alt="">
          
       
         </div>

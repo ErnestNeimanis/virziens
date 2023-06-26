@@ -73,12 +73,12 @@ onBeforeUnmount(() => {
 
     <div class="h-full w-full background bg-red-100">
       <HomeBGVideo class=" " />
-      <div class="w-full h-[20.5vw] min-h-[150px] bg-red-100   border-4 border-blac">
+      <div class="w-full h-[22vw] min-h-[150px] bg-red-100   border-4 border-blac">
 
       </div>
       <BGE1 class="z-[-101] overflow-clip" />
-      <div class="h-[80vw]">
-
+      <div class="h-[80vw] ">
+        <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
       </div>
 
       <div class="w-full ">
@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
     </div>
 
     <div class="foreground  hidde">
-      
+
       <HomeSection1 />
       <div ref="homeSection2">
         <HomeSection2 />
@@ -101,11 +101,10 @@ onBeforeUnmount(() => {
         <HomeSection3 />
       </div>
 
-         <HomeSection4 />
-
-      <HomeSection5/>
+      <HomeSection4 class="border-t-[2vw] border-amber-700" />
+      <HomeSection5 class="border-t-[2vw] border-white" />
+      <HomeSection6 class="border-t-[2vw] border-red-200" />
       
-      <HomeSection6/>
     </div>
   </div>
 </template>
@@ -137,13 +136,13 @@ onBeforeUnmount(() => {
   z-index: -1;
 }
 
-
+/* 
 .bg-image-s2 {
   background-image: url("@/assets/images/virziens-piramida.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
+} */
 
 
 .parallax-duration {
