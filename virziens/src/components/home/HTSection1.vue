@@ -58,7 +58,7 @@ async function vibrate(ms: number = 100) {
 
       <div
         class="flex  mt-12 px-9 text-[5vw] text-white  font-serif w-full  ">
-        <span class="font-semibold">Piedāvā plašas iespējas gan dejotājiem, gan sadarbības partneriem
+        <span class="font-semibold">Piedāvājam plašas iespējas gan dejotājiem, gan sadarbības partneriem.
         </span>
 
       </div>
