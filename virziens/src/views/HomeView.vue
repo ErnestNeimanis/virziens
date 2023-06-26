@@ -70,10 +70,10 @@ onBeforeUnmount(() => {
 
     <div class="h-full w-full background bg-red-100">
       <HomeBGVideo class=" " />
-      <div class="w-full h-[30vw] bg-red-100">
+      <div class="w-full h-[22vw] min-h-[150px] bg-red-100   border-4 border-blac">
 
       </div>
-      <BGE1 class="" />
+      <BGE1 class="z-[-101] overflow-clip" />
       <div class="h-[80vw]">
 
       </div>
