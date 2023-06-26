@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { onBeforeMount, onBeforeUnmount, onMounted, ref, type Ref } from 'vue';
 
-import dejoBerni1 from "@/assets/images/Dejo berni 1.jpeg"
-import dejoBerni2 from "@/assets/images/Dejo berni 2.jpeg"
-import dejoBerni3 from "@/assets/images/Dejo berni 3.jpeg"
+// import dejoBerni1 from "@/assets/images/Dejo berni 1.jpeg"
+// import dejoBerni2 from "@/assets/images/Dejo berni 2.jpeg"
+// import dejoBerni3 from "@/assets/images/Dejo berni 3.jpeg"
 
 interface Image {
   path: string;
@@ -116,8 +116,8 @@ function rotate(){
 
         <div class="flex -translate-x-[400px]">
 
-           <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
-          <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
+           <!-- <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/>
+          <img :ref="`img${i}`" :style="{ transform: `translateX(${translateX}px)` }"   v-for="(img,i) in  imgArray" class="img-switch-transition    object-cover " :src="imgArray[i].path" alt=""/> -->
         </div>
 
       
