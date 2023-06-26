@@ -4,7 +4,7 @@
 import { computed, onMounted, ref } from 'vue';
 import Logo from './Logo.vue';
 
-// import openingVideo from "@/assets/videos/OPENING video.mp4"
+import openingVideo from "@/assets/videos/opening-vid.mp4"
 
 
 const videoTranslate = ref("-translate-x-[100%]");
@@ -182,10 +182,10 @@ const videoRef = ref(null);
         </div>
 
         <div :class="[videoTranslate, videoVisibility]" class="relative transition-transform duration-1000">
-            <!-- <video ref="videoRef" autoplay muted loop playsinline="true"
+            <video ref="videoRef" autoplay muted loop playsinline="true"
                 class="absolute w-full min-w-[500px] min-h-full  object-cover z-[-105] ">
                 <source :src="openingVideo" type="video/mp4"/>
-            </video> -->
+            </video>
         </div>
 
         <div
