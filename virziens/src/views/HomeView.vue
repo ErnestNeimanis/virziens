@@ -77,16 +77,27 @@ onBeforeUnmount(() => {
 
       </div>
       <BGE1 class="z-[-101] overflow-clip" />
-      <div class="h-[80vw] ">
-        <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
+      <div class="h-[20vh] ">
+        
       </div>
+    
+ 
+
+ 
+
+ 
 
       <div class="w-full ">
-        <video class="w-full" autoplay muted loop playsinline="true">
+        <video class="w-full min-w-[420px] h-[80vh]  object-cover" autoplay muted loop playsinline="true">
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
+         <div class="h-[70vh] bg-black">
+
+    </div>
       </div>
     </div>
+   
+    
 
     <div class="foreground  hidde">
 
@@ -97,13 +108,16 @@ onBeforeUnmount(() => {
 
       <HTSection1 />
 
-      <div ref="secondVidSection">
-        <HomeSection3 />
+      <div>
+        <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
       </div>
-
+        <HomeSection3 />
       <HomeSection4 class="border-t-[2vw] border-amber-700" />
       <HomeSection5 class="border-t-[2vw] border-white" />
       <HomeSection6 class="border-t-[2vw] border-red-200" />
+      <div class="h-[150vw]">
+
+      </div>
       
     </div>
   </div>
@@ -112,6 +126,8 @@ onBeforeUnmount(() => {
 <style>
 .wrapper {
   background-color: black;
+    background-image: url("@/assets/images/virziens-piramida.jpg");
+ 
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
