@@ -24,9 +24,9 @@ onMounted(() => {
         <span class="christmas text-[40vw] text-center ">Virziens</span>
       </div>
       <div class="flex justify-center items-center -translate-y-[18vw]">
-        <div class="border-2 border-black w-[20vw] h-0 translate-y-[0.5vw] "></div>
-        <span class="text-[4.3vw] mx-[1.3vw]">DEJU STUDIJA</span>
-        <div class="border-2 border-black w-[20vw] h-0 translate-y-[0.5vw]"></div>
+        <div class="border-[0.1vw] border-black w-[24vw] h-0 translate-y-[0.5vw] "></div>
+        <span class="text-[4.3vw] mx-[1.9vw]">DEJU STUDIJA</span>
+        <div class="border-[0.1vw] border-black w-[24vw] h-0 translate-y-[0.5vw]"></div>
       </div>
     </div>
   </div>
