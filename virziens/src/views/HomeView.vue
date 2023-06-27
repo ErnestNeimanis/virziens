@@ -109,7 +109,7 @@ onBeforeUnmount(() => {
       <HTSection1 />
 
       <div>
-        <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
+        <span class="ml-8  text-white uppercase text-[8vw] font-extrabold">Pie mums dejo:</span>
       </div>
       <HomeSection3 />
       <HomeSection4 class="border-t-[2vw border-amber-700" />
