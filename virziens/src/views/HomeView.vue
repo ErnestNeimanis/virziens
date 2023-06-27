@@ -14,7 +14,7 @@ import HomeSection6 from "@/components/home/HomeSection6.vue"
 import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
-
+import ContactCard from "@/components/ContactCard.vue";
 
 
 const apiTest = ref("")
@@ -78,26 +78,26 @@ onBeforeUnmount(() => {
       </div>
       <BGE1 class="z-[-101] overflow-clip" />
       <div class="h-[20vh] ">
-        
+
       </div>
-    
- 
 
- 
 
- 
+
+
+
+
 
       <div class="w-full ">
         <video class="w-full min-w-[420px] h-[80vh]  object-cover" autoplay muted loop playsinline="true">
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
-         <div class="h-[70vh] bg-black">
+        <div class="h-[80vh] bg-black" >
 
-    </div>
+        </div>
       </div>
     </div>
-   
-    
+
+
 
     <div class="foreground  hidde">
 
@@ -111,14 +111,35 @@ onBeforeUnmount(() => {
       <div>
         <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
       </div>
-        <HomeSection3 />
+      <HomeSection3 />
       <HomeSection4 class="border-t-[2vw] border-amber-700" />
       <HomeSection5 class="border-t-[2vw] border-white" />
       <HomeSection6 class="border-t-[2vw] border-red-200" />
-      <div class="h-[150vw]">
 
+      <div class="h-[150vw] relative">
+        <div class="w-full h-full flex justify-center items-center translate-y-[30vh] ">
+          <div class="flex flex-col gap-12">
+            <div class="flex justify-center items-center gap-4">
+              <div class="flex justify-center gap-8">
+                <div> <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE"> <i
+                      class="bi bi-facebook text-white hover:text-gray-400 text-8xl"></i> </a>
+                </div>
+                <div> <a href="https://www.instagram.com/dejustudijavirziens/?hl=de"> <i
+                      class="bi bi-instagram text-white text-8xl hover:text-gray-400"></i> </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div>
+              <ContactCard/>
+            </div> -->
+            <div>
+              
+            </div>
+          </div>
+
+        </div>
       </div>
-      
+
     </div>
   </div>
 </template>
@@ -126,8 +147,8 @@ onBeforeUnmount(() => {
 <style>
 .wrapper {
   background-color: black;
-    background-image: url("@/assets/images/virziens-piramida.jpg");
- 
+  background-image: url("@/assets/images/virziens-piramida.jpg");
+
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
