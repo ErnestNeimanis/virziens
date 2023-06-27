@@ -20,13 +20,13 @@ onMounted(() => {
 <template>
   <div  >
     <div class="flex flex-col  " :class="{'hidden':!mainLogoShow}">
-      <div class="translate-x-[15px]">
-        <span class="christmas text-[40vw] text-center ">Virziens</span>
+      <div class="translate-x-[5vw]">
+        <span class="christmas text-[32vw]  text-center ">Virziens</span>
       </div>
-      <div class="flex justify-center items-center -translate-y-[18vw]">
-        <div class="border-[0.2vw] border-black w-[24vw] h-0 translate-y-[0.5vw] "></div>
-        <span class="text-[4.3vw] mx-[1.9vw]">DEJU STUDIJA</span>
-        <div class="border-[0.2vw] border-black w-[24vw] h-0 translate-y-[0.5vw]"></div>
+      <div class="flex justify-center items-center -translate-y-[14.5vw]">
+        <div class="border-[0.148vw] border-black w-[16vw] h-0 translate-y-[1vw] "></div>
+        <span class="text-[4.3vw] mx-[1.9vw] translate-y-[0.5vw]">DEJU STUDIJA</span>
+        <div class="border-[0.148vw] border-black w-[16vw] h-0 translate-y-[1vw]"></div>
       </div>
     </div>
   </div>

@@ -198,25 +198,22 @@ const videoRef = ref(null);
             <div :class="logoDotSize"  class="absolute bg-white rounded-full translate-x-[90px] translate-y-[4px]">
                 
             </div>
-
         </div>
 
         <div :class="logoBottomVisibility"
             class=" absolute top-0 left-0 w-full h-full flex justify-center items-center border  ">
-            <div class="  flex justify-center items-center translate-y-[70px] w-[290px] ">
+            <div class="  flex justify-center items-center translate-y-[90px] w-[340px] ">
                 <div :class="[logoLeftLineTranslate, lineOpacity]"
-                    class="border w-[70px] h-0 transition-transform duration-1000 ">
+                    class="border w-[260px] h-0 transition-transform duration-1000 ">
 
                 </div>
                 <div class=" flex mx-3 not-transparent bg-black" style="background-color: black; isolation: isolate;">
                     <span v-for="(char, index) in logoBottomText" :key="char" :class="[lbtOpacityArray[index]]"
-                        class="uppercase text-white bg-black text-[20px] transition-all duration-1000 "> {{ char === ' ' ?
+                        class="uppercase text-white bg-black text-[30px] transition-all duration-1000 "> {{ char === ' ' ?
                             '\u00A0' : char }}</span>
-
                 </div>
                 <div :class="[logoRightLineTranslate, lineOpacity]"
-                    class=" w-[70px] border  h-0 transition-transform duration-1000">
-
+                    class=" w-[260px] border  h-0 transition-transform duration-1000">
                 </div>
 
             </div>
