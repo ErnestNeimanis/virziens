@@ -112,9 +112,9 @@ onBeforeUnmount(() => {
         <span class="ml-8  text-white uppercase text-[5vw] font-extrabold">Pie mums dejo:</span>
       </div>
       <HomeSection3 />
-      <HomeSection4 class="border-t-[2vw] border-amber-700" />
-      <HomeSection5 class="border-t-[2vw] border-white" />
-      <HomeSection6 class="border-t-[2vw] border-red-200" />
+      <HomeSection4 class="border-t-[2vw border-amber-700" />
+      <HomeSection5 class="border-t-[2vw border-white" />
+      <HomeSection6 class="border-t-[2vw border-red-200" />
 
       <div class="h-[150vw] relative">
         <div class="w-full h-full flex justify-center items-center translate-y-[30vh] ">
