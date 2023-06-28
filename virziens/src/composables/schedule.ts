@@ -178,10 +178,7 @@ export const schedule = [
     title: "svētdiena",
     bgColor: "#000",
     entries: [
-      {
-        title: "Sacensību solo dejas",
-       
-      },
+   
       {
         title: "STARTER",
         time: "14:00",
