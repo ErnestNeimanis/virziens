@@ -9,48 +9,7 @@ const defaultTextColor = "#fff";
 
 const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 
-function toNumber(s:string) {
-    
-}
 
-function fillDay(entries: ScheduleEntry[]):ScheduleEntry[]{
-    const totalHours = 24;
-    const numberOfElements = 6;
-     const timeFrameUnit = totalHours/numberOfElements
-    const filledEntryArray = []
-    const emptyEntry = {}
-
-    let entriesIndex = 0;
-    for (let i = 0; i < numberOfElements; i++) {
-
-        const timeStr = entries[entriesIndex]?.time ?? '';
-        const hourStr = timeStr ? timeStr.slice(0,2) : undefined;
-        const hour = hourStr ? parseInt(hourStr) : undefined;
-
-          if (!hour) {
-            filledEntryArray.push(undefined)
-            continue;
-        }
-       
-        const currentTimeFrame = i*timeFrameUnit;
-        const nextTimeFrame = (i+1)*timeFrameUnit
-
-        const inTimeFrame = hour >= currentTimeFrame && hour < nextTimeFrame;
-
-      
-        if(inTimeFrame){
-            filledEntryArray.push(entries[entriesIndex])
-            entriesIndex++;
-        }else{
-              filledEntryArray.push({title:currentTimeFrame,time:hour})
-            continue; 
-        }
-
-    }
-
-    return filledEntryArray
-
-}
 
 </script>
 <template>
