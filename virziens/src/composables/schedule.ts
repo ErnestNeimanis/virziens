@@ -25,18 +25,22 @@ export const schedule = [
     bgColor: "#000",
     textColor: "#fff",
     entries: [
+      {},
+      {},
       {
         title: "JUNIORI I (9+)",
         time: "16:30 - 17:45",
         bgColor: "#ffb6c1",
         textColor: "#000",
       },
+      {},
       {
         title: "PIEAUGUŠIE AR LABĀM ZINĀŠANĀM",
         time: "18:30 - 20:00",
-        bgColor: "#2b65ec",
+        bgColor: "#00AAFF",
         textColor: "#000",
       },
+      {},
     ],
   },
   {
@@ -44,6 +48,8 @@ export const schedule = [
     title: "otrdiena",
     bgColor: "#000",
     entries: [
+      {},
+      {},
       {
         title: "JUNIORI II (11+)",
         time: "16:00 - 17:15",
@@ -53,19 +59,19 @@ export const schedule = [
       {
         title: "TĪŅI (13+)",
         time: "17:15 - 18:30",
-        bgColor: "#ffa500",
+        bgColor: "#FFB433",
         textColor: "#000",
       },
       {
         title: "KIDS I (4+)",
         time: "18:30 - 19:15",
-        bgColor: "#ffff33",
+        bgColor: "#FDFF80",
         textColor: "#000",
       },
       {
         title: "ADULT (16+)",
         time: "19:15 - 20:30",
-        bgColor: "#e75480",
+        bgColor: "#C266FF",
         textColor: "#000",
       },
     ],
@@ -76,22 +82,25 @@ export const schedule = [
     title: "trešdiena",
     bgColor: "#000",
     entries: [
+      {},
+      {},
       {
         title: "JUNIORI I (9+)",
         time: "16:30 - 17:45",
         bgColor: "#ffb6c1",
         textColor: "#000",
       },
+      {},
       {
         title: "KIDS II (6+)",
         time: "18:00 - 19:00",
-        bgColor: "#ADF802",
+        bgColor: "#F1F524",
         textColor: "#000",
       },
       {
         title: "ADVANCED IZLASE",
         time: "19:15 - 20:30",
-        bgColor: "#FDD017",
+        bgColor: "#7BE93F",
         textColor: "#000",
       },
     ],
@@ -102,6 +111,8 @@ export const schedule = [
     title: "ceturtdiena",
     bgColor: "#000",
     entries: [
+      {},
+      {},
       {
         title: "JUNIORI II (11+)",
         time: "16:00 - 17:15",
@@ -111,7 +122,7 @@ export const schedule = [
       {
         title: "TĪŅI (13+)",
         time: "17:15 - 18:30",
-        bgColor: "#ffa500",
+        bgColor: "#FFB433",
         textColor: "#000",
       },
       {
@@ -120,6 +131,7 @@ export const schedule = [
         bgColor: "#9AFEFF",
         textColor: "#000",
       },
+      {},
     ],
   },
 
@@ -128,6 +140,8 @@ export const schedule = [
     title: "piekdiena",
     bgColor: "#000",
     entries: [
+      {},
+      {},
       {
         title: "AKROBĀTIKA I",
         time: "15:30 - 16:30",
@@ -143,13 +157,13 @@ export const schedule = [
       {
         title: "KIDS II (6+)",
         time: "18:00 - 19:00",
-        bgColor: "#ADF802",
+        bgColor: "#F1F524",
         textColor: "#000",
       },
       {
         title: "ADULT (16+)",
         time: "19:15 - 20:30",
-        bgColor: "#E75480",
+        bgColor: "#C266FF",
         textColor: "#000",
       },
     ],
@@ -162,15 +176,19 @@ export const schedule = [
       {
         title: "PIAUGUŠIE IESĀCĒJI",
         time: "10:15 - 11:30",
-        bgColor: "#98AFC7",
+        bgColor: "#B3D7FF",
         textColor: "#000",
       },
       {
         title: "KIDS I (4+)",
         time: "12:00 - 12:45",
-        bgColor: "#FFFF33",
+        bgColor: "#FDFF80",
         textColor: "#000",
       },
+      {},
+      {},
+      {},
+      {},
     ],
   },
   {
@@ -178,41 +196,40 @@ export const schedule = [
     title: "svētdiena",
     bgColor: "#000",
     entries: [
-   
       {
         title: "STARTER",
         time: "14:00",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
       {
         title: "FREE STYLE STARTER",
         time: "15:00",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
       {
         title: "NEWCOMER",
         time: "15:30",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
       {
         title: "NOVICE",
         time: "16:30",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
       {
         title: "FREE STYLE EXPERIECED",
         time: "17:30",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
       {
         title: "INTERMEDIATE ADVANCED",
         time: "18:00",
-        bgColor: "#eb5406",
+        bgColor: "#C3FFA3",
         textColor: "#000",
       },
     ],
