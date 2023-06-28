@@ -1,22 +1,12 @@
 <script setup lang="ts">
 import { onBeforeMount, onBeforeUnmount, onMounted, ref, type Ref } from 'vue';
 
-import dejoBerni1 from "@/assets/images/Dejo berni 1.jpeg"
-// import dejoBerni2 from "@/assets/images/Dejo berni 2.jpeg"
-// import dejoBerni3 from "@/assets/images/Dejo berni 3.jpeg"
+
 
 interface Image {
   path: string;
   ref:Ref <HTMLImageElement | null>
 }
-
-// const imgArray = ref<Image[]>([
-//   {
-//     path: dejoBerni1,
-//     ref:  ref<HTMLImageElement | null>(null)
-//   },
-// ])
-
 
 
 const translateX = ref(0);
@@ -115,7 +105,7 @@ function rotate(){
           <h1 class="uppercase  text-white text-[13vw]  -translate-y-[8vw] font-extrabold">bērni</h1>
         </div>
      
-      <img src="@/assets/images/Dejo berni 1.jpeg" class="max-h-full w-full -translate-y-4 object-cover" alt="">
+      <img src="@/assets/images/dejo-berni-1.jpeg" class="max-h-full w-full -translate-y-4 object-cover" alt="">
     </section>
 </template>
 <style>

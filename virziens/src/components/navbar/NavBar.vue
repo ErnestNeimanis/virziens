@@ -25,7 +25,7 @@ const navMenu = ref<NavItem[]>([
   },
    {
     name: 'services',
-    title: 'Pakalpojumi',
+    title: 'Pakalpojumi un cenas',
     link: "/"
   },
    {
@@ -33,11 +33,7 @@ const navMenu = ref<NavItem[]>([
     title: 'Grafiks',
     link: "/schedule"
   },
-   {
-    name: 'gallery',
-    title: 'Galerija',
-    link: "/"
-  },
+
    {
     name: 'contact-us',
     title: 'Kontakti',
@@ -103,29 +99,11 @@ function updateResize() {
     <div :class="menuClass"
       class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-6">
       <nav  class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl  ">
-        <div class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
-          <span>SĀKUMS</span>
+        <RouterLink v-for="item in navMenu" :to="item.link">
+        <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
+          <span>{{ item.title }}</span>
         </div>
-        <div class="w-full flex items-center  font-extrabold text-white px-2 cursor-pointer underline">
-          <span>PAR MUMS</span>
-        </div>
-        <div class="w-full flex items-center  font-extrabold text-white px-2 cursor-pointer underline">
-          <span>PAKALPOJUMI</span>
-        </div>
-        <div class="w-full flex items-center  font-extrabold text-white px-2 cursor-pointer underline">
-          <span>GRAFIKS</span>
-        </div>
-        <div class=" w-full flex items-center  font-extrabold text-white px-2 cursor-pointer underline">
-          <span>FOTO</span>
-        </div>
-        <div class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
-          <span>VIDEO</span>
-        </div>
-        <div class="w-full flex items-center font-extrabold text-white px-2 cursor-pointer underline">
-          <span>KONTAKTI</span>
-        </div>
-
-
+        </RouterLink>
       </nav>
     </div>
 
