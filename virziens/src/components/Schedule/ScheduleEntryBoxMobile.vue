@@ -16,16 +16,16 @@ const defaultBgColor = "#fff";
 const defaultTextColor = "#000";
 </script>
 <template>
-    <div class="flex flex-col justify-center items-center  rounded-lg h-[7vw]"
+    <div class="flex flex-col justify-center items-center  rounded-lg h-[17vw] "
                         :style="{ backgroundColor: entry.bgColor ?? defaultBgColor }">
                         <div class="flex justify-center">
-                            <span class="font-semibold text-[1.9vw] whitespace-nowrap"
+                            <span class="font-extrabold text-[5vw] whitespace-nowrap"
                                 :style="{ color: entry?.textColor ?? defaultTextColor }">
                                 {{ entry?.time }}
                             </span>
                         </div>
                         <div class="flex justify-center">
-                            <span class="font-extrabold text-center text-[1vw]" :style="{
+                            <span class="font-extrabold text-center text-[4vw]" :style="{
                                 color: entry?.textColor ?? defaultTextColor,
                             }">{{ entry?.title }}
                             </span>
