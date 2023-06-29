@@ -18,7 +18,7 @@ interface ScheduleEntry {
   fontStyle?: string;
 }
 
-export const schedule = [
+export const schedule:ScheduleDay[] = [
   {
     name: "monday",
     title: "pirmdiena",
