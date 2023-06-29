@@ -15,6 +15,7 @@ import BGE1 from "@/components/home/BGE1.vue"
 import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
 import ContactCard from "@/components/ContactCard.vue";
+import HomeSlider from "@/components/HomeSlider/HomeSlider.vue"
 
 
 const apiTest = ref("")
@@ -111,10 +112,10 @@ onBeforeUnmount(() => {
       <div>
         <span class="ml-8  text-white uppercase text-[8vw] font-extrabold">Pie mums dejo:</span>
       </div>
-      <HomeSection3 />
-      <HomeSection4 class="border-t-[2vw border-amber-700" />
-      <HomeSection5 class="border-t-[2vw border-white" />
-      <HomeSection6 class="border-t-[2vw border-red-200" />
+      
+      <HomeSlider />
+      
+    
 
       <div class="h-[150vw] relative">
         <div class="w-full h-full flex justify-center items-center translate-y-[30vh] ">
