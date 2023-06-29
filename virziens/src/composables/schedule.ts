@@ -18,7 +18,7 @@ interface ScheduleEntry {
   fontStyle?: string;
 }
 
-export const schedule:ScheduleDay[] = [
+export const schedule = [
   {
     name: "monday",
     title: "pirmdiena",
@@ -53,7 +53,7 @@ export const schedule:ScheduleDay[] = [
       {
         title: "JUNIORI II (11+)",
         time: "16:00 - 17:15",
-        bgColor: "#ee82ee",
+        bgColor: "#FF80B7",
         textColor: "#000",
       },
       {
@@ -65,7 +65,7 @@ export const schedule:ScheduleDay[] = [
       {
         title: "KIDS I (4+)",
         time: "18:30 - 19:15",
-        bgColor: "#FDFF80",
+        bgColor: "#FFFCA3",
         textColor: "#000",
       },
       {
@@ -94,7 +94,7 @@ export const schedule:ScheduleDay[] = [
       {
         title: "KIDS II (6+)",
         time: "18:00 - 19:00",
-        bgColor: "#F1F524",
+        bgColor: "#D6E600",
         textColor: "#000",
       },
       {
@@ -116,7 +116,7 @@ export const schedule:ScheduleDay[] = [
       {
         title: "JUNIORI II (11+)",
         time: "16:00 - 17:15",
-        bgColor: "#EE82EE",
+        bgColor: "#FF80B7",
         textColor: "#000",
       },
       {
@@ -141,23 +141,23 @@ export const schedule:ScheduleDay[] = [
     bgColor: "#000",
     entries: [
       {},
-      {},
       {
         title: "AKROBĀTIKA I",
         time: "15:30 - 16:30",
-        bgColor: "#CECECE",
+        bgColor: "#E5E4E2",
         textColor: "#000",
       },
       {
         title: "AKROBĀTIKA II",
         time: "16:30 - 17:30",
-        bgColor: "#E5E4E2",
+        bgColor: "#BFBFBF",
         textColor: "#000",
       },
+      {},
       {
         title: "KIDS II (6+)",
         time: "18:00 - 19:00",
-        bgColor: "#F1F524",
+        bgColor: "#D6E600",
         textColor: "#000",
       },
       {
@@ -182,7 +182,7 @@ export const schedule:ScheduleDay[] = [
       {
         title: "KIDS I (4+)",
         time: "12:00 - 12:45",
-        bgColor: "#FDFF80",
+        bgColor: "#FFFCA3",
         textColor: "#000",
       },
       {},
@@ -199,37 +199,37 @@ export const schedule:ScheduleDay[] = [
       {
         title: "STARTER",
         time: "14:00",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "FREE STYLE STARTER",
         time: "15:00",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "NEWCOMER",
         time: "15:30",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "NOVICE",
         time: "16:30",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "FREE STYLE EXPERIECED",
         time: "17:30",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "INTERMEDIATE ADVANCED",
         time: "18:00",
-        bgColor: "#C3FFA3",
+        bgColor: "#2EFFAF",
         textColor: "#000",
       },
     ],

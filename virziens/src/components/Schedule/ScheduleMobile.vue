@@ -15,18 +15,18 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 </script>
 <template>
     <div class="w-full pb-16">
-        <div  class="flex flex-col justify-center gap-2 min-w-[380px]">
-            <div v-for="(day, i) in schedule" class="flex flex-col  px-8 mt-12">
-                <div class="w-full">
+        <div  class="flex flex-col justify-center  min-w-[380px] shadow-xl">
+            <div v-for="(day, i) in schedule" class="flex flex-col px-8  ">
+                <div class="w-full mb-2 mt-8">
                     <div class="flex justify-center capitalize" :style="{ backgroundColor: day.bgColor ?? defaultBgColor }">
                         <span class="text-4xl font-extrabold" :style="{ color: day.textColor ?? defaultTextColor }">
                             {{ day.title }}
                         </span>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 ">
-                    <div v-for="(entry, j) in day.entries" >
-                         <ScheduleEntryBoxMobile v-if="entry.time" :entry="entry" />
+                <div class="flex flex-col justify-center gap-2  ">
+                    <div v-for="(entry, j) in day.entries"  class="">
+                         <ScheduleEntryBoxMobile v-if="entry.time" :entry="entry"  />
                     </div>
                    
                 </div>
