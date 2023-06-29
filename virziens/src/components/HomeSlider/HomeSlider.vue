@@ -4,34 +4,46 @@ import HomeSection4 from "@/components/home/HomeSection4.vue"
 import HomeSection5 from "@/components/home/HomeSection5.vue"
 import HomeSection6 from "@/components/home/HomeSection6.vue"
 
+import StartpageGalleryElement from "./StartpageGalleryElement.vue"
+
+import {useInView} from '@/composables/in-view'
+
 import dejoBerni1 from "@/assets/images/dejo-berni-1.jpeg"
 import dejoPusaudzi from "@/assets/images/dejo-pusaudzi.jpeg"
 import dejoJauniesi from "@/assets/images/dejo-jauniesi-3.jpeg"
 import dejoPieaugusie from "@/assets/images/dejo-pieaugusie.jpg"
+import { ref } from "vue"
+
+const galleryElements = ref([
+    {
+        title:"bērni",
+        image:dejoBerni1,
+    },
+    {
+        title:"pusaudži",
+        image:dejoPusaudzi,
+    },
+    {
+        title:"jaunieši",
+        image:dejoJauniesi,
+    },
+    {
+        title:"pieagušie",
+        image:dejoPieaugusie,
+    },
+
+])
 
 </script>
 <template>
-<div class="h-[50vw] w-screen bg-red-800 relative">
-  <div class="flex h-full bg-blue-700 -translate-x-[000vw]">
+    <div class="w-screen bg-red-800 pt-8 ">
+        <div class="  bg-blue-700 ">
 
-    <img :src="dejoBerni1" class="w-screen  h-full object-cover flex-none" alt="">
-    <img :src="dejoPusaudzi" class="w-screen  h-full object-cover flex-none" alt="">
-    <img :src="dejoJauniesi" class=" w-screen h-full  object-cover flex-none" alt="">
-    <img :src="dejoPieaugusie" class=" w-screen  h-full object-cover flex-none" alt=""> 
+            
+            <StartpageGalleryElement v-for="element in  galleryElements" :title="element.title" :image="element.image" />
 
-
-    <!-- <div class="w-screen h-full bg-yellow-300 flex-none">
-
+        </div>
     </div>
-    <div class="w-screen h-full bg-yellow-500 flex-none">
-
-    </div>
-    <div class="w-screen h-full bg-yellow-700 flex-none">
-   
-    </div> -->
-  </div>
-</div>
-
 </template>
 
 
