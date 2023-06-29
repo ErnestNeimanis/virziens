@@ -14,29 +14,93 @@ const title = computed(() => props.title ?? "")
 const image = computed(() => props.image ?? "")
 
 const contentContainer = ref<HTMLElement | null>(null);
+const imageContainer = ref<HTMLElement | null>(null);
+const headingContainer = ref<HTMLElement | null>(null);
+
+const imageVisible = ref<boolean>(false)
+
+const headingVisible = ref<boolean>(false)
+
+const textVisible = ref<boolean>(false)
 
 
 
-function animate(){
-    console.log('visible')
+
+
+function rand(min: number, max: number): number {
+  const inclusiveMax = max + 1;
+  return Math.floor(Math.random() * (inclusiveMax - min)) + min;
+}
+
+
+
+const t = computed(() => {
+    
+const translateStyles = ["transform: translateX(100%)","transform: translateX(-100%)","transform: translateY(-100%)",,"transform: translateY(-100%)"]
+    const i = rand(0,3)
+  if(!headingVisible.value) {
+    console.log(translateStyles[i])
+    return translateStyles[i]
+}
+  else return "transform: translateX(0%)"
+  
+})
+
+
+function animateText():void{
+    textVisible.value = true;
+}
+
+function animateHeading():void{
+    headingVisible.value = true;
+}
+
+function animateImage():void{
+    imageVisible.value = true;
 }
 
 onMounted(() =>{
-    if(contentContainer.value){
-        useInView(contentContainer.value,animate)
+    if(headingContainer.value){
+        useInView(headingContainer.value,animateHeading)
     }
+ 
+    if(contentContainer.value){
+        useInView(contentContainer.value,animateImage)
+    }
+    
+    
 })
+
+
+
+
 
 </script>
 <template>
  <div class="flex justify-center  w-full  ">
-                <div ref="contentContainer" class="flex flex-col gap-4 w-10/12 my-12 ">
-                    <div class="w-full flex justify-center ">
-                        <h2 class="text-[15vw] font-extrabold text-white uppercase">{{ props.title }}</h2>
+                <div ref="contentContainer" class="flex flex-col gap-4 w-10/12  ">
+                    <div ref="headingContainer" class="w-full flex justify-center overflow-hidden  ">
+                        <h2 class="text-[15vw] font-extrabold text-white  transition-all duration-1000 uppercase ease-in-out" :style="t" >{{ props.title }}</h2>
                     </div>
-                    <div class="w-full border-4 rounded-3xl overflow-clip">
+                    <div ref="imageContainer" class="w-full shadow-md shadow-white/20 rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible}" >
                         <img :src="props.image" class="  object-cover " alt="">
                     </div>
                 </div>
             </div>
 </template>
+
+<style scoped>
+
+.translate{
+    transform: translate();
+}
+
+.initial-state-img{
+    opacity: 0;
+    transform: translateY(20vh);
+}
+.image-opacity{
+    transition: opacity 2000ms ease-in, transform 1300ms ease-in-out;
+}
+
+</style>
