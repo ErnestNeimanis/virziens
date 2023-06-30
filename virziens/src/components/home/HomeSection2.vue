@@ -43,7 +43,7 @@ onMounted(() => {
 
 
     <div class="flex justify-center description-text   ">
-      <h1 class=" text-[6vw] px-6  uppercase font-extrabold text-center  bg-red-100">vieta, kur
+      <h1 class=" text-[6vw] px-6  uppercase font-extrabold text-center  ">vieta, kur
         deja kļūst par dzīvesveidu </h1>
     </div>
     <div class="flex justify-start items-center  relative overflow-hidden    background-container">
