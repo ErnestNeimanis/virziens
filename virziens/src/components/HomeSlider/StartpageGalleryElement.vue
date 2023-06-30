@@ -69,14 +69,18 @@ function animateImage():void{
     setTimeout(() => {shadowOn.value=true},1200)
 }
 
+function animateAll():void{
+    animateHeading()
+    animateImage()
+}
 
 onMounted(() =>{
-    if(headingContainer.value){
-        useInView(headingContainer.value,animateHeading)
-    }
+    // if(headingContainer.value){
+    //     useInView(headingContainer.value,animateHeading)
+    // }
  
-    if(imageContainer.value){
-        useInView(imageContainer.value,animateImage)
+    if(contentContainer.value){
+        useInView(contentContainer.value,animateAll)
     }
     
     
@@ -111,10 +115,10 @@ onMounted(() =>{
 
 .initial-state-img{
     opacity: 0;
-    transform: translateY(20vh);
+    transform: translateY(30vh);
 }
 .image-opacity{
-    transition: opacity 700ms ease-in, transform 1300ms ease-in-out, box-shadow 500ms;
+    transition: opacity 1800ms ease-in, transform 1200ms ease-in-out, box-shadow 500ms;
 }
 
 </style>
