@@ -77,18 +77,16 @@ onBeforeUnmount(() => {
       <div class="w-full lg:h-[19vw] md:h-[21vw] h-[21vw] min-h-[150px] bg-red-100   border-4 border-blac">
 
       </div>
-      <BGE1 class="z-[-101] overflow-clip" />
-      <div class="h-[20vh] ">
-
-      </div>
-
+      <BGE1 class="z-[-101]" />
+           
+    
 
 
 
 
 
 
-      <div class="w-full ">
+      <div class="w-full lg:-translate-y-[26vw] md:-translate-y-[25vw]    " >
         <video class="w-full min-w-[420px] h-[80vh]  object-cover" autoplay muted loop playsinline="true">
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
@@ -114,11 +112,12 @@ onBeforeUnmount(() => {
       </div>
       
       <HomeSlider />
-      
-    
 
-      <div class="h-[150vw] relative">
-        <div class="w-full h-full flex justify-center items-center translate-y-[30vh] ">
+      
+     
+
+      <div class="h-[60vw] relative">
+        <div class="w-full h-full flex justify-center items-center ">
           <div class="flex flex-col gap-12">
             <div class="flex justify-center items-center gap-4">
               <div class="flex justify-center gap-8">
@@ -148,7 +147,7 @@ onBeforeUnmount(() => {
 <style>
 .wrapper {
   background-color: black;
-  background-image: url("@/assets/images/virziens-piramida.jpg");
+  background-image: url("@/assets/images/dancing-in-water.jpg");
 
   height: 100%;
   overflow-y: scroll;
