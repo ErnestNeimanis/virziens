@@ -30,10 +30,13 @@ const textVisible = ref<boolean>(false)
 
 const randomNumber = rand(0,3)
 
+const shadowOn = ref<boolean>(false)
+
 function rand(min: number, max: number): number {
   const inclusiveMax = max + 1;
   return Math.floor(Math.random() * (inclusiveMax - min)) + min;
 }
+
 
 
 
@@ -63,16 +66,21 @@ function animateHeading():void{
 
 function animateImage():void{
     imageVisible.value = true;
+    setTimeout(() => {shadowOn.value=true},1200)
 }
 
+function animateAll():void{
+    animateHeading()
+    animateImage()
+}
 
 onMounted(() =>{
-    if(headingContainer.value){
-        useInView(headingContainer.value,animateHeading)
-    }
+    // if(headingContainer.value){
+    //     useInView(headingContainer.value,animateHeading)
+    // }
  
     if(contentContainer.value){
-        useInView(contentContainer.value,animateImage)
+        useInView(contentContainer.value,animateAll)
     }
     
     
@@ -89,7 +97,7 @@ onMounted(() =>{
                     <div ref="headingContainer" class="w-full flex justify-center overflow-hidden  ">
                         <h2 class="text-[15vw] font-extrabold text-white  transition-all duration-1000 uppercase ease-in-out" :style="t" >{{ props.title }}</h2>
                     </div>
-                    <div ref="imageContainer" class="w-full shadow-md shadow-white/20 rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible}" >
+                    <div ref="imageContainer" class="w-full rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible,'shadow':shadowOn}" >
                         <img :src="props.image" class="  object-cover " alt="">
                     </div>
                 </div>
@@ -97,6 +105,9 @@ onMounted(() =>{
 </template>
 
 <style scoped>
+.shadow {
+    box-shadow: 1px 1px 5px 5px rgba(175, 9, 197, 0.37);
+}
 
 .translate{
     transform: translate();
@@ -104,10 +115,10 @@ onMounted(() =>{
 
 .initial-state-img{
     opacity: 0;
-    transform: translateY(20vh);
+    transform: translateY(30vh);
 }
 .image-opacity{
-    transition: opacity 1200ms ease-in, transform 1300ms ease-in-out;
+    transition: opacity 1800ms ease-in, transform 1200ms ease-in-out, box-shadow 500ms;
 }
 
 </style>

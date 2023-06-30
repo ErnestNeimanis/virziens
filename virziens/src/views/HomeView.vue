@@ -22,9 +22,7 @@ import { useInView,useNotInView } from "@/composables/in-view";
 
 const apiTest = ref("")
 async function testApi() {
-  console.log('logging for api test')
   const response = await axios.get("https://virziens-api.netlify.app/.netlify/functions/api")
-  console.log(response.data.hello)
   apiTest.value = response.data.hello
 }
 testApi();
