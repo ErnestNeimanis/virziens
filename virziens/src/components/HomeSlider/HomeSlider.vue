@@ -14,6 +14,7 @@ const galleryElements = ref([
     {
         title:"bērni",
         image:dejoBerni1,
+        initialHeadingTranslate: "transform: translateY(-100%)"
     },
     {
         title:"pusaudži",
@@ -36,7 +37,7 @@ const galleryElements = ref([
         <div class="flex flex-col gap-[10vh]  ">
 
             
-            <StartpageGalleryElement v-for="element in  galleryElements" :title="element.title" :image="element.image" />
+            <StartpageGalleryElement v-for="element in  galleryElements" :title="element.title" :image="element.image" :initialHeadingTranslate="element.initialHeadingTranslate" />
 
         </div>
     </div>

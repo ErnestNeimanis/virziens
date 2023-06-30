@@ -7,6 +7,9 @@ const props = defineProps<
 {
     title:string,
     image:string,
+    animationNumber?:number | undefined,
+    initialHeadingTranslate?:string
+
 }
 >()
 
@@ -38,7 +41,12 @@ const t = computed(() => {
     
 const translateStyles = ["transform: translateX(100%)","transform: translateX(-100%)","transform: translateY(100%)","transform: translateY(-100%)"]
   if(!headingVisible.value) {
-    return translateStyles[randomNumber]
+    if(props.initialHeadingTranslate){
+        return props.initialHeadingTranslate
+    }else{
+           return translateStyles[randomNumber]
+    }
+ 
 }
   else return "transform: translateX(0%)"
   
