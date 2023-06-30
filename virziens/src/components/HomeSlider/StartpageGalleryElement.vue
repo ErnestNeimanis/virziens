@@ -66,7 +66,7 @@ function animateHeading():void{
 
 function animateImage():void{
     imageVisible.value = true;
-    setTimeout(() => {shadowOn.value=true},1800)
+    setTimeout(() => {shadowOn.value=true},1200)
 }
 
 
@@ -75,8 +75,8 @@ onMounted(() =>{
         useInView(headingContainer.value,animateHeading)
     }
  
-    if(contentContainer.value){
-        useInView(contentContainer.value,animateImage)
+    if(imageContainer.value){
+        useInView(imageContainer.value,animateImage)
     }
     
     
@@ -114,7 +114,7 @@ onMounted(() =>{
     transform: translateY(20vh);
 }
 .image-opacity{
-    transition: opacity 1600ms ease-in, transform 1300ms ease-in-out, box-shadow 500ms;
+    transition: opacity 700ms ease-in, transform 1300ms ease-in-out, box-shadow 500ms;
 }
 
 </style>
