@@ -16,6 +16,7 @@ import HTSection1 from "@/components/home/HTSection1.vue"
 import axios from "axios"
 import ContactCard from "@/components/ContactCard.vue";
 import HomeSlider from "@/components/HomeSlider/HomeSlider.vue"
+import SocialIcons from "@/components/SocialIcons.vue"
 
 
 const apiTest = ref("")
@@ -85,13 +86,12 @@ onBeforeUnmount(() => {
 
 
 
-
       <div class="w-full lg:-translate-y-[26vw] md:-translate-y-[25vw]    " >
         <video class="w-full min-w-[420px] h-[80vh]  object-cover" autoplay muted loop playsinline="true">
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
-        <div class="h-[80vh] bg-black" >
-
+        <div class="h-[80vh] bg-black"  >
+            <Logo class=""/>
         </div>
       </div>
     </div>
@@ -116,18 +116,11 @@ onBeforeUnmount(() => {
       
      
 
-      <div class="h-[60vw] relative">
-        <div class="w-full h-full flex justify-center items-center ">
+      <div class="h-[250vw] relative">
+        <div class="w-full h-full flex justify-center items-end ">
           <div class="flex flex-col gap-12">
             <div class="flex justify-center items-center gap-4">
-              <div class="flex justify-center gap-8">
-                <div> <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE"> <i
-                      class="bi bi-facebook text-white hover:text-gray-400 text-8xl"></i> </a>
-                </div>
-                <div> <a href="https://www.instagram.com/dejustudijavirziens/?hl=de"> <i
-                      class="bi bi-instagram text-white text-8xl hover:text-gray-400"></i> </a>
-                </div>
-              </div>
+              <SocialIcons/>
             </div>
             <!-- <div>
               <ContactCard/>
@@ -147,13 +140,17 @@ onBeforeUnmount(() => {
 <style>
 .wrapper {
   background-color: black;
-  background-image: url("@/assets/images/dancing-in-water.jpg");
+
+  background-image: url("@/assets/images/neon-3.jpg");
 
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
   perspective: 10px;
+
+   background-size: cover;
+  background-position: center;
 
 
 }
