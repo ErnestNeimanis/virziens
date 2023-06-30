@@ -130,7 +130,7 @@ onBeforeUnmount(() => {
       
      
 
-      <div ref="bottomSection" class="h-[250vw] relative ">
+      <div ref="bottomSection" class=" xl:h-[210vw] lg:h-[170vw] md:h-[160vw] sm:h-[210vw] h-[250vw] relative ">
         <div class="w-full h-full flex justify-center items-end ">
           <div class="flex flex-col gap-12">
             <div class="flex justify-center items-center gap-4">

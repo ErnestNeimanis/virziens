@@ -62,15 +62,15 @@ onMounted(() => {
   <section class=" w-full h-full  relative"  >
 
 
-    <div class="flex justify-center description-text   h-[16vw]">
-      <h1 class=" text-[5vw] px-6 uppercase font-extrabold text-center  ">vieta, kur
+    <div class="flex justify-center description-text   ">
+      <h1 class=" text-[6vw] px-6  uppercase font-extrabold text-center  bg-red-100">vieta, kur
         deja kļūst par dzīvesveidu </h1>
     </div>
     <div class="flex justify-start items-center  relative overflow-hidden    background-container">
       <div
         class="relative flex   ">
         <article
-          class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-4xl sm:text-2xl xs:text-base  px-6   h-full ">
+          class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-5xl sm:text-2xl xs:text-base  px-6   h-full ">
       
         <p ref="firstText" class=" font-semibold font-serif ">
          
@@ -95,7 +95,7 @@ onMounted(() => {
 .description-text {
   background-color: rgb(254 226 226 );
   animation-name: fade-out;
-  animation-duration: 7s;
+  animation-duration: 11s;
   animation-fill-mode: forwards;
 }
 
