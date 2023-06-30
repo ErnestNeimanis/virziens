@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
+import { computed, onBeforeMount, onMounted, ref } from 'vue';
 import { createWebHistory } from 'vue-router';
 import {useInView} from '@/composables/in-view'
 
@@ -25,7 +25,7 @@ const textVisible = ref<boolean>(false)
 
 
 
-
+const randomNumber = rand(0,3)
 
 function rand(min: number, max: number): number {
   const inclusiveMax = max + 1;
@@ -36,11 +36,9 @@ function rand(min: number, max: number): number {
 
 const t = computed(() => {
     
-const translateStyles = ["transform: translateX(100%)","transform: translateX(-100%)","transform: translateY(-100%)",,"transform: translateY(-100%)"]
-    const i = rand(0,3)
+const translateStyles = ["transform: translateX(100%)","transform: translateX(-100%)","transform: translateY(100%)","transform: translateY(-100%)"]
   if(!headingVisible.value) {
-    console.log(translateStyles[i])
-    return translateStyles[i]
+    return translateStyles[randomNumber]
 }
   else return "transform: translateX(0%)"
   
@@ -58,6 +56,7 @@ function animateHeading():void{
 function animateImage():void{
     imageVisible.value = true;
 }
+
 
 onMounted(() =>{
     if(headingContainer.value){
@@ -100,7 +99,7 @@ onMounted(() =>{
     transform: translateY(20vh);
 }
 .image-opacity{
-    transition: opacity 2000ms ease-in, transform 1300ms ease-in-out;
+    transition: opacity 1200ms ease-in, transform 1300ms ease-in-out;
 }
 
 </style>

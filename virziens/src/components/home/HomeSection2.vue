@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import baibaExploding from '@/assets/images/ba-stars.jpg'
+
 
 const firstTextContent = ref<string>(`
 Jūrmalas deju studija Virziens aicina pievienoties mūsu kolektīvam ne tikai bērnus un jauniešus, bet arī pieaugušos un seniorus. Pie mums iespējams dejot gan hobija nolūkos, gan arī deju apgūt profesionālā līmenī.
@@ -137,11 +137,6 @@ onMounted(() => {
   }
 
 }
-
-.background-pattern {
-  background-image: url('@/assets/images/pattern-large.png');
-}
-
 
 
 

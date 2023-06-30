@@ -182,13 +182,6 @@ onBeforeUnmount(() => {
   z-index: -1;
 }
 
-/* 
-.bg-image-s2 {
-  background-image: url("@/assets/images/virziens-piramida.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-} */
 
 
 .parallax-duration {

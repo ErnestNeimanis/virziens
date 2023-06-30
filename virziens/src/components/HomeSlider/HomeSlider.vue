@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import HomeSection3 from "@/components/home/HomeSection3.vue"
-import HomeSection4 from "@/components/home/HomeSection4.vue"
-import HomeSection5 from "@/components/home/HomeSection5.vue"
-import HomeSection6 from "@/components/home/HomeSection6.vue"
 
 import StartpageGalleryElement from "./StartpageGalleryElement.vue"
 
@@ -11,7 +7,7 @@ import {useInView} from '@/composables/in-view'
 import dejoBerni1 from "@/assets/images/dejo-berni-1.jpeg"
 import dejoPusaudzi from "@/assets/images/dejo-pusaudzi.jpeg"
 import dejoJauniesi from "@/assets/images/dejo-jauniesi-3.jpeg"
-import dejoPieaugusie from "@/assets/images/dejo-pieaugusie.jpg"
+import dejoPieaugusie from "@/assets/images/dejo-pieaugusie-downsize.jpg"
 import { ref } from "vue"
 
 const galleryElements = ref([
