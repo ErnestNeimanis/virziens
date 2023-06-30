@@ -17,6 +17,7 @@ import axios from "axios"
 import ContactCard from "@/components/ContactCard.vue";
 import HomeSlider from "@/components/HomeSlider/HomeSlider.vue"
 import SocialIcons from "@/components/SocialIcons.vue"
+import { useInView,useNotInView } from "@/composables/in-view";
 
 
 const apiTest = ref("")
@@ -34,7 +35,16 @@ const secondVidSectionVisible = ref(false);
 const wrapper = ref<HTMLAreaElement | null>(null);
 
 const homeSection2 = ref<HTMLAreaElement | null>(null);
+const bottomSection =ref<HTMLElement | null>(null);
 
+const iconsVisible =ref<boolean>(false);
+
+function showIcons(){
+iconsVisible.value = true;
+}
+function hideIcons(){
+iconsVisible.value = false;
+}
 function handleScroll() {
 
   const element = homeSection2.value;
@@ -56,6 +66,11 @@ window.addEventListener('scrol', () => {
 })
 onMounted(() => {
   wrapper.value?.addEventListener('scroll', handleScroll)
+if(bottomSection.value){
+    useInView(bottomSection.value,showIcons)
+    useNotInView(bottomSection.value,hideIcons)
+}
+
 });
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll);
@@ -68,8 +83,7 @@ onBeforeUnmount(() => {
 
   <NavBar class=" fixed   z-[100] w-2/3" />
 
-
-
+     <SocialIcons :show="iconsVisible" class="fixed bottom-12  z-[100] w-full" />
 
   <div ref="wrapper" class="wrapper  h-[100vh]  ">
 
@@ -91,7 +105,7 @@ onBeforeUnmount(() => {
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
         <div class="h-[80vh] bg-black"  >
-            <Logo class=""/>
+
         </div>
       </div>
     </div>
@@ -116,11 +130,11 @@ onBeforeUnmount(() => {
       
      
 
-      <div class="h-[250vw] relative">
+      <div ref="bottomSection" class="h-[250vw] relative ">
         <div class="w-full h-full flex justify-center items-end ">
           <div class="flex flex-col gap-12">
             <div class="flex justify-center items-center gap-4">
-              <SocialIcons/>
+            
             </div>
             <!-- <div>
               <ContactCard/>
@@ -140,8 +154,6 @@ onBeforeUnmount(() => {
 <style>
 .wrapper {
   background-color: black;
-
-  background-image: url("@/assets/images/neon-3.jpg");
 
   height: 100%;
   overflow-y: scroll;
