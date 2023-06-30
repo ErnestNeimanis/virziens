@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
+import { useInView } from '@/composables/in-view';
 
-const firstTextContent = ref<string>(`
-Jūrmalas deju studija Virziens aicina pievienoties mūsu kolektīvam ne tikai bērnus un jauniešus, bet arī pieaugušos un seniorus. Pie mums iespējams dejot gan hobija nolūkos, gan arī deju apgūt profesionālā līmenī.
-
-`)
 
 const secondTextContent = ref<string>(`
 "Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu dārgās dzimtenes iedzīvotājus," stāsta trenere Baiba Andersone.
@@ -15,15 +12,13 @@ const secondTextContent = ref<string>(`
 
 
 
-const firstText = ref<HTMLElement | null>(null)
-const firstTextAnimationClass = ref("first-text")
+
+
 
 const secondText = ref<HTMLElement | null>(null)
 const secondTextAnimationClass = ref<string>("translate-x-[10vw]")
 
-function animateFirstText() {
-  firstTextAnimationClass.value = "first-text-animate"
-}
+
 
 function animateSecondText1() {
   secondTextAnimationClass.value = ""
@@ -56,23 +51,11 @@ myCallbackFunction: (entry: IntersectionObserverEntry)
 
 
 
-function inViewport(el: HTMLElement | null): boolean {
-  if (!el) throw new Error("no element detected")
-  const rect = el.getBoundingClientRect();
-
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
 
 onMounted(() => {
-  if (!firstText.value || !secondText.value) throw new Error("mounted but no element")
-  onElementIntersection(firstText.value, animateFirstText)
-  onElementIntersection(secondText.value, animateSecondText1)
-  onElementIntersection(secondText.value, animateSecondText2, 1)
+  if(secondText.value){
+    useInView(secondText.value,animateSecondText2)
+  }
 })
 </script>
 <template>
@@ -88,10 +71,7 @@ onMounted(() => {
         class="relative flex   ">
         <article
           class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-4xl sm:text-2xl xs:text-base  px-6   h-full ">
-          <p :class="firstTextAnimationClass" ref="firstText" class=" font-semibold font-serif ">
-         
-
-          </p>
+      
 
           <p :class="secondTextAnimationClass" ref="secondText"
             class="  transition-all mb-[3.5vw] w-full text-center   rounded-lg px-6 my-56 font-extrabold bg-white/40 "
