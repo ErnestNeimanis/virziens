@@ -75,7 +75,7 @@ onMounted(() => {
 .description-text {
   background-color: rgb(254 226 226 );
   animation-name: fade-out;
-  animation-duration: 11s;
+  animation-duration: 13s;
   animation-fill-mode: forwards;
 }
 
