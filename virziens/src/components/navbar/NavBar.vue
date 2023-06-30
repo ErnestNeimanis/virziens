@@ -5,6 +5,8 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import HomeBGVideo from './HomeBGVideo.vue'
 import Hamburger from './Hamburger.vue';
+import { useWindowSize } from '@/composables/window';
+const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
 
 interface NavItem {
   name?: string,
@@ -45,8 +47,7 @@ const navMenu = ref<NavItem[]>([
 const menuClass = ref("-translate-x-[100%] hidden")
 const menuOpen = ref(false)
 
-const screenW = ref(window.innerWidth);
-const mobileWidth = 640;
+
 
 function openMenu() {
   menuOpen.value = true;
@@ -66,22 +67,18 @@ function closeMenu() {
   }, 300)
 }
 
-const mobileView = computed(() => {
-  return screenW.value <= mobileWidth;
-});
+
 onMounted(() => {
-  window.addEventListener("resize", updateResize);
+ 
 });
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateResize);
+
 });
-function updateResize() {
-  screenW.value = window.innerWidth;
-}
+
 
 </script>
 <template>
-  <div v-if="!mobileView" class="w-full flex justify-end  fixed  top-8 right-4 z-[100]">
+  <div v-if="!smallWindow" class="w-full flex justify-end  fixed  top-8 right-4 z-[100]">
     <nav :="$attrs" class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
     
         <RouterLink v-for="item in navMenu" :to="item.link">
