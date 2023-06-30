@@ -11,10 +11,9 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 </script>
 <template>
     <div class=" min-h-screen bg-slate-200 ">
-        <div class="bg-red-100 h-24 sticky -top-4 ">
+        <div class=" h-24 sticky -top-4 " style="background-image: url('@/assets/images/bricks.jpeg');">
             <NavBar class="w-full   " />
         </div>
-
 
         <div class="w-full  bg-gradient-to-r from-blue-700 to-pink-600   ">
             <div class="f w-full ">
