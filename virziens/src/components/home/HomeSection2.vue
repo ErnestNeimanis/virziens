@@ -16,38 +16,18 @@ const secondTextContent = ref<string>(`
 
 
 const secondText = ref<HTMLElement | null>(null)
-const secondTextAnimationClass = ref<string>("translate-x-[10vw]")
+const secondTextAnimationClass = ref<string>("-translate-y-[10vw]")
 
 
 
-function animateSecondText1() {
-  secondTextAnimationClass.value = ""
-}
 function animateSecondText2() {
-  secondTextAnimationClass.value = "shadow-2xl shadow-white"
+  secondTextAnimationClass.value = ""
+  setTimeout(()=>{
+    secondTextAnimationClass.value = "text-shadow"
+  },990)
+  
 }
 
-
-function onElementIntersection(element: HTMLElement, 
-myCallbackFunction: (entry: IntersectionObserverEntry) 
-=> void, threshold: number | undefined = 0.1) {
-  if (!threshold) threshold = 0.1
-
-  const options = {
-    rootMargin: '0px',
-    threshold: threshold
-  };
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio >= options.threshold) {
-        myCallbackFunction(entry);
-      }
-    });
-  }, options);
-
-  observer.observe(element);
-}
 
 
 
@@ -78,7 +58,7 @@ onMounted(() => {
           </p>
           <p :class="secondTextAnimationClass" ref="secondText"
             class="  transition-all mb-[3.5vw] w-full text-center   rounded-lg px-6 my-56 font-extrabold bg-white/40 "
-            style="transition-duration: 800ms;">
+            style="transition-duration: 1000ms;">
            {{ secondTextContent }}
           </p>
 
@@ -99,6 +79,11 @@ onMounted(() => {
   animation-fill-mode: forwards;
 }
 
+.text-shadow {
+  box-shadow: 0px 0px 20px 8px rgb(255,255,255);
+  transition-property: box-shadow;
+  transition-duration: 100ms;
+}
 .first-text {
   transform: translateX(-20px);
 }
