@@ -89,6 +89,6 @@ async function vibrate(ms: number = 100) {
 }
 .text-opacity {
   transition-property: all;
-  transition-duration: 4s;
+  transition-duration: 2s;
 }
 </style>
