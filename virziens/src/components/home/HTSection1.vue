@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
-
+import { useInView } from '@/composables/in-view';
 const randomBtn = ref<HTMLElement | null>()
 const vibrator = ref<number>(20)
 
 const randomBtnVisible = ref(false)
 
+const textOpaque = ref<boolean>(true);
+const textContainer = ref<HTMLElement | null>()
 
 function onElementIntersection(element: HTMLElement,
   myCallbackFunction: (entry: IntersectionObserverEntry)
@@ -35,6 +37,11 @@ function delay(ms: number) {
 onMounted(() => {
   if (!randomBtn.value) return
   onElementIntersection(randomBtn.value, () => { randomBtnVisible.value = true }, 1)
+
+  if(textContainer.value){
+    useInView(textContainer.value,() => {textOpaque.value = false})
+  }
+
 })
 watch(randomBtnVisible, async () => {
   await vibrate(60)
@@ -52,21 +59,20 @@ async function vibrate(ms: number = 100) {
 </script>
 <template>
   <section class="w-full h-[100vh] max-h-[150vw]   overflow-hidden">
-    <div class=" h-full flex flex-col   gap-18">
+    <div class=" h-full flex flex-col   a">
 
 
 
-      <div
-        class="flex  mt-12 px-9 text-[5vw] text-white  font-serif w-full  ">
-        <span class="font-semibold">Piedāvājam plašas iespējas gan dejotājiem, gan sadarbības partneriem.
+      <div ref="textContainer" class="flex  mt-[10vh] px-9 text-[5vw] text-white  font-serif w-full  ">
+        <span  class="font-semibold text-opacity" :class="{'opacity-0 ':textOpaque}">Piedāvājam plašas iespējas gan dejotājiem, gan sadarbības partneriem.
         </span>
 
       </div>
 
-      <div class="flex justify-end w-full px-20 ">
+      <div class="flex justify-end items-center w-full mt-[30vh]  -translate-y-[3vh]">
 
         <button ref="randomBtn" :style="{ transform: `translateX(${vibrator}px)` }"
-          class="transition-all duration-100 bg-black rounded-full hover:bg-black/30 mt-6  px-12 py-2 sm:text-[3vw] text-[5vw]  text-white uppercase font-extrabold">Piesakies!
+          class="transition-all duration-100 bg-black rounded-full hover:bg-black/30  mx-[10vw] px-12  py-2 sm:text-[5vw] text-[5vw]  text-white uppercase font-extrabold">Piesakies!
         </button>
 
       </div>
@@ -74,3 +80,11 @@ async function vibrate(ms: number = 100) {
     </div>
   </section>
 </template>
+
+<style scoped>
+
+.text-opacity {
+  transition-property: all;
+  transition-duration: 4s;
+}
+</style>
