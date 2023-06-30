@@ -33,8 +33,8 @@ export function useNotInView(
     (entries) => {
       entries.forEach((entry) => {
         if (
-          !entry.isIntersecting 
-         
+          !entry.isIntersecting &&
+          entry.intersectionRatio < defaultThreshold
         ) {
           callback();
         }

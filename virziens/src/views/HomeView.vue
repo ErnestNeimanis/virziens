@@ -67,8 +67,8 @@ window.addEventListener('scrol', () => {
 onMounted(() => {
   wrapper.value?.addEventListener('scroll', handleScroll)
 if(bottomSection.value){
-    useInView(bottomSection.value,showIcons)
-    useNotInView(bottomSection.value,hideIcons)
+    useInView(bottomSection.value,showIcons,0.1)
+    useNotInView(bottomSection.value,hideIcons,0.1)
 }
 
 });
