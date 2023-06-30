@@ -64,7 +64,7 @@ async function vibrate(ms: number = 100) {
 
 
       <div ref="textContainer" class="flex  mt-[10vh] px-9 text-[5vw] text-white  font-serif w-full  ">
-        <span  class="font-semibold text-opacity" :class="{'opacity-0 ':textOpaque}">Piedāvājam plašas iespējas gan dejotājiem, gan sadarbības partneriem.
+        <span  class="font-semibold text-opacity" :class="{'opacity-0 text-scale':textOpaque}">Piedāvājam plašas iespējas gan dejotājiem, gan sadarbības partneriem.
         </span>
 
       </div>
@@ -83,6 +83,10 @@ async function vibrate(ms: number = 100) {
 
 <style scoped>
 
+.text-scale{
+  transform: scale(0.8);
+
+}
 .text-opacity {
   transition-property: all;
   transition-duration: 4s;
