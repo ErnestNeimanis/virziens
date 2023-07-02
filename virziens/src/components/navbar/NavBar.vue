@@ -25,6 +25,11 @@ const navMenu = ref<NavItem[]>([
     title: 'Par mums',
     link: "/"
   },
+  {
+    name: 'team',
+    title: 'Mākslinieciskā komanda',
+    link: "/team"
+  },
    {
     name: 'services',
     title: 'Pakalpojumi un cenas',
@@ -78,7 +83,7 @@ onBeforeUnmount(() => {
 
 </script>
 <template>
-  <div v-if="!smallWindow" class="w-full flex justify-end  fixed  top-8 right-4 z-[100]">
+  <div v-if="!smallWindow" class="w-full flex justify-end  right-4 z-[100]">
     <nav :="$attrs" class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
     
         <RouterLink v-for="item in navMenu" :to="item.link">
@@ -86,7 +91,6 @@ onBeforeUnmount(() => {
             <span>{{ item.title }}</span>
           </div>
         </RouterLink>
-    
     </nav>
   </div>
 
