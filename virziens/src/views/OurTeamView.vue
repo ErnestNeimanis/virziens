@@ -2,7 +2,6 @@
 import TeamMember from "@/components/our-team/TeamMember.vue"
 import ligitaImg from "@/assets/images/LIGITA.jpg"
 import baibaImg from "@/assets/images/BAIBA.jpg"
-import karlinaImg from "@/assets/images/KARLINA.jpg"
 import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
@@ -52,15 +51,16 @@ Radošās gaitas un nozīmīgākie panākumi:
 ·         Sadarbība ar dažādiem Latvijas māksliniekiem un horeogrāfiem
 ·         Regulāri tiek aicināta tiesāt sacensības Latvijā un ārpus tās robežām`,
         },
-        {
-            name: "Karlīna Savicka",
-            subtitle: "deju studijas VIRZIENS treneru asistente un horeogrāfe.",
-            image: karlinaImg,
-            text: `Karlīna Savicka ir jutekliska dejotāja, kura ar deju nodarbojas kopš 2012. gada, un ir deju studijas VIRZIENS Adult grupas sastāvā. Dejotāja ir apguvusi vairākus deju stilus, tai skaitā Laikmetīgo deju, Šova deju, HipHop, Fusion, DanceHall, Waacking un citus. Karlīna Savicka vienmēr aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīva pasākumos. 2023. gada janvārī māksliniece uzņēmās lomu Martas Grigales priekšnesumā televīzijas raidījuma Muzikālā banka finālā.
-Paralēli Mūsdienu dejām Karlīna Savicka kopš astoņu gadu vecuma nodarbojas ar Sacensību solo dejām. Viņa ir apguvusi Valša, Čačas, West Coast Swing, Džaiva un Sambas deju elementus šajā stilā, savas zināšanas regulāri pilnveidojot meistarklasēs pie slaveniem deju horeogrāfiem un pasniedzējiem, piemēram, Daniel Trepat un Roy Verdonk.
-Piedaloties Sacensību solo deju konkursos Karlīna Savicka regulāri iegūst godalgotas vietas gan Latvijā, gan ārvalstīs, tostarp Lietuvā, Igaunijā, Šveicē, Vācijā un Dānijā, sasniedzot Intermediate līmeni. 2019. gadā dejotāja izcīnīja pirmo vietu Novice grupā WorldCDF pasaules čempionātā Vācijā.
-Deju studijā VIRZIENS Karlīna Savicka iesaistās ne tikai kā dejotāja, bet arī aktīvi asistē pasniedzējus un veido horeogrāfijas deju priekšnesumiem un videoklipiem. Regulāri piedaloties treniņu procesā, dejotājas mērķis ir palīdzēt komandai attīstīties par vēl labākiem dejotājiem.`,
-        },
+//         {
+//             name: "Karlīna Savicka",
+//             subtitle: "deju studijas VIRZIENS treneru asistente un horeogrāfe.",
+//             image: ""
+            
+//             text: `Karlīna Savicka ir jutekliska dejotāja, kura ar deju nodarbojas kopš 2012. gada, un ir deju studijas VIRZIENS Adult grupas sastāvā. Dejotāja ir apguvusi vairākus deju stilus, tai skaitā Laikmetīgo deju, Šova deju, HipHop, Fusion, DanceHall, Waacking un citus. Karlīna Savicka vienmēr aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīva pasākumos. 2023. gada janvārī māksliniece uzņēmās lomu Martas Grigales priekšnesumā televīzijas raidījuma Muzikālā banka finālā.
+// Paralēli Mūsdienu dejām Karlīna Savicka kopš astoņu gadu vecuma nodarbojas ar Sacensību solo dejām. Viņa ir apguvusi Valša, Čačas, West Coast Swing, Džaiva un Sambas deju elementus šajā stilā, savas zināšanas regulāri pilnveidojot meistarklasēs pie slaveniem deju horeogrāfiem un pasniedzējiem, piemēram, Daniel Trepat un Roy Verdonk.
+// Piedaloties Sacensību solo deju konkursos Karlīna Savicka regulāri iegūst godalgotas vietas gan Latvijā, gan ārvalstīs, tostarp Lietuvā, Igaunijā, Šveicē, Vācijā un Dānijā, sasniedzot Intermediate līmeni. 2019. gadā dejotāja izcīnīja pirmo vietu Novice grupā WorldCDF pasaules čempionātā Vācijā.
+// Deju studijā VIRZIENS Karlīna Savicka iesaistās ne tikai kā dejotāja, bet arī aktīvi asistē pasniedzējus un veido horeogrāfijas deju priekšnesumiem un videoklipiem. Regulāri piedaloties treniņu procesā, dejotājas mērķis ir palīdzēt komandai attīstīties par vēl labākiem dejotājiem.`,
+//         },
         {
             name: "Melānija Vaivode-Šulte",
             subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe.",
