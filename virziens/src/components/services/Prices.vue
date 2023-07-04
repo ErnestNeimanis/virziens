@@ -13,12 +13,9 @@ const props = defineProps<
 </script>
 <template>
     <div>
-        <ul class="list-disc">
-            <li v-for="price in prices"  >
-                <span>
-                    •
-                </span>
-                <span>
+        <ul class="list-disc ">
+            <li v-for="price in prices"  > 
+                <span class="ml-6">
                     {{ price.amount }} EUR
                 </span>
                 <span>

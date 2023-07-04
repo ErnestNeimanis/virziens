@@ -73,76 +73,71 @@ const services =
 
 </script>
 <template>
-       <div class=" sticky -top-6 pt-8 bg-white pb-2">
-        <NavBar />
-    </div>
-    <main class="">
-        <section>
-            <div>
-                <button>
-                    Piesaki savu priekšnesumu!
-                </button>
-            </div>
-            <div>
-                <p>
-                    text
-                </p>
-            </div>
-        </section>
-        <div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-        <section>
-            <div>
-                <button>Piesaki sadarbību!</button>
-            </div>
-            <div>
-                <h2>Vienmēr esam...</h2>
-                <div>
-                    
-                </div>
-            </div>
 
-        </section>
-        <section>
+<div class="sticky -top-6 pt-8 pb-2">
+    <NavBar />
+</div>
+<main class="bg-gray-100 py-8 px-4">
+    <section class="max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                Piesaki savu priekšnesumu!
+            </button>
+        </div>
+        <div class="d p-4 mb-8">
+            <p class="text-gray-800">
+                text
+            </p>
+        </div>
+    </section>
+    <div class="max-w-4xl mx-auto mb-8">
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <section class="max-w-4xl mx-auto mb-8">
+        <div class="text-center mb-8">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                Piesaki sadarbību!
+            </button>
+        </div>
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">Vienmēr esam...</h2>
+         
+        </div>
+    </section>
+    <section class="max-w-4xl mx-auto mb-8">
+        <div class="mb-4">
+            <h2 class="text-2xl font-semibold uppercase">cenas</h2>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Deju nodarbības maksa par mēnesi</h3>
             <div>
-                <h2 class="uppercase">cenas</h2>
-            </div>
-            <div>
-                <h3>Deju nodarbības maksa par mēnesi</h3>
-                <div>
-                    <div v-for="service in services">
+                <div v-for="service in services" class="mb-4">
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="text-lg font-semibold">{{ service.title }}</h4>
+                        </div>
                         <div>
-                            <div class="">
-                                <h4>{{ service.title }}</h4>
-                            </div>
-                            <div>
-                                <Prices :prices="service.prices" />
-                            </div>
+                            <Prices :prices="service.prices" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-
-                <div>
-                    <span>
-                        Par katru apmeklēto nodarbību un pasākumu atsevišķi -
-                    </span>
-                    <span>
-                        10 EUR
-                    </span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <div>
-
         </div>
-    </main>
+        <div class="flex  items-center mt-4">
+            <span>
+                Par katru apmeklēto nodarbību un pasākumu atsevišķi -
+            </span>
+            <span class="font-semibold">
+                10 EUR
+            </span>
+        </div>
+    </section>
+    <div class="max-w-4xl mx-auto">
+        
+    </div>
+</main>
+
+
 </template>
