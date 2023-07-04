@@ -22,13 +22,13 @@ const contacts = ref<Contact[]>([
     name: "Ligita Apena",
     title: " Deju studijas VIRZIENS vadītāja",
     phone: "+37129445989",
-    icon: ``
+    icon: `<i class="bi bi-phone"/>`
   },
   {
-    name: "Ligita Apena",
-    title: " Deju studijas VIRZIENS vadītāja",
+    name: "Baiba Andersone",
+    title: " Deju studijas VIRZIENS līdzvadītāja",
     phone: "+37129445989",
-    icon: ``
+    icon: `<i class="bi bi-phone"/>`
   },
 ])
 
@@ -60,10 +60,12 @@ function telHref(phone: string | undefined) {
             <div class="flex">
               <a :href="telHref(contact.phone)">
                 <div>
-
+               
                 </div>
               </a>
-              <div>
+              <div class="flex">
+                <div v-html="contact.icon">
+                </div>
                 <span>{{ contact.phone }}</span>
               </div>
             </div>
