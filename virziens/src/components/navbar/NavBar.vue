@@ -20,11 +20,7 @@ const navMenu = ref<NavItem[]>([
     title: 'Sākums',
     link: "/"
   },
-   {
-    name: 'about',
-    title: 'Par mums',
-    link: "/"
-  },
+
   {
     name: 'team',
     title: 'Mākslinieciskā komanda',
@@ -33,7 +29,7 @@ const navMenu = ref<NavItem[]>([
    {
     name: 'services',
     title: 'Pakalpojumi un cenas',
-    link: "/"
+    link: "/services"
   },
    {
     name: 'schedule',
@@ -42,9 +38,9 @@ const navMenu = ref<NavItem[]>([
   },
 
    {
-    name: 'contact-us',
+    name: 'contacts',
     title: 'Kontakti',
-    link: "/"
+    link: "/contacts"
   },
 ])
 

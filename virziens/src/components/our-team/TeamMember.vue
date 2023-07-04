@@ -51,8 +51,8 @@ const path = "../assets/images/BAIBA.jpg"
         </div>
 
         <div class="w-">
-            <p class="whitespace-break-spaces md:text-3xl font-[500] mt-12">
-                {{ member.text }}
+            <p v-html="member.text" class="whitespace-break-spaces md:text-3xl font-[500] mt-12">
+              
             </p>
 
         </div>
