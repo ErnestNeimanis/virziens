@@ -79,7 +79,7 @@ onBeforeUnmount(() => {
 <template>
   <!-- <div>testing api {{ apiTest }}</div> -->
 
-  <NavBar class=" fixed translate-y-4  z-[100] w-2/3" />
+ <NavBar class=" fixed   z-[100] w-2/3" />
 
      <SocialIcons :show="iconsVisible" class="fixed bottom-12  z-[100] w-full" />
 
