@@ -34,21 +34,20 @@ const contacts = ref<Contact[]>([
 
 function telHref(phone: string | undefined) {
   if (!phone) return ""
-  return `Tel+${phone}`
+  return `Tel${phone}`
 }
 
 </script>
 <template>
-
-    <div class=" sticky -top-6 pt-8 bg-white ">
-        <NavBar />
-    </div>
+  <div class=" sticky -top-6 pt-8 bg-white ">
+    <NavBar />
+  </div>
   <main class="flex justify-center items-center ">
     <div class="">
-      <div>
+      <div class="mt-12">
         <h1 class="text-8xl">Kontakti</h1>
       </div>
-      <div>
+      <div class="f mt-32  ">
         <div v-for="contact in contacts">
           <div class="flex flex-col">
             <div>
@@ -58,14 +57,13 @@ function telHref(phone: string | undefined) {
               <span>{{ contact.name }}</span>
             </div>
             <div class="flex">
-              <a :href="telHref(contact.phone)">
-                <div>
-               
-                </div>
-              </a>
+
               <div class="flex">
-                <div v-html="contact.icon">
-                </div>
+                <a :href="telHref(contact.phone)">
+                  <div v-html="contact.icon">
+                  </div>
+                </a>
+
                 <span>{{ contact.phone }}</span>
               </div>
             </div>
