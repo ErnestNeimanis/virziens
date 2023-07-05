@@ -16,7 +16,7 @@ const props = defineProps<
         <ul class="list-disc ">
             <li v-for="price in prices"  > 
                 <span class="ml-6">
-                    {{ price.amount }} EUR
+                    {{ price.amount }}
                 </span>
                 <span>
                     {{ price.description }}

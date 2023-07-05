@@ -159,7 +159,7 @@ const services = [
             </div>
             <div class="flex items-center mt-4">
                 <span> Par katru apmeklēto nodarbību un pasākumu atsevišķi - </span>
-                <span class="font-semibold"> 10 EUR </span>
+                <span class="font-semibold"> 10 € </span>
             </div>
         </section>
         <div class="max-w-4xl mx-auto"></div>
