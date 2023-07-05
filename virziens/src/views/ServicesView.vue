@@ -98,19 +98,7 @@ const services =
             </button>
         </div>
         <div class="d p-4 mb-8">
-            <div class="flex flex-col gap-9">
-                <div v-for="colab in colabs">
-                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
-                    <div>
-                        <ul>
-                            <li v-for="item in colab.list" class="list-disc">
-                                <div v-html="item"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-               
-            </div>
+          
 
             <p class="text-gray-800">
                 text
@@ -132,6 +120,19 @@ const services =
             <h2 class="text-2xl font-semibold mb-4">Vienmēr esam...</h2>
          
         </div>
+          <div class="flex flex-col gap-9">
+                <div v-for="colab in colabs">
+                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
+                    <div>
+                        <ul>
+                            <li v-for="item in colab.list" class="list-disc">
+                                <div v-html="item"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
     </section>
     <section class="max-w-4xl mx-auto mb-8">
         <div class="mb-4">
