@@ -19,25 +19,38 @@ interface Colab {
 }
 
 const colabs: Colab[] =
-    [
-        {
-            title: "Ar ko sadarbojas",
-            list:
-                [
-                    "partneris",
-                    "nakamais partneris"
-                ]
+   [  
+       {
+        title: "Mēs organizējam grupu un individuālās nodarbības:",
+        list:
+        [
+        `<em>Hip Hop</em>`,
+        `<em>Laikmetīgās dejas</em>`,
+        `<em>House</em>`,
+        `<em>Sacensību solo dejas</em>`,
+        `<em>Džeza dejas</em>`,
+        `<em>Lady style</em>`,
+        `<em>Experimental</em>`,
+        `<em>Fusion</em>`,
+        `u. c. deju stilos`
+        ],
+       },
+       {
+        title: "Mēs aicinām pievienoties mūsu kolektīvam ne tikai bērnus, pusaudžus un jauniešus, bet arī pieaugušos un seniorus. Pie mums iespējams dejot gan hobija nolūkos, gan arī deju apgūt profesionālā līmenī, kā arī piedalīties:",
+        list:
+        [
+        "Valsts un starptautiska mēroga sacensībās",
+        "Meistarklasēs",
+        "Koncertos",
+        "Festivālos",
+        "Nometnēs",
+        "Profesionālu videoklipu uzņemšanā",
+        "Fotosesijās",
+        "Šovos",
+        "u. c. pasākumos"
+        ],
         },
-        {
-            title: "Sadarbibas iespejas",
-            list:
-                [
-                    "iespeja",
-                    "nakama iespeja"
-                ]
-        },
-    ]
-
+       ]
 const services =
     [
         {
@@ -85,6 +98,20 @@ const services =
             </button>
         </div>
         <div class="d p-4 mb-8">
+            <div class="flex flex-col gap-9">
+                <div v-for="colab in colabs">
+                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
+                    <div>
+                        <ul>
+                            <li v-for="item in colab.list" class="list-disc">
+                                <div v-html="item"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+
             <p class="text-gray-800">
                 text
             </p>

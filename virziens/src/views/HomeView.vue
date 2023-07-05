@@ -22,8 +22,8 @@ import { useInView,useNotInView } from "@/composables/in-view";
 
 const apiTest = ref("")
 async function testApi() {
-  const response = await axios.get("https://virziens-api.netlify.app/.netlify/functions/api")
-  apiTest.value = response.data.hello
+  const response = await axios.get("https://test-api2.netlify.app/.netlify/functions/api/")
+  apiTest.value = response.data
 }
 testApi();
 
@@ -77,7 +77,7 @@ onBeforeUnmount(() => {
 
 </script>
 <template>
-  <!-- <div>testing api {{ apiTest }}</div> -->
+  <div>testing api {{ apiTest }}</div>
 
  <NavBar class=" fixed   z-[100] w-2/3" />
 
