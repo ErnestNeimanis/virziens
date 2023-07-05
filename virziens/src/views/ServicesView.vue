@@ -12,6 +12,12 @@ interface Service {
     }[];
 }
 
+interface CourseList {
+    title: string;
+    list: string[];
+}
+
+
 interface Colab {
     title: string;
     list: string[];
@@ -33,7 +39,37 @@ const offers: Offer[] = [
     },
 ];
 
-const colabs: Colab[] = [
+const colabs: Colab[] =
+ [
+          {
+  title: "Ar ko mēs sadarbojamies?" ,
+            list:
+                [
+                "Deju treneriem, horeogrāfiem vai tiesnešiem",
+                "Dažādu pasākumu rīkotājiem",
+                "Kinofilmu vai seriālu režisoriem",
+                "Mūziķiem vai citiem māksliniekiem",
+                "Izglītības iestādēm",
+                "Influenceriem"
+                ],
+              },
+              {   
+            title: "Kādas ir sadarbības iespējas?",
+            list:
+                [
+"Sniegt/nodrošināt meistarklases",
+"Veidot horeogrāfijas",
+"Organizēt deju koncertus, sacensības un konkursus, nometnes vai festivālus",
+"Piedalīties dažādos valstiska mēroga svētkos",
+"Uzstāties šovos",
+"Bagātināt dažādu stilu mūziķu priekšnesumus",
+"Veikt citas radošas darbības"
+                ],
+              },
+ ]
+
+
+const courses: CourseList[] = [
     {
         title: "Mēs organizējam grupu un individuālās nodarbības:",
         list: [
@@ -64,7 +100,7 @@ const colabs: Colab[] = [
         ],
     },
 ];
-const services = [
+const services:Service[] = [
     {
         title:
             "Maksa par mēnesi deju studijā VIRZIENS 2023./2024. deju sezonā, sākot ar augustu.",
@@ -98,7 +134,46 @@ const services = [
         <NavBar />
     </div>
     <main class="bg-gray-100 py-8 px-4">
-          <section class="max-w-4xl mx-auto mb-8">
+          <section class="max-w-4xl mx-auto mb-8 px-4">
+        
+            <div>
+                <h2 class="text-2xl font-semibold mb-4 uppercase">deju nodarbības</h2>
+            </div>
+            <div class="flex flex-col gap-9">
+                <div v-for="course in courses">
+                    <h1 class="text-xl font-bold mb-6">{{ course.title }}</h1>
+                    <div>
+                        <ul>
+                            <li v-for="item in course.list" class="list-disc">
+                                <div v-html="item"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section v-for="offer in offers" class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                    {{ offer.title }}
+                </button>
+            </div>
+             <div class="d p-4 mb-8">
+                <p class="text-gray-800">{{ offer.text }}</p>
+            </div>
+        </section>
+
+      
+        <div class="max-w-4xl mx-auto mb-8">
+            <div>
+                <img src="" alt="" />
+            </div>
+        </div>
+
+
+        <section class="max-w-4xl mx-auto mb-8 px-4">
         
             <div>
                 <h2 class="text-2xl font-semibold mb-4 uppercase">deju nodarbības</h2>
@@ -116,27 +191,8 @@ const services = [
                 </div>
             </div>
         </section>
-
-
-        <section v-for="offer in offers" class="max-w-4xl mx-auto">
-            <div class="text-center mb-8">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
-                    {{ offer.title }}
-                </button>
-            </div>
-             <div class="d p-4 mb-8">
-                <p class="text-gray-800">{{ offer.text }}</p>
-            </div>
-        </section>
-
       
-        <div class="max-w-4xl mx-auto mb-8">
-            <div>
-                <img src="" alt="" />
-            </div>
-        </div>
-      
-        <section class="max-w-4xl mx-auto mb-8">
+        <section class="max-w-4xl mx-auto mb-8 px-4">
             <div class="mb-4">
                 <h2 class="text-2xl font-semibold uppercase">cenas</h2>
             </div>
