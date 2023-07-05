@@ -98,6 +98,26 @@ const services = [
         <NavBar />
     </div>
     <main class="bg-gray-100 py-8 px-4">
+          <section class="max-w-4xl mx-auto mb-8">
+        
+            <div>
+                <h2 class="text-2xl font-semibold mb-4 uppercase">deju nodarbības</h2>
+            </div>
+            <div class="flex flex-col gap-9">
+                <div v-for="colab in colabs">
+                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
+                    <div>
+                        <ul>
+                            <li v-for="item in colab.list" class="list-disc">
+                                <div v-html="item"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section v-for="offer in offers" class="max-w-4xl mx-auto">
             <div class="text-center mb-8">
                 <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
@@ -115,24 +135,7 @@ const services = [
                 <img src="" alt="" />
             </div>
         </div>
-        <section class="max-w-4xl mx-auto mb-8">
-        
-            <div>
-                <h2 class="text-2xl font-semibold mb-4">Vienmēr esam...</h2>
-            </div>
-            <div class="flex flex-col gap-9">
-                <div v-for="colab in colabs">
-                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
-                    <div>
-                        <ul>
-                            <li v-for="item in colab.list" class="list-disc">
-                                <div v-html="item"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      
         <section class="max-w-4xl mx-auto mb-8">
             <div class="mb-4">
                 <h2 class="text-2xl font-semibold uppercase">cenas</h2>
