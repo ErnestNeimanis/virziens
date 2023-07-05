@@ -24,10 +24,20 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
                     </div>
                 </div>
                 <div class="flex flex-col gap-2 mt-4">
-                    <ScheduleEntryBox v-for="(entry, j) in day.entries" :entry="entry" class="h-[6vw]" />
+                    <ScheduleEntryBox v-for="(entry, j) in day.entries" :entry="entry" class="h-[6vw] " :class="{'grow-button':entry.bgColor}" />
                 </div>
 
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+
+.grow-button:hover {
+
+    transform: scale(1.1);
+    transition: transform 200ms ;
+}
+
+</style>
