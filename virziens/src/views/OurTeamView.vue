@@ -4,6 +4,7 @@ import ligitaImg from "@/assets/images/LIGITA.jpg"
 import baibaImg from "@/assets/images/BAIBA.jpg"
 import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
+import karlinaImg from "@/assets/images/Karlina.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
 
 
@@ -55,7 +56,7 @@ Radošās gaitas un nozīmīgākie panākumi:
         {
             name: "Karlīna Savicka",
             subtitle: "deju studijas VIRZIENS treneru asistente un horeogrāfe.",
-            image: "",
+            image: karlinaImg,
             
             text: `<article>Karlīna Savicka ir jutekliska dejotāja, kura ar deju nodarbojas kopš 2012. gada, un ir deju studijas VIRZIENS Adult grupas sastāvā. Dejotāja ir apguvusi vairākus deju stilus, tai skaitā Laikmetīgo deju, Šova deju, HipHop, Fusion, DanceHall, Waacking un citus. Karlīna Savicka vienmēr aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīva pasākumos. 2023. gada janvārī māksliniece uzņēmās lomu Martas Grigales priekšnesumā televīzijas raidījuma Muzikālā banka finālā.
 Paralēli Mūsdienu dejām Karlīna Savicka kopš astoņu gadu vecuma nodarbojas ar Sacensību solo dejām. Viņa ir apguvusi Valša, Čačas, West Coast Swing, Džaiva un Sambas deju elementus šajā stilā, savas zināšanas regulāri pilnveidojot meistarklasēs pie slaveniem deju horeogrāfiem un pasniedzējiem, piemēram, Daniel Trepat un Roy Verdonk.
@@ -90,6 +91,8 @@ Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un cito
     <div class=" sticky -top-6 pt-8 bg-white ">
         <NavBar />
     </div>
+
+  
     <div>
         <div>
 
