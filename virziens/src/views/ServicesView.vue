@@ -206,7 +206,7 @@ const services:Service[] = [
                             <div class="mb-2">
                                 <h4 class="text-lg font-semibold">{{ service.title }}</h4>
                             </div>
-                            <div>
+                            <div v-if="service.prices">
                                 <Prices :prices="service.prices" />
                             </div>
                         </div>
