@@ -50,8 +50,8 @@ const path = "../assets/images/BAIBA.jpg"
 
         </div>
 
-        <div class="w-">
-            <p v-html="member.text" class="whitespace-break-spaces md:text-3xl font-[500] mt-12">
+        <div class="w-full flex justify-center">
+            <p v-html="member.text" class="whitespace-break-spaces md:text-3xl md:w-[90%] font-[500] mt-12">
               
             </p>
 

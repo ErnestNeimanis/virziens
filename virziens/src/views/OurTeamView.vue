@@ -108,13 +108,13 @@ Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un cito
 
 
             <div class="my-12">
-                <h1 class="text-center text-[8vw]">
+                <h1 class="text-center text-[8vw] font-serif">
                     Mākslinieciskā komanda
                 </h1>
             </div>
 
         </div>
-        <div class="md:px-24 px-4 flex flex-col gap-16">
+        <div class="md:px-36 px-4  flex flex-col gap-16">
             <TeamMember v-for="member in teamMembers" :member="member" />
 
 
