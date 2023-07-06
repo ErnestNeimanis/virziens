@@ -2,7 +2,7 @@
 import Prices from "@/components/services/Prices.vue";
 import ColabList from "@/components/services/ColabList.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
-import Header from "@/components/utils/Header.vue";
+import Header from "@/components/Header.vue";
 
 interface Service {
     title: string;

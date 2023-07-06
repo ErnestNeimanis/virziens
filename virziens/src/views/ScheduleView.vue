@@ -5,7 +5,7 @@ import NavBar from '@/components/navbar/NavBar.vue';
 import Schedule from '@/components/Schedule/Schedule.vue';
 import ScheduleMobile from '@/components/Schedule/ScheduleMobile.vue';
 import ScheduleHeading from '@/components/Schedule/ScheduleHeading.vue';
-import Header from "@/components/utils/Header.vue";
+import Header from "@/components/Header.vue";
 
 const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 

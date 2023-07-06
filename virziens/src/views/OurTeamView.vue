@@ -6,7 +6,7 @@ import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
 import karlinaImg from "@/assets/images/Karlina.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
-import Header from "@/components/utils/Header.vue"
+import Header from "@/components/Header.vue"
 
 import { useWindowSize } from "@/composables/window"
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();

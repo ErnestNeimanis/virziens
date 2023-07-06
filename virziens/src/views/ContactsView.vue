@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
-import Header from '@/components/utils/Header.vue';
+import Header from '@/components/Header.vue';
 
 interface Contact {
   name?: string;

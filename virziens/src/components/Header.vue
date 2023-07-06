@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { useWindowSize } from '@/composables/window';
+import NavBar from '@/components/navbar/NavBar.vue';
 const  {smallWindow,mediumWindow,largeWindow} = useWindowSize();
-import NavBar from "@/components/navbar/NavBar.vue"
+
+
 </script>
 <template>
 <div class="sticky pt-8 pb-3  min-h-[8vh] z-[100] w-full" :class="{'-top-10':!smallWindow,'-top-3':smallWindow}">
   <div class="flex justify-end w-full pl-[33%] ">
-      <NavBar class="  " />
+    <!-- <NavBar/> -->
   </div>  
   <div>
 
