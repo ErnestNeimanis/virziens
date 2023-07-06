@@ -2,6 +2,7 @@
 import Prices from "@/components/services/Prices.vue";
 import ColabList from "@/components/services/ColabList.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
+import Header from "@/components/utils/Header.vue";
 
 interface Service {
     title: string;
@@ -130,9 +131,7 @@ const services:Service[] = [
 ];
 </script>
 <template>
-    <div class="sticky -top-6 pt-8 pb-2">
-        <NavBar />
-    </div>
+    <Header class="bg-black" />
     <main class="bg-gray-100 py-8 px-4">
           <section class="max-w-4xl mx-auto mb-8 px-4">
         

@@ -5,16 +5,15 @@ import NavBar from '@/components/navbar/NavBar.vue';
 import Schedule from '@/components/Schedule/Schedule.vue';
 import ScheduleMobile from '@/components/Schedule/ScheduleMobile.vue';
 import ScheduleHeading from '@/components/Schedule/ScheduleHeading.vue';
+import Header from "@/components/utils/Header.vue";
 
 const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 
 </script>
 <template>
-    <div class=" min-h-screen bg-slate-200 ">
-       <div class=" sticky -top-6 pt-8 bg-white pb-2">
-        <NavBar />
-    </div>
-
+    <Header class="bg-black " />
+    <div class="  bg-slate-200 ">
+      
         <div class="w-full  bg-gradient-to-r from-blue-700 to-pink-600   ">
             <div class="f w-full ">
                 <div>

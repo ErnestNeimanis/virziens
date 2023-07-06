@@ -6,6 +6,7 @@ import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
 import karlinaImg from "@/assets/images/Karlina.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
+import Header from "@/components/utils/Header.vue"
 
 import { useWindowSize } from "@/composables/window"
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
@@ -91,21 +92,10 @@ Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un cito
 </script>
 <template>
 
-<div class="sticky bg-yellow-700 pt-8 -top-3 pb-3 min-h-[8vh] z-[100] w-full">
-  <div class="flex justify-end w-full pl-[33%] ">
-      <NavBar class="  " />
-  </div>  
-  <div>
-
-  </div>
-</div>
-  
-
+<Header class="bg-black" />
   
     <div>
         <div>
-
-
 
             <div class="my-12">
                 <h1 class="text-center text-[8vw] font-serif">

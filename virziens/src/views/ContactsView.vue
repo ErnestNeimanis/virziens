@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
-
+import Header from '@/components/utils/Header.vue';
 
 interface Contact {
   name?: string;
@@ -48,13 +48,13 @@ function telSeparate(phone: string | undefined):string {
 
 </script>
 <template>
+
+      <Header class="bg-black" />
   <div class="bg-cyan-800 min-h-screen">
-  <div class="sticky top-6 pt-8">
-    <NavBar />
-  </div>
+
   <main class="flex justify-center items-center">
     <div class="min-w-[370px] w-[60vw]">
-      <div class="mt-12 w-full">
+      <div class="mt-12 w-full border-4">
         <h1 class="text-6xl text-center bg-white bg-opacity-60 px-4 rounded-md uppercase font-extrabold">Kontakti</h1>
       </div>
       <div class="mt-32 bg-white bg-opacity-50 rounded-md w-full border-4">
@@ -73,7 +73,7 @@ function telSeparate(phone: string | undefined):string {
           </div>
         </div>
       </div>
-      <div class="bg-white bg-opacity-50 px-8 py-2 my-8 rounded-md">
+      <div class="bg-white border-4 bg-opacity-50 px-8 py-2 my-8 rounded-md">
         <div class="flex items-center">
           <i class="bi bi-envelope-open-fill"></i>
           <span class="ml-2">{{ generalContactData.email }}</span>
