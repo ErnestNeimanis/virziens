@@ -71,9 +71,13 @@ async function vibrate(ms: number = 100) {
 
       <div class="flex justify-end items-center w-full mt-[30vh]  -translate-y-[3vh]">
 
-        <button ref="randomBtn" :style="{ transform: `translateX(${vibrator}px)` }"
-          class="transition-all duration-100 bg-black rounded-full hover:bg-black/30  mx-[10vw] px-12  py-2 sm:text-[5vw] text-[5vw]  text-white uppercase font-extrabold">Piesakies!
+        <RouterLink to="/contacts">
+            <button ref="randomBtn" :style="{ transform: `translateX(${vibrator}px)` }"
+          class="transition-all duration-100 bg-black rounded-full hover:bg-black/30  mx-[10vw] px-12  py-2 sm:text-[5vw] text-[5vw]  text-white uppercase font-extrabold">
+          Piesakies!
         </button>
+        </RouterLink>
+      
 
       </div>
 
