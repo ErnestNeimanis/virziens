@@ -79,8 +79,8 @@ onBeforeUnmount(() => {
 
 </script>
 <template>
-  <div v-if="!smallWindow" class="w-full flex justify-end  right-4 z-[100]">
-    <nav :="$attrs" class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
+  <div v-if="!smallWindow" class="w-full  flex justify-end  right-4 z-[100]">
+    <nav class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
     
         <RouterLink v-for="item in navMenu" :to="item.link">
           <div class="menu-item">
@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
     <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4" />
     <div :class="menuClass"
       class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-6">
-      <nav  class=" flex flex-col pl-[30%]  gap-3  xs:text-2xl  ">
+      <nav  class=" flex flex-col pl-[30%]  gap-4  xs:text-2xl  ">
         <RouterLink v-for="item in navMenu" :to="item.link">
         <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
           <span>{{ item.title }}</span>
