@@ -34,7 +34,7 @@ const contacts = ref<Contact[]>([
 
 function telHref(phone: string | undefined) {
   if (!phone) return ""
-  return `Tel${phone}`
+  return `tel:${phone}`
 }
 
 function addressHref(address: string | undefined):string {
