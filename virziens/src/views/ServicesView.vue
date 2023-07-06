@@ -3,6 +3,12 @@ import Prices from "@/components/services/Prices.vue";
 import ColabList from "@/components/services/ColabList.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
 import Header from "@/components/Header.vue";
+import { useDeviceStore } from "@/stores/device.store";
+import router from "@/router";
+
+const device = useDeviceStore();
+device.setDeviceType();
+
 
 interface Service {
     title: string;
@@ -129,6 +135,25 @@ const services:Service[] = [
         ],
     },
 ];
+
+// Check if the device is a desktop PC
+function isDesktop() {
+  return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+}
+
+// Check if the device is a mobile device
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function redirectToCall(){
+    if(device.isMobile){
+        window.location.href = "tel:+37129445989"
+    } else{
+        router.push({path:"/contacts"})
+    }
+}
+
 </script>
 <template>
     <Header class="bg-black" />
@@ -155,7 +180,7 @@ const services:Service[] = [
 
         <section v-for="offer in offers" class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-8">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                <button @click="redirectToCall" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
                     {{ offer.title }}
                 </button>
             </div>
