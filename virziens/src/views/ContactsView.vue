@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
 import Header from '@/components/Header.vue';
+import topImage from '@/assets/images/dancing-in-water.jpg'
 
 interface Contact {
   name?: string;
@@ -50,9 +51,13 @@ function telSeparate(phone: string | undefined):string {
 <template>
 
       <Header class="bg-black" />
-  <div class="bg-cyan-800 min-h-screen">
+  <div class=" min-h-screen">
 
+    <div>
+      <img :src="topImage" alt="">
+    </div>
   <main class="flex justify-center items-center">
+    
     <div class="min-w-[370px] w-[60vw]">
       <div class="mt-12 w-full border-4">
         <h1 class="text-6xl text-center bg-white bg-opacity-60 px-4 rounded-md uppercase font-extrabold">Kontakti</h1>
