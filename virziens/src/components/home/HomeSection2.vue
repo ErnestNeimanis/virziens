@@ -16,7 +16,7 @@ const secondTextContent = ref<string>(`
 
 
 const secondText = ref<HTMLElement | null>(null)
-const secondTextAnimationClass = ref<string>("-translate-y-[10vw]")
+const secondTextAnimationClass = ref<string>("")
 
 
 
