@@ -7,7 +7,6 @@ import { useInView } from '@/composables/in-view';
 const secondTextContent = ref<string>(`
 "Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu dārgās dzimtenes iedzīvotājus," stāsta trenere Baiba Andersone.
 
-
 `)
 
 
@@ -16,7 +15,7 @@ const secondTextContent = ref<string>(`
 
 
 const secondText = ref<HTMLElement | null>(null)
-const secondTextAnimationClass = ref<string>("")
+const secondTextAnimationClass = ref<string>("-translate-y-[20px]")
 
 
 
@@ -51,11 +50,7 @@ onMounted(() => {
         class="relative flex   ">
         <article
           class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-5xl sm:text-2xl xs:text-base  px-6   h-full ">
-      
-        <p ref="firstText" class=" font-semibold font-serif ">
-         
-
-          </p>
+    
           <p :class="secondTextAnimationClass" ref="secondText"
             class="  transition-all mb-[3.5vw] w-full text-center   rounded-lg px-6 my-56 font-extrabold bg-white/40 "
             style="transition-duration: 1000ms;">
