@@ -14,7 +14,7 @@ import BGE1 from "@/components/home/BGE1.vue";
 import HTSection1 from "@/components/home/HTSection1.vue";
 import axios from "axios";
 import ContactCard from "@/components/ContactCard.vue";
-import HomeSlider from "@/components/HomeSlider/HomeSlider.vue";
+import HomeGallery from "@/components/home-gallery/HomeGallery.vue";
 import SocialIcons from "@/components/SocialIcons.vue";
 import { useInView, useNotInView } from "@/composables/in-view";
 
@@ -71,6 +71,7 @@ onBeforeUnmount(() => {
 });
 </script>
 <template>
+
   <div class="fixed top-8 z-[100] w-full">
     <div class="flex justify-end w-full pl-[33%]">
       <NavBar class="  " />
@@ -105,18 +106,10 @@ onBeforeUnmount(() => {
         <span class="ml-8 text-white uppercase text-[8vw] font-extrabold">Pie mums dejo:</span>
       </div>
 
-      <HomeSlider />
+      <HomeGallery />
 
       <div ref="bottomSection" class="xl:h-[210vw] lg:h-[170vw] md:h-[160vw] sm:h-[210vw] h-[250vw] relative">
-        <div class="w-full h-full flex justify-center items-end">
-          <div class="flex flex-col gap-12">
-            <div class="flex justify-center items-center gap-4"></div>
-            <!-- <div>
-              <ContactCard/>
-            </div> -->
-            <div></div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
