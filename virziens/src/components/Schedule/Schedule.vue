@@ -26,7 +26,6 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
                 <div class="flex flex-col gap-2 mt-4">
                     <ScheduleEntryBox v-for="(entry, j) in day.entries" :entry="entry" class="h-[6vw] " :class="{'grow-button':entry.bgColor}" />
                 </div>
-
             </div>
         </div>
     </div>

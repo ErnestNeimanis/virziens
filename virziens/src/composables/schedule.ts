@@ -27,6 +27,7 @@ export const schedule = [
     entries: [
       {},
       {},
+      {},
       {
         title: "JUNIORI I (9+)",
         time: "16:30 - 17:45",
@@ -48,6 +49,7 @@ export const schedule = [
     title: "otrdiena",
     bgColor: "#000",
     entries: [
+      {},
       {},
       {},
       {
@@ -84,6 +86,7 @@ export const schedule = [
     entries: [
       {},
       {},
+      {},
       {
         title: "JUNIORI I (9+)",
         time: "16:30 - 17:45",
@@ -113,6 +116,7 @@ export const schedule = [
     entries: [
       {},
       {},
+      {},
       {
         title: "JUNIORI II (11+)",
         time: "16:00 - 17:15",
@@ -140,6 +144,7 @@ export const schedule = [
     title: "piekdiena",
     bgColor: "#000",
     entries: [
+      {},
       {},
       {
         title: "AKROBĀTIKA I",
@@ -189,6 +194,7 @@ export const schedule = [
       {},
       {},
       {},
+      {},
     ],
   },
   {
@@ -196,6 +202,12 @@ export const schedule = [
     title: "svētdiena",
     bgColor: "#000",
     entries: [
+      {
+        time: "",
+        title: `SACENSĪBU SOLO DEJAS`,
+        bgColor: "#000",
+        textColor: "#fff",
+      },
       {
         title: "STARTER",
         time: "14:00",

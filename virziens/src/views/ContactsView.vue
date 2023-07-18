@@ -3,62 +3,44 @@ import { ref } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
 import Header from '@/components/Header.vue';
 import topImage from '@/assets/images/dancing-in-water.jpg'
-
-interface Contact {
-  name?: string;
-  title?: string;
-  phone?: string;
-  icon?: string
-}
-
-const generalContactData = ref(
-  {
-    email: "dejustudijavirziens@gmail.com",
-    address: "Talsu šoseja 39, Jūrmala, LV-2016"
-  }
-)
-
-const contacts = ref<Contact[]>([
-  {
-    name: "Ligita Apena",
-    title: " Deju studijas VIRZIENS vadītāja",
-    phone: "+37129445989",
-    icon: `<i class="bi bi-phone"/>`
-  },
-  {
-    name: "Baiba Andersone",
-    title: " Deju studijas VIRZIENS līdzvadītāja",
-    phone: "+37129445989",
-    icon: `<i class="bi bi-phone"/>`
-  },
-])
-
+import { contacts, generalContactData } from '@/composables/contacts';
+import ContactListCard from '@/components/contacts/ContactListCard.vue';
+import GeneralContactsCard from '@/components/contacts/GeneralContactsCard.vue';
 function telHref(phone: string | undefined) {
   if (!phone) return ""
   return `tel:${phone}`
 }
 
-function addressHref(address: string | undefined):string {
-  if(!address) return "";
+function addressHref(address: string | undefined): string {
+  if (!address) return "";
   return `https://www.google.com/maps/search/?api=1&query=${address}`
 }
-function telSeparate(phone: string | undefined):string {
-  if(!phone) return "";
-  return `${phone.substring(0,4)} ${phone.substring(4,phone.length)}`
+function telSeparate(phone: string | undefined): string {
+  if (!phone) return "";
+  return `${phone.substring(0, 4)} ${phone.substring(4, phone.length)}`
 }
 
 </script>
 <template>
-
-      <Header class="bg-black" />
+  <Header class="bg-black" />
   <div class=" min-h-screen">
 
-    <div>
+    <!-- <div>
       <img :src="topImage" alt="">
-    </div>
-  <main class="flex justify-center items-center">
-    
-    <div class="min-w-[370px] w-[60vw]">
+    </div> -->
+    <main class="flex justify-center items-center  ">
+      <img :src="topImage" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
+      <div class="h-screen w-screen flex justify-center items-center ">
+        <div class="flex gap-24">
+          <div>
+            <ContactListCard />
+          </div>
+       
+        </div>
+
+      </div>
+
+      <!-- <div class="min-w-[370px] w-[60vw]">
       <div class="mt-12 w-full border-4">
         <h1 class="text-6xl text-center bg-white bg-opacity-60 px-4 rounded-md uppercase font-extrabold">Kontakti</h1>
       </div>
@@ -88,9 +70,7 @@ function telSeparate(phone: string | undefined):string {
           <span class="ml-2">{{ generalContactData.address }}</span>
         </div>
       </div>
-    </div>
-  </main>
-</div>
-
-
+    </div> -->
+    </main>
+  </div>
 </template>
