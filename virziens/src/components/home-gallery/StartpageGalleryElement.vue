@@ -100,7 +100,7 @@ onMounted(() =>{
                     <div ref="headingContainer" class="w-full flex justify-center overflow-hidden  ">
                         <h2 class="text-[15vw] font-extrabold text-white  transition-all duration-1000 uppercase ease-in-out" :style="t" >{{ props.title }}</h2>
                     </div>
-                    <div ref="imageContainer" class="w-full rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible,'shadow':shadowOn}" >
+                    <div ref="imageContainer" class="w-full rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible,'shadow':true}" >
                         <img :src="props.image" class="  object-cover " alt="">
                     </div>
                 </div>
@@ -109,7 +109,7 @@ onMounted(() =>{
 
 <style scoped>
 .shadow {
-    box-shadow: 1px 1px 5px 5px rgba(175, 9, 197, 0.37);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.37);
 }
 
 .translate{
@@ -118,10 +118,10 @@ onMounted(() =>{
 
 .initial-state-img{
     opacity: 0;
-    /* transform: translateY(30vh); */
+    /* transform: translateY(5vh); */
 }
 .image-opacity{
-    transition: opacity 1800ms ease-in, transform 1200ms ease-in-out, box-shadow 500ms;
+    transition: opacity 1300ms ease-in, transform 1200ms ease-in-out, box-shadow 500ms;
 }
 
 </style>
