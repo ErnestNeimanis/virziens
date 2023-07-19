@@ -22,6 +22,8 @@ export function useInView(
   observer.observe(element);
 }
 
+
+
 export function useNotInView(
   element: HTMLElement,
   callback: CallableFunction,

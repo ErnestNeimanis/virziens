@@ -31,13 +31,19 @@ const galleryElements = ref([
 
 ])
 
+
+
+
 </script>
 <template>
     <div class="w-screen  pt-8 ">
         <div class="flex flex-col gap-[10vh]  ">
 
             
-            <StartpageGalleryElement v-for="element in  galleryElements" :title="element.title" :image="element.image" :initialHeadingTranslate="element.initialHeadingTranslate" />
+            <StartpageGalleryElement v-for="element in  galleryElements" 
+            :title="element.title" 
+            :image="element.image" 
+            :initialHeadingTranslate="element.initialHeadingTranslate" />
 
         </div>
     </div>

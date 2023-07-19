@@ -8,7 +8,8 @@ const props = defineProps<
     title:string,
     image:string,
     animationNumber?:number | undefined,
-    initialHeadingTranslate?:string
+    initialHeadingTranslate?:string,
+    startAnimation?:boolean;
 
 }
 >()
@@ -70,6 +71,8 @@ function animateImage():void{
 }
 
 function animateAll():void{
+
+
     animateHeading()
     animateImage()
 }
@@ -115,7 +118,7 @@ onMounted(() =>{
 
 .initial-state-img{
     opacity: 0;
-    transform: translateY(30vh);
+    /* transform: translateY(30vh); */
 }
 .image-opacity{
     transition: opacity 1800ms ease-in, transform 1200ms ease-in-out, box-shadow 500ms;
