@@ -87,7 +87,7 @@ onBeforeUnmount(() => {
       <BGE1 class="z-[-101]" />
 
       <div class="w-full lg:-translate-y-[26vw] md:-translate-y-[25vw]">
-        <video class="w-full min-w-[420px] h-[80vh] object-cover" autoplay muted loop playsinline="true">
+        <video class="w-full min-w-[420px] h-[80vh] object-cover " autoplay muted loop playsinline="true" style="transform: scale(1.2);">
           <source src="@/assets/videos/one-dancer.mp4" type="video/mp4" />
         </video>
         <div class="h-[80vh] bg-black"></div>
@@ -108,7 +108,7 @@ onBeforeUnmount(() => {
 
       <HomeGallery />
 
-      <div ref="bottomSection" class="xl:h-[210vw] lg:h-[170vw] md:h-[160vw] sm:h-[210vw] h-[250vw] relative">
+      <div ref="bottomSection" class="xl:h-[250vw] lg:h-[170vw] md:h-[160vw] sm:h-[210vw] h-[250vw] relative">
 
       </div>
     </div>
