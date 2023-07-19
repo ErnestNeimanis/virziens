@@ -49,7 +49,7 @@ onMounted(() => {
       <div
         class="relative flex   ">
         <article
-          class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-5xl md:text-5xl sm:text-2xl xs:text-base  px-6   h-full ">
+          class="flex flex-col mt-[25vw] md:gap-[10vw] gap-4  lg:text-6xl md:text-5xl sm:text-4xl xs:text-xl  px-6   h-full ">
     
           <p :class="secondTextAnimationClass" ref="secondText"
             class="  transition-all mb-[3.5vw] w-full text-center   rounded-lg px-6 my-56 font-extrabold bg-white/40 "

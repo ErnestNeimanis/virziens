@@ -25,15 +25,15 @@ function telSeparate(phone: string | undefined): string {
   <Header class="bg-black" />
   <div class=" min-h-screen">
 
-    <!-- <div>
-      <img :src="topImage" alt="">
-    </div> -->
-    <main class="flex justify-center items-center  ">
+    <main class="flex justify-center items-center  min-h-screen min-w-screen pt-8">
       <img :src="topImage" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
-      <div class="h-screen w-screen flex justify-center items-center ">
-        <div class="flex gap-24">
-          <div>
+      <div class="n flex justify-center items-center fixe  ">
+        <div class="flex justify-center items-center flex-wrap gap-20 w-full px-4 ">
+          <div class=" md:w-[25vw] md:h-[25vw] w-[90vw] h-[90vw]  shadow shadow-black shadow-xl min-w-[360px] min-h-[360px] ">
             <ContactListCard />
+          </div>
+          <div class="md:w-[25vw] md:h-[25vw] w-[90vw] h-[90vw]  shadow shadow-black shadow-xl min-w-[360px] min-h-[360px]">
+            <GeneralContactsCard /> 
           </div>
        
         </div>
