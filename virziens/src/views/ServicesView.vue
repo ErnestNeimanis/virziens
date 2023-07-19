@@ -47,33 +47,33 @@ const offers: Offer[] = [
 ];
 
 const colabs: Colab[] =
- [
-          {
-  title: "Ar ko mēs sadarbojamies?" ,
+    [
+        {
+            title: "Ar ko mēs sadarbojamies?",
             list:
                 [
-                "Deju treneriem, horeogrāfiem vai tiesnešiem",
-                "Dažādu pasākumu rīkotājiem",
-                "Kinofilmu vai seriālu režisoriem",
-                "Mūziķiem vai citiem māksliniekiem",
-                "Izglītības iestādēm",
-                "Influenceriem"
+                    "Deju treneriem, horeogrāfiem vai tiesnešiem",
+                    "Dažādu pasākumu rīkotājiem",
+                    "Kinofilmu vai seriālu režisoriem",
+                    "Mūziķiem vai citiem māksliniekiem",
+                    "Izglītības iestādēm",
+                    "Influenceriem"
                 ],
-              },
-              {   
+        },
+        {
             title: "Kādas ir sadarbības iespējas?",
             list:
                 [
-"Sniegt/nodrošināt meistarklases",
-"Veidot horeogrāfijas",
-"Organizēt deju koncertus, sacensības un konkursus, nometnes vai festivālus",
-"Piedalīties dažādos valstiska mēroga svētkos",
-"Uzstāties šovos",
-"Bagātināt dažādu stilu mūziķu priekšnesumus",
-"Veikt citas radošas darbības"
+                    "Sniegt/nodrošināt meistarklases",
+                    "Veidot horeogrāfijas",
+                    "Organizēt deju koncertus, sacensības un konkursus, nometnes vai festivālus",
+                    "Piedalīties dažādos valstiska mēroga svētkos",
+                    "Uzstāties šovos",
+                    "Bagātināt dažādu stilu mūziķu priekšnesumus",
+                    "Veikt citas radošas darbības"
                 ],
-              },
- ]
+        },
+    ]
 
 
 const courses: CourseList[] = [
@@ -107,7 +107,7 @@ const courses: CourseList[] = [
         ],
     },
 ];
-const services:Service[] = [
+const services: Service[] = [
     {
         title:
             "Maksa par mēnesi deju studijā VIRZIENS 2023./2024. deju sezonā, sākot ar augustu.",
@@ -138,19 +138,19 @@ const services:Service[] = [
 
 // Check if the device is a desktop PC
 function isDesktop() {
-  return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 }
 
 // Check if the device is a mobile device
 function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-function redirectToCall(){
-    if(device.isMobile){
+function redirectToCall() {
+    if (device.isMobile) {
         window.location.href = "tel:+37129445989"
-    } else{
-        router.push({path:"/contacts"})
+    } else {
+        router.push({ path: "/contacts" })
     }
 }
 
@@ -158,15 +158,18 @@ function redirectToCall(){
 <template>
     <Header class="bg-black" />
     <main class="bg-gray-100 py-8 px-4">
-          <section class="max-w-4xl mx-auto mb-8 px-4">
-        
+        <section class="max-w-4xl mx-auto mb-8  ">
+
             <div>
-                <h2 class="text-2xl font-semibold mb-4 uppercase">deju nodarbības</h2>
+                <button @click="redirectToCall"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full uppercase">
+                    piesakies deju nodarbībām!
+                </button>
             </div>
             <div class="flex flex-col gap-9">
                 <div v-for="course in courses">
                     <h1 class="text-xl font-bold mb-6">{{ course.title }}</h1>
-                    <div>
+                    <div class="ml-12">
                         <ul>
                             <li v-for="item in course.list" class="list-disc">
                                 <div v-html="item"></div>
@@ -175,37 +178,36 @@ function redirectToCall(){
                     </div>
                 </div>
             </div>
+
+            
         </section>
 
 
-        <section v-for="offer in offers" class="max-w-4xl mx-auto px-4">
+
+        <section v-for="offer in offers" class="max-w-4xl mx-auto pt-8 border-t-2 border-slate-700">
             <div class="text-center mb-8">
-                <button @click="redirectToCall" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                <button @click="redirectToCall"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
                     {{ offer.title }}
                 </button>
             </div>
-             <div class="d p-4 mb-8">
+            <div class="d p-4 mb-8">
                 <p class="text-gray-800">{{ offer.text }}</p>
             </div>
+
+         
         </section>
 
-      
-        <div class="max-w-4xl mx-auto mb-8">
-            <div>
-                <img src="" alt="" />
-            </div>
-        </div>
+
+     
 
 
-        <section class="max-w-4xl mx-auto mb-8 px-4">
-        
-            <div>
-                <h2 class="text-2xl font-semibold mb-4 uppercase">deju nodarbības</h2>
-            </div>
+        <section class="max-w-4xl mx-auto mb-8 px-8">
+
             <div class="flex flex-col gap-9">
                 <div v-for="colab in colabs">
                     <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
-                    <div>
+                    <div class="ml-12">
                         <ul>
                             <li v-for="item in colab.list" class="list-disc">
                                 <div v-html="item"></div>
@@ -215,29 +217,29 @@ function redirectToCall(){
                 </div>
             </div>
         </section>
-      
-        <section class="max-w-4xl mx-auto mb-8 px-4">
-            <div class="mb-4">
-                <h2 class="text-2xl font-semibold uppercase">cenas</h2>
+
+       
+
+        <section class="max-w-4xl mx-auto border-t-2 border-slate-600 pt-8 ">
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold my-4 uppercase">cenas</h2>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">
-                    Deju nodarbības maksa par mēnesi
-                </h3>
+            
                 <div>
                     <div v-for="service in services" class="mb-4">
                         <div>
                             <div class="mb-2">
                                 <h4 class="text-lg font-semibold">{{ service.title }}</h4>
                             </div>
-                            <div v-if="service.prices">
+                            <div v-if="service.prices" class="ml-12">
                                 <Prices :prices="service.prices" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-         
+
         </section>
         <div class="max-w-4xl mx-auto"></div>
     </main>

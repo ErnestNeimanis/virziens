@@ -22,7 +22,7 @@ export const contacts = [
   {
     name: "Baiba Andersone",
     title: " Deju studijas VIRZIENS līdzvadītāja",
-    phone: "+37129445989",
+    phone: "+37122017951",
     icon: `<i class="bi bi-phone"/>`,
   },
 ];
