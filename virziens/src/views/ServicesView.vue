@@ -158,15 +158,15 @@ function redirectToCall() {
 <template>
     <Header class="bg-black" />
     <main class="bg-gray-100 py-8 px-4">
-        <section class="max-w-4xl mx-auto mb-8  ">
+        <section class="max-w-4xl mx-auto mb-8   ">
 
             <div>
                 <button @click="redirectToCall"
-                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full uppercase">
+                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded w-full uppercase">
                     piesakies deju nodarbībām!
                 </button>
             </div>
-            <div class="flex flex-col gap-9">
+            <div class="flex flex-col gap-9 my-8">
                 <div v-for="course in courses">
                     <h1 class="text-xl font-bold mb-6">{{ course.title }}</h1>
                     <div class="ml-12">
@@ -187,7 +187,7 @@ function redirectToCall() {
         <section v-for="offer in offers" class="max-w-4xl mx-auto pt-8 border-t-2 border-slate-700">
             <div class="text-center mb-8">
                 <button @click="redirectToCall"
-                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">
+                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded w-full">
                     {{ offer.title }}
                 </button>
             </div>

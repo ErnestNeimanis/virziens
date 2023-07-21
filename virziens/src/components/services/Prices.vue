@@ -18,7 +18,7 @@ const props = defineProps<
                 <span class="ml-6">
                     {{ price.amount }}
                 </span>
-                <span>
+                <span class="ml-6">
                     {{ price.description }}
                 </span>
             </li>
