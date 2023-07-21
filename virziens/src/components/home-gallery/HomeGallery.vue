@@ -7,7 +7,7 @@ import {useInView} from '@/composables/in-view'
 import dejoBerni1 from "@/assets/images/dejo-berni-1.jpeg"
 import dejoPusaudzi from "@/assets/images/dejo-pusaudzi.jpeg"
 import dejoJauniesi from "@/assets/images/dejo-jauniesi-3.jpeg"
-import dejoPieaugusie from "@/assets/images/dejo-pieaugusie-home.jpg"
+import dejoPieaugusie from "@/assets/images/dejo-pieaugusie.jpg"
 import { ref } from "vue"
 
 const galleryElements = ref([
@@ -26,7 +26,7 @@ const galleryElements = ref([
     },
     {
         title:"pieagušie",
-        image:dejoPieaugusie,
+      image:dejoPieaugusie,  
     },
 
 ])
