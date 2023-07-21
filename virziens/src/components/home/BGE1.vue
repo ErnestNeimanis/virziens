@@ -6,7 +6,7 @@
     <div class="overflow-clip ">
 
 
-      <img src="@/assets/images/white-brown-dancer-original.jpeg"
+      <img src="@/assets/images/karlina-home-bg.jpg"
         class="img w-full lg:-translate-y-[26vw] md:-translate-y-[25vw " alt="">
 
       <img src="@/assets/images/virziens-piramida.jpg"
