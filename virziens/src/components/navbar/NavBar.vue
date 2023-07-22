@@ -21,15 +21,16 @@ const navMenu = ref<NavItem[]>([
     link: "/"
   },
 
-  {
-    name: 'team',
-    title: 'Mākslinieciskā komanda',
-    link: "/team"
-  },
+ 
    {
     name: 'services',
     title: 'Pakalpojumi un cenas',
     link: "/services"
+  },
+   {
+    name: 'team',
+    title: 'Mākslinieciskā komanda',
+    link: "/team"
   },
    {
     name: 'schedule',

@@ -5,6 +5,7 @@ import baibaImg from "@/assets/images/BAIBA.jpg"
 import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
 import karlinaImg from "@/assets/images/Karlina.jpg"
+import AnnijaImg from "@/assets/images/annija-placinda.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
 
@@ -23,7 +24,7 @@ const teamMembers =
     [
         {
             name: "Ligita Apena",
-            subtitle: "deju studijas VIRZIENS dibinātāja, vadītāja, trenere un horeogrāfe.",
+            subtitle: "deju studijas VIRZIENS dibinātāja, vadītāja, trenere un horeogrāfe",
             image: ligitaImg,
             text:
                 `<article>Ligita Apena jau no trīs gadu vecuma uzsāka nodarboties ar sporta dejām, tautas dejām un mākslas vingrošanu. 1977. gadā dejotāja ar izcilību beidza Leona Brunava Baleta studijas sešu gadu kursu mācību programmā Baleta mākslinieks.
@@ -36,7 +37,7 @@ Ligita Apena arī šobrīd izglīto dejotājus, kuri gūst ievērojamus panākum
         },
         {
             name: "Baiba Andersone",
-            subtitle: "deju studijas VIRZIENS līdzvadītāja, dejotāja, trenere, horeogrāfe un Serificēta Sacensību solo deju tiesnese.",
+            subtitle: "deju studijas VIRZIENS līdzvadītāja, dejotāja, trenere, horeogrāfe un Serificēta Sacensību solo deju tiesnese",
             image: baibaImg,
             text: `<article> Baiba Andersone ar deju iepazinās četru gadu vecumā, jo nebija jau īsti variantu - mamma bijusi profesionāla balerīna un izveidojusi deju studiju. Tur arī Baiba bērnībā pavadīja visu savu brīvo laiku, dejojot bērnu grupā un ar interesi vērojot lielos dejotājus.
 Radošās gaitas un nozīmīgākie panākumi:
@@ -49,7 +50,7 @@ Radošās gaitas un nozīmīgākie panākumi:
 ·         Iegūts WorldCDF RISING STAR tituls 2014. gadā
 ·         Iegūts WorldCDF MEGASTAR tituls 2015. gadā
 ·         Absolvēta Latvijas Kultūras koledža studiju programmā Deju kolektīva vadītājs ar specializāciju mūsdienu dejā, kā arī iegūts pedagoga sertifikāts
-·         Dalība koncertorogrammā Latvijai 100, sešu mēnešu garumā uzstājoties uz kruīza kuģa Tallink Romantika
+·         Dalība koncertprogrammā Latvijai 100, sešu mēnešu garumā uzstājoties uz kruīza kuģa Tallink Romantika
  
 ·         Kopā ar mammu Ligitu Apenu ir deju studiju VIRZIENS vadītāja, kā arī trenē dejotājus vecumā no 4 līdz 84 gadiem
 ·         Serificēta Sacensību solo deju tiesnese Global Organisation of Line Dance (GOLD) asociācijā, kas sniedz iespēju vērtēt dejotāju sniegumu sacensībās un piedalīties šovos visā pasaulē
@@ -58,7 +59,7 @@ Radošās gaitas un nozīmīgākie panākumi:
         },
         {
             name: "Karlīna Savicka",
-            subtitle: "deju studijas VIRZIENS treneru asistente un horeogrāfe.",
+            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
             image: karlinaImg,
             
             text: `<article>Karlīna Savicka ir jutekliska dejotāja, kura ar deju nodarbojas kopš 2012. gada, un ir deju studijas VIRZIENS Adult grupas sastāvā. Dejotāja ir apguvusi vairākus deju stilus, tai skaitā Laikmetīgo deju, Šova deju, HipHop, Fusion, DanceHall, Waacking un citus. Karlīna Savicka vienmēr aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīva pasākumos. 2023. gada janvārī māksliniece uzņēmās lomu Martas Grigales priekšnesumā televīzijas raidījuma Muzikālā banka finālā.
@@ -66,9 +67,20 @@ Paralēli Mūsdienu dejām Karlīna Savicka kopš astoņu gadu vecuma nodarbojas
 Piedaloties Sacensību solo deju konkursos Karlīna Savicka regulāri iegūst godalgotas vietas gan Latvijā, gan ārvalstīs, tostarp Lietuvā, Igaunijā, Šveicē, Vācijā un Dānijā, sasniedzot Intermediate līmeni. 2019. gadā dejotāja izcīnīja pirmo vietu Novice grupā WorldCDF pasaules čempionātā Vācijā.
 Deju studijā VIRZIENS Karlīna Savicka iesaistās ne tikai kā dejotāja, bet arī aktīvi asistē pasniedzējus un veido horeogrāfijas deju priekšnesumiem un videoklipiem. Regulāri piedaloties treniņu procesā, dejotājas mērķis ir palīdzēt komandai attīstīties par vēl labākiem dejotājiem.</article>`,
         },
+     {
+            name: "Monta Markus",
+            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
+            image: montaImg,
+            text: `<article>Monta Markus deju pasaulē atrodas no sešu gadu vecuma, un ir apguvusi dažādus deju stilus: Mūsdienu deju, Latin Jazz, Hip-Hop, Comtemporary Jazz, Sacensību solo dejas un Laikmetīgo deju. Māksliniece deju studijas VIRZIENS sastāvā piedalījusies dažādos nacionāla un starptautiska mēroga konkursos gan deju grupu sastāvā, gan individuāli, Sacensību solo deju stilā.
+Nozīmīgākie panākumi:
+2019. gadā WorldCDF rīkotajā Sacensību solo deju pasaules čempionātā Vācijā izcīnīta pirmā vieta Newcomer kategorijā.
+2022. gadā dalība Līgas Libertes dejas teātra Mentoringa programmā, kur tika gūtas prasmes baletā, akrobātikā, Laikmetīgās un Džeza dejas tehnikā.
+2022. gadā dalība Smart Art Cabaret 36/37/38 deju izrādē.
+Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un citos pasākumos, piemēram, bagātinot mūzikas grupas Mazais princis priekšnesumu. Māksliniece regulāri pilnveido savas zināšanas profesionālu dejotāju un horeogrāfu vadītajos semināros un meistarklasēs. </article>`,
+        },
         {
             name: "Melānija Vaivode-Šulte",
-            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe.",
+            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
             image: melanijaImg,
             text: `<article> Melānija Vaivode-Šulte jau no četru gadu vecuma apmeklēja baleta nodarbības pie pasniedzējas Intas Karules-Teikmanes un paralēli Jūrmalas Sporta skolā nodarbojās ar mākslas vingrošanu. Uzsākot skolas gaitas, jaunā censone apguva arī tautas dejas.
 Deju studijai VIRZIENS Melānija Vaivode-Šulte pievienojās vecumā, kad sāka mācīties trešajā klasē. Tas viņai ir devis iespēju attīstīt savas dejotprasmes dažādos grupu deju stilos, kā arī pievērsties Sacensību solo dejām. Regulāri piedaloties konkursos un koncertos, Melānija Vaivode-Šulte deviņu gadu laikā Sacensību solo dejās ir sasniegusi Advanced līmeni.
@@ -77,15 +89,11 @@ Prasmes deju mākslā Melānija Vaivode-Šulte jau no agra vecuma ir pilnveidoju
 No 12 gadu vecuma Melānija Vaivode-Šulte deju studijā VIRZIENS darbojas kā treneru asistente, salīdzinoši īsā laika periodā uzkrājot pietiekami daudz noderīgu zināšanu, lai 16 gadu vecumā sāktu strādāt par pastāvīgu treneri Kids ll un Juniori l grupām. Paralēli nodarbību vadīšanai, dejotāja veido horeogrāfijas, piemēram, šova dejām, ar kurām tiek gūti ievērības cienīgi panākumi deju sacensībās. </article>`,
         },
         {
-            name: "Monta Markus",
-            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe.",
-            image: montaImg,
-            text: `<article>Monta Markus deju pasaulē atrodas no sešu gadu vecuma, un ir apguvusi dažādus deju stilus: Mūsdienu deju, Latin Jazz, Hip-Hop, Comtemporary Jazz, Sacensību solo dejas un Laikmetīgo deju. Māksliniece deju studijas VIRZIENS sastāvā piedalījusies dažādos nacionāla un starptautiska mēroga konkursos gan deju grupu sastāvā, gan individuāli, Sacensību solo deju stilā.
-Nozīmīgākie panākumi:
-2019. gadā WorldCDF rīkotajā Sacensību solo deju pasaules čempionātā Vācijā izcīnīta pirmā vieta Newcomer kategorijā.
-2022. gadā dalība Līgas Libertes dejas teātra Mentoringa programmā, kur tika gūtas prasmes baletā, akrobātikā, Laikmetīgās un Džeza dejas tehnikā.
-2022. gadā dalība Smart Art Cabaret 36/37/38 deju izrādē.
-Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un citos pasākumos, piemēram, bagātinot mūzikas grupas Mazais princis priekšnesumu. Māksliniece regulāri pilnveido savas zināšanas profesionālu dejotāju un horeogrāfu vadītajos semināros un meistarklasēs. </article>`,
+            name: "Annija Plačinda",
+            subtitle: "deju studijas VIRZIENS dejotāja, treneru asistente un horeogrāfe",
+            image: AnnijaImg,
+            text: `<article>  Annija Plačinda deju gaitas uzsāka piecu gadu vecumā. Pirmā viņas gūtā pieredze bija Sporta dejās, bet astoņu gadu vecumā viņa pievērsās Modernajām dejām. Pēc diviem gadiem Annija Plačinda guva ieskatu arī Tautas dejās, ar kurām nodarbojās līdz 11 gadu vecumam. Turpmāk viņa apmeklēja nodarbības mākslas vingrošanā, un trīs gadi pagāja nemanot. 14 gadu vecumā Annija Plačinda tomēr atsāka nodarboties ar dejām, iestājoties deju studijā VIRZIENS, kur viņa aktīvi turpina augt un attīstīties.
+Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos kopumā, deju sacensībās viņa reiz spēja vien sapņot par pirmo vietu, bet māksliniece to uztver no pozitīvās puses. Dejotāja vienmēr izsakās, ka tas sniedz tikai papildus motivāciju strādāt vēl cītīgāk, pie tam viņai lieliski izdodas arī iedvesmot un motivēt citus dejotājus. </article>`,
         },
     ]
 

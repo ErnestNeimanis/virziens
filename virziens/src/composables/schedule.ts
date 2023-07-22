@@ -233,7 +233,7 @@ export const schedule = [
         textColor: "#000",
       },
       {
-        title: "FREE STYLE EXPERIECED",
+        title: "FREE STYLE EXPERIENCED",
         time: "17:30",
         bgColor: "#2EFFAF",
         textColor: "#000",

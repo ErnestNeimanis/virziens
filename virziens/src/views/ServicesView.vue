@@ -37,11 +37,11 @@ interface Offer {
 
 const offers: Offer[] = [
     {
-        title: "PIESAKI SAVU PRIEKŠNESUMU!",
+        title: "PRIEKŠNESUMI",
         text: `Labprāt priecēsim Jūsu acis ar krāšņiem, dejiskiem, tehniskiem priekšnesumiem Jūsu pasākumos, piemēram, uzstāšanos jubilejās, ceremonijās, ballēs, dažādos svētkos, reklāmas videoklipu uzņemšanai vai jebkurā citā notikumā. Lai nodrošinātu augstvērtīgu kvalitāti, pielāgojam individuālu pieeju katram pasūtījumam atbilstoši Jūsu prasībām un vajadzībām. Esam atvērti jebkurai idejai!`,
     },
     {
-        title: "PIESAKI SADARBĪBU!",
+        title: "SADARBĪBAS",
         text: `Vienmēr esam atvērti gan nacionāla, gan starptautiska mēroga sadarbībām!`,
     },
 ];
@@ -163,7 +163,7 @@ function redirectToCall() {
             <div>
                 <button @click="redirectToCall"
                     class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded w-full uppercase">
-                    piesakies deju nodarbībām!
+                    DEJU NODARBĪBAS
                 </button>
             </div>
             <div class="flex flex-col gap-9 my-8">
