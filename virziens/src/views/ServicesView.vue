@@ -110,7 +110,7 @@ const courses: CourseList[] = [
 const services: Service[] = [
     {
         title:
-            "Maksa par mēnesi deju studijā VIRZIENS 2023./2024. deju sezonā, sākot ar augustu.",
+            "Mēneša maksa deju studijā VIRZIENS 2023./2024:",
         prices: [
             {
                 amount: "35.00 €",
@@ -162,7 +162,7 @@ function redirectToCall() {
 
             <div>
                 <button @click="redirectToCall"
-                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded w-full uppercase">
+                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded-full w-full uppercase">
                     DEJU NODARBĪBAS
                 </button>
             </div>
@@ -187,7 +187,7 @@ function redirectToCall() {
         <section v-for="offer in offers" class="max-w-4xl mx-auto pt-8 border-t-2 border-slate-700">
             <div class="text-center mb-8">
                 <button @click="redirectToCall"
-                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded w-full">
+                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded-full w-full">
                     {{ offer.title }}
                 </button>
             </div>
