@@ -161,13 +161,13 @@ function redirectToCall() {
 const section1 = [
 
     {
-        container: "",
+        container: "bg-black text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
         h1: "",
         content: "",
         listItem: "",
     },
     {
-        container: "",
+        container: "bg-amber-900 text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
         h1: "",
         content: "",
         listItem: "",
@@ -191,17 +191,17 @@ const section2 = [
 
 const section3 = [
     {
-        container: "bg-black text-white",
-        h1: "",
-        list: "text-white",
-        listItem: "",
+        container: "bg-rose-100 text-black border-4 border-white shadow shadow-red-300 shadow-6xl",
+        h1: "text-center",
+        list: "",
+        listItem: "font-semibold",
 
     },
     {
-        container: "",
-        h1: "",
+        container: "bg-rose-100 text-black border-4 border-white shadow shadow-red-300 shadow-6xl",
+        h1: "text-center",
         list: "",
-        listItem: "",
+        listItem: "font-semibold",
 
     },
 
@@ -218,15 +218,15 @@ const section3 = [
 
         <section id="section1" class="max-w-4xl mx-auto mb-8  ">
 
-            <div>
-                <button @click="redirectToCall"
-                    class="bg-rose-700 text-white font-semibold py-2 px-4 rounded w-full uppercase"
+       
+                <div 
+                    class="bg-rose-700 text-white text-center text-2xl font-extrabold py-2 px-4  w-full uppercase"
                    >
                     DEJU NODARBĪBAS
-                </button>
-            </div>
+                </div>
+         
             <div class="flex flex-col gap-9 my-8  ">
-                <div v-for="(course, i) in courses" class="border-4 border-white bg-amber-900 p-8 text-white"
+                <div v-for="(course, i) in courses" class=" p-8 "
                     :class="section1[i].container">
                     <h1 class="text-xl font-bold mb-6 font-serif" :class="section1[i].h1">{{ course.title }}</h1>
                     <div class="ml-12" :class="section1[i].content">
@@ -242,8 +242,31 @@ const section3 = [
 
         </section>
 
+          <section id="section4" class="max-w-4xl mx-auto ">
+            <div class="text-center">
+                <h2 class="text-2xl font-extrabold uppercase  bg-rose-700 mb-4 p-2 text-white">cenas</h2>
+            </div>
+            <div class="bg-blue-950 text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl p-8 ">
 
-        <section id="section2" v-for="(offer, i) in offers" class="max-w-4xl mx-auto pt-8 border-slate-700  "
+                <div>
+                    <div v-for="service in services" class="mb-4">
+                        <div>
+                            <div class="mb-2">
+                                <h4 class="text-lg font-semibold">{{ service.title }}</h4>
+                            </div>
+                            <div v-if="service.prices" class="ml-12  font-bold">
+                                <Prices :prices="service.prices" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="max-w-4xl mx-auto mt-12 h-[2px] bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 w-full "></div>
+
+        <!-- <section id="section2" v-for="(offer, i) in offers" class="max-w-4xl mx-auto pt-8 border-slate-700  "
             :class="section2[i].section">
             <div class="text-center mb-8">
                 <button @click="redirectToCall" class="bg-rose-700 text-white font-semibold rounded py-2 px-4  w-full"
@@ -256,9 +279,22 @@ const section3 = [
                 <p class="0">{{ offer.text }}</p>
             </div>
 
+        </section> -->
+
+         <section id="section2" class="max-w-4xl mx-auto pt-8  b-gradient-to-b from-transparent  via-white/50 to-transparent " >
+        
+            <div class="d p-4 mb-8  text-white  text-cente  text-[1.4rem]  font-serif  white ">
+                <p class="0 text-black ">
+                    Labprāt priecēsim Jūsu acis ar krāšņiem, dejiskiem, tehniskiem priekšnesumiem Jūsu pasākumos, piemēram, uzstāšanos jubilejās, ceremonijās, ballēs, dažādos svētkos, reklāmas videoklipu uzņemšanai vai jebkurā citā notikumā. Lai nodrošinātu augstvērtīgu kvalitāti, pielāgojam individuālu pieeju katram pasūtījumam atbilstoši Jūsu prasībām un vajadzībām. Esam atvērti jebkurai idejai!
+                </p>
+                <p class="text-black mt-4 font-extrabold  ">
+                    Vienmēr esam atvērti gan nacionāla, gan starptautiska mēroga sadarbībām!
+                </p>
+            </div>
+
         </section>
 
-
+<div class="max-w-4xl mx-auto my-12 h-[2px] bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 w-full "></div>
 
 
 
@@ -280,27 +316,7 @@ const section3 = [
 
 
 
-        <section id="section4" class="max-w-4xl mx-auto border-t-2 border-slate-600 pt-8 ">
-            <div class="text-center">
-                <h2 class="text-2xl font-semibold my-4 uppercase">cenas</h2>
-            </div>
-            <div>
-
-                <div>
-                    <div v-for="service in services" class="mb-4">
-                        <div>
-                            <div class="mb-2">
-                                <h4 class="text-lg font-semibold">{{ service.title }}</h4>
-                            </div>
-                            <div v-if="service.prices" class="ml-12">
-                                <Prices :prices="service.prices" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+      
         <div class="max-w-4xl mx-auto"></div>
     </main>
 </template>
