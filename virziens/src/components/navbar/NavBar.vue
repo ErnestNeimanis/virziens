@@ -6,13 +6,18 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import HomeBGVideo from './HomeBGVideo.vue'
 import Hamburger from './Hamburger.vue';
 import { useWindowSize } from '@/composables/window';
+import { useRoute } from 'vue-router';
+
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
+const route =  useRoute();
 
 interface NavItem {
   name?: string,
   title: string,
   link: string,
 }
+
+
 
 const navMenu = ref<NavItem[]>([
   {
@@ -76,7 +81,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
 
 });
-
+console.log(route.path)
 
 </script>
 <template>
@@ -85,7 +90,7 @@ onBeforeUnmount(() => {
     
         <RouterLink v-for="item in navMenu" :to="item.link">
           <div class="menu-item">
-            <span>{{ item.title }}</span>
+            <span :class="{'underline': route.path == item.link && route.path != navMenu[0].link}">{{ item.title }}</span>
           </div>
         </RouterLink>
     </nav>
@@ -97,9 +102,9 @@ onBeforeUnmount(() => {
     <div :class="menuClass"
       class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-6">
       <nav  class=" flex flex-col pl-[30%]  gap-4  xs:text-2xl  ">
-        <RouterLink v-for="item in navMenu" :to="item.link">
+        <RouterLink v-for="(item,i) in navMenu" :to="item.link">
         <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline">
-          <span>{{ item.title }}</span>
+          <span >{{ item.title }}</span>
         </div>
         </RouterLink>
       </nav>
