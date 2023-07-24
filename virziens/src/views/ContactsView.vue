@@ -27,7 +27,7 @@ function telSeparate(phone: string | undefined): string {
 
     <main class="flex justify-center items-center  min-h-screen min-w-screen pt-8">
       <img :src="topImage" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
-      <div class="n flex justify-center items-center fixe  ">
+      <div class="n flex justify-center items-center mb-12 fixe  ">
         <div class="flex justify-center items-center flex-wrap gap-20 w-full px-4 ">
           <div class=" md:w-[25vw] md:h-[25vw] w-[90vw] h-[90vw]   shadow-black shadow-xl min-w-[360px] min-h-[360px] ">
             <ContactListCard />
