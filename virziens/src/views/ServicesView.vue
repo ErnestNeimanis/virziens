@@ -136,6 +136,8 @@ const services: Service[] = [
     },
 ];
 
+
+
 // Check if the device is a desktop PC
 function isDesktop() {
     return !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
@@ -154,24 +156,83 @@ function redirectToCall() {
     }
 }
 
+
+
+const section1 = [
+
+    {
+        container: "",
+        h1: "",
+        content: "",
+        listItem: "",
+    },
+    {
+        container: "",
+        h1: "",
+        content: "",
+        listItem: "",
+    },
+]
+
+const section2 = [
+    {
+        section: "",
+        button: "",
+        content: "",
+
+    },
+    {
+        section: "",
+        button: "",
+        content: "",
+
+    },
+]
+
+const section3 = [
+    {
+        container: "bg-black text-white",
+        h1: "",
+        list: "text-white",
+        listItem: "",
+
+    },
+    {
+        container: "",
+        h1: "",
+        list: "",
+        listItem: "",
+
+    },
+
+]
+
+
 </script>
 <template>
     <Header class="bg-black" />
-    <main class="bg-gray-100 py-8 px-4">
-        <section class="max-w-4xl mx-auto mb-8   ">
+    <main class="bg-gray-100 py-8 px-4 relative " style=" background-image: url('https://images.pexels.com/photos/4286932/pexels-photo-4286932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    ">
+
+
+        <section id="section1" class="max-w-4xl mx-auto mb-8  ">
 
             <div>
                 <button @click="redirectToCall"
-                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded-full w-full uppercase">
+                    class="bg-rose-700 text-white font-semibold py-2 px-4 rounded w-full uppercase"
+                   >
                     DEJU NODARBĪBAS
                 </button>
             </div>
-            <div class="flex flex-col gap-9 my-8">
-                <div v-for="course in courses">
-                    <h1 class="text-xl font-bold mb-6">{{ course.title }}</h1>
-                    <div class="ml-12">
+            <div class="flex flex-col gap-9 my-8  ">
+                <div v-for="(course, i) in courses" class="border-4 border-white bg-amber-900 p-8 text-white"
+                    :class="section1[i].container">
+                    <h1 class="text-xl font-bold mb-6 font-serif" :class="section1[i].h1">{{ course.title }}</h1>
+                    <div class="ml-12" :class="section1[i].content">
                         <ul>
-                            <li v-for="item in course.list" class="list-disc">
+                            <li v-for="item in course.list" class="list-disc font-serif text-xl"
+                                :class="section1[i].listItem">
                                 <div v-html="item"></div>
                             </li>
                         </ul>
@@ -179,37 +240,36 @@ function redirectToCall() {
                 </div>
             </div>
 
-            
         </section>
 
 
-
-        <section v-for="offer in offers" class="max-w-4xl mx-auto pt-8 border-t-2 border-slate-700">
+        <section id="section2" v-for="(offer, i) in offers" class="max-w-4xl mx-auto pt-8 border-slate-700  "
+            :class="section2[i].section">
             <div class="text-center mb-8">
-                <button @click="redirectToCall"
-                    class="bg-stone-900 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded-full w-full">
+                <button @click="redirectToCall" class="bg-rose-700 text-white font-semibold rounded py-2 px-4  w-full"
+                    :class="section2[i].button">
                     {{ offer.title }}
                 </button>
             </div>
-            <div class="d p-4 mb-8">
-                <p class="text-gray-800">{{ offer.text }}</p>
+            <div class="d p-4 mb-8 bg-black text-white text-center font-bold font-serif border-4 white "
+                :class="section2[i].content">
+                <p class="0">{{ offer.text }}</p>
             </div>
 
-         
         </section>
 
 
-     
 
 
-        <section class="max-w-4xl mx-auto mb-8 px-8">
+
+        <section id="section3" class="max-w-4xl mx-auto mb-8 p">
 
             <div class="flex flex-col gap-9">
-                <div v-for="colab in colabs">
-                    <h1 class="text-xl font-bold mb-6">{{ colab.title }}</h1>
-                    <div class="ml-12">
+                <div class="p-4" v-for="(colab,i) in colabs" :class="section3[i].container">
+                    <h1 class="text-xl font-bold mb-6 " :class="section3[i].h1">{{ colab.title }}</h1>
+                    <div class="ml-12 " :class="section3[i].list">
                         <ul>
-                            <li v-for="item in colab.list" class="list-disc">
+                            <li v-for="item in colab.list" class="list-disc" :class="section3[i].listItem">
                                 <div v-html="item"></div>
                             </li>
                         </ul>
@@ -218,14 +278,14 @@ function redirectToCall() {
             </div>
         </section>
 
-       
 
-        <section class="max-w-4xl mx-auto border-t-2 border-slate-600 pt-8 ">
+
+        <section id="section4" class="max-w-4xl mx-auto border-t-2 border-slate-600 pt-8 ">
             <div class="text-center">
                 <h2 class="text-2xl font-semibold my-4 uppercase">cenas</h2>
             </div>
             <div>
-            
+
                 <div>
                     <div v-for="service in services" class="mb-4">
                         <div>
@@ -244,3 +304,7 @@ function redirectToCall() {
         <div class="max-w-4xl mx-auto"></div>
     </main>
 </template>
+
+<style>
+main-bg {}
+</style>
