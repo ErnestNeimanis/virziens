@@ -2,10 +2,12 @@
 import { useWindowSize } from '@/composables/window';
 import NavBar from "@/components/navbar/NavBar.vue"
 import LogoSmall from './utils/LogoSmall.vue';
-const  {smallWindow,mediumWindow,largeWindow} = useWindowSize();
+
 import { useInView,useNotInView } from '@/composables/in-view';
 import { onBeforeMount, onMounted, ref } from 'vue';
 
+
+const  {smallWindow,mediumWindow,largeWindow} = useWindowSize();
 const smallLogoText = "text-4xl top-4";
 const largeLogoText = "text-7xl top-7"
 
