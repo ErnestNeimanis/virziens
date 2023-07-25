@@ -16,6 +16,7 @@ interface Service {
     prices?: {
         amount: string | number;
         description?: string;
+        nodisc?:boolean
     }[];
 }
 
@@ -79,15 +80,15 @@ const colabs: Colab[] =
 const courses: CourseList[] = [
     {
         title: "Mēs organizējam grupu un individuālās nodarbības:",
-        list: [
-            `<em>Hip Hop</em>`,
-            `<em>Laikmetīgās dejas</em>`,
-            `<em>House</em>`,
-            `<em>Sacensību solo dejas</em>`,
-            `<em>Džeza dejas</em>`,
-            `<em>Lady style</em>`,
-            `<em>Experimental</em>`,
-            `<em>Fusion</em>`,
+       list: [
+            `Hip Hop`,
+            `Laikmetīgās dejas`,
+            `House`,
+            `Sacensību solo dejas`,
+            `Džeza dejas`,
+            `Lady style`,
+            `Experimental`,
+            `Fusion`,
             `u. c. deju stilos`,
         ],
     },
@@ -129,6 +130,11 @@ const services: Service[] = [
                 description: "dejo, cik vēlies",
             },
             {
+                amount: "",
+                description: "VAI",
+                nodisc:true
+            },
+            {
                 amount: "10.00 €",
                 description: "par katru apmeklēto nodarbību un pasākumu",
             },
@@ -161,13 +167,13 @@ function redirectToCall() {
 const section1 = [
 
     {
-        container: "bg-black text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
+        container: "bg-blac text-black border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
         h1: "",
         content: "",
         listItem: "",
     },
     {
-        container: "bg-amber-900 text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
+        container: "text-black border-4 border-white shadow shadow-fuchsia-900 shadow-6xl",
         h1: "",
         content: "",
         listItem: "",
@@ -244,9 +250,9 @@ const section3 = [
 
           <section id="section4" class="max-w-4xl mx-auto ">
             <div class="text-center">
-                <h2 class="text-2xl font-extrabold uppercase  bg-rose-700 mb-4 p-2 text-white">cenas</h2>
+                <h2 class="text-2xl font-extrabold uppercase  bg-blue-950 mb-4 p-2 text-white">cenas</h2>
             </div>
-            <div class="bg-blue-950 text-white border-4 border-white shadow shadow-fuchsia-900 shadow-6xl p-8 ">
+            <div class="bg-blue-950 text-white   shadow shadow-fuchsia-900 shadow-6xl p-8 ">
 
                 <div>
                     <div v-for="service in services" class="mb-4">
@@ -255,7 +261,7 @@ const section3 = [
                                 <h4 class="text-lg font-semibold">{{ service.title }}</h4>
                             </div>
                             <div v-if="service.prices" class="ml-12  font-bold">
-                                <Prices :prices="service.prices" />
+                                <Prices :prices="service.prices" /> 
                             </div>
                         </div>
                     </div>
