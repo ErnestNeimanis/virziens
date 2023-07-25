@@ -12,7 +12,7 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 </script>
 <template>
   
-    <main class="  bg-gradient-to-r from-blue-700 to-pink-600  ">
+    <main class=" min-h-screen bg-gradient-to-r from-blue-700 to-pink-600  ">
         <Header/>
         <div class="w-full    ">
             <div class="f w-full ">
