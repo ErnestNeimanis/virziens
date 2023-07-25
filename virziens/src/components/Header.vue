@@ -4,8 +4,9 @@ import NavBar from "@/components/navbar/NavBar.vue"
 import LogoSmall from './utils/LogoSmall.vue';
 
 import { useInView, useNotInView } from '@/composables/in-view';
-import { onBeforeMount, onMounted, ref } from 'vue';
+import { onBeforeMount, onMounted, onUnmounted, ref } from 'vue';
 
+import {useScrollHandler} from "@/composables/scroll-handler"
 
 const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 const smallLogoText = "text-4xl top-4";
@@ -16,56 +17,21 @@ const headerHeight = ref()
 const logoSizeClass = ref<string>(largeLogoText)
 
 
-onMounted(() => {
-  if (header.value) {
-
-    headerHeight.value = header.value.clientHeight;
-    resize();
-    useInView(header.value, log, 1);
-    useNotInView(header.value, logNotInView, 1)
-    console.log(header.value?.clientHeight)
-    window.addEventListener("resize", () => {
-      if (!header.value) return
-      headerHeight.value = header.value.clientHeight;
-      resize()
-    })
-  }
-})
-
-function log() {
-  if (headerHeight.value == 96) {
-    return
-  } else if (headerHeight.value == 104) {
-    logoSizeClass.value = smallLogoText;
-  } else if (headerHeight.value == 144) {
-    logoSizeClass.value = largeLogoText
-  }
-  logoSizeClass.value = largeLogoText
-}
-function logNotInView() {
-  console.log("not in view")
-  logoSizeClass.value = smallLogoText
-}
-
-function resize() {
 
 
 
-  if (headerHeight.value == 96) {
-    logoSizeClass.value = `-translate-y-5 ${largeLogoText} `
-    console.log("resizing")
-  } else if (headerHeight.value == 104) {
-    logoSizeClass.value = `-translate-y-10 text-6xl `
-  } else if (headerHeight.value == 144) {
-    logoSizeClass.value = `-translate-y-10 text-8xl `
-  }
-}
+
+
+
+
+
+
+
 
 
 </script>
 <template>
-
-  <div class="sticky bg  z-[100] w-full " :class="{'-top-8 translate-y-8 mb-12':!smallWindow, 'mb-20':smallWindow}" >
+  <div class="sticky bg  z-[100] w-full " :class="{ '-top-8 translate-y-8 mb-12': !smallWindow, 'mb-20': smallWindow, }">
     <div class="flex justify-end w-full pl-[33%]">
       <NavBar class="  " />
     </div>
@@ -96,4 +62,4 @@ function resize() {
 
 .christmas {
     font-family: 'Christmas Wish Calligraphy', sans-serif;
-}
+}@/composables/scroll-handler

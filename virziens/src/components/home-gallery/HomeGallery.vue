@@ -40,10 +40,12 @@ const galleryElements = ref([
         <div class="flex flex-col gap-[10vh]  ">
 
             
-            <StartpageGalleryElement v-for="element in  galleryElements" 
+            <StartpageGalleryElement 
+            v-for="element in  galleryElements" 
             :title="element.title" 
             :image="element.image" 
-            :initialHeadingTranslate="element.initialHeadingTranslate" />
+            :initialHeadingTranslate="element.initialHeadingTranslate"
+             />
 
         </div>
     </div>

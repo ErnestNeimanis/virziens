@@ -3,8 +3,10 @@ import Prices from "@/components/services/Prices.vue";
 import ColabList from "@/components/services/ColabList.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
 import Header from "@/components/Header.vue";
+import LogoSmall from "@/components/utils/LogoSmall.vue";
 import { useDeviceStore } from "@/stores/device.store";
 import router from "@/router";
+import type LogoSmallVue from "@/components/utils/LogoSmall.vue";
 
 const device = useDeviceStore();
 device.setDeviceType();
@@ -216,10 +218,13 @@ const section3 = [
 
 </script>
 <template>
+
+    <LogoSmall/>
    
     <main class=" relative " style=" background-image: url('https://images.pexels.com/photos/4286932/pexels-photo-4286932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     ">
+
         <Header/>
 
         <section id="section1" class="max-w-4xl mx-auto mb-8  ">
