@@ -216,11 +216,11 @@ const section3 = [
 
 </script>
 <template>
-    <Header class="bg-black" />
-    <main class="bg-gray-100 py-8 px-4 relative " style=" background-image: url('https://images.pexels.com/photos/4286932/pexels-photo-4286932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   
+    <main class=" relative " style=" background-image: url('https://images.pexels.com/photos/4286932/pexels-photo-4286932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     ">
-
+        <Header/>
 
         <section id="section1" class="max-w-4xl mx-auto mb-8  ">
 

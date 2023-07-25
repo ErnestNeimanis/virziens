@@ -2,6 +2,7 @@
 import HomeBGVideo from "@/components/navbar/HomeBGVideo.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
 import Hamburger from "@/components/navbar/Hamburger.vue";
+import Header from "@/components/Header.vue";
 import Logo from "@/components/navbar/Logo.vue";
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import HomeSection1 from "@/components/home/HomeSection1.vue";
@@ -17,6 +18,7 @@ import ContactCard from "@/components/ContactCard.vue";
 import HomeGallery from "@/components/home-gallery/HomeGallery.vue";
 import SocialIcons from "@/components/SocialIcons.vue";
 import { useInView, useNotInView } from "@/composables/in-view";
+
 
 const apiTest = ref("");
 async function testApi() {
@@ -78,7 +80,11 @@ onBeforeUnmount(() => {
     </div>
   </div>
 
-  <SocialIcons :show="iconsVisible" class="fixed bottom-12 z-[100] w-full" />
+
+
+      <SocialIcons :show="iconsVisible" class="fixed bottom-0 z-[100] w-full bg-black" />
+
+
 
   <div ref="wrapper" class="wrapper h-[100vh]">
     <div class="h-full w-full background">

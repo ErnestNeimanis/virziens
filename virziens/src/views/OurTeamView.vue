@@ -100,9 +100,11 @@ Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos 
 </script>
 <template>
 
-<Header class="bg-black" />
+
   
-    <div>
+    <main>
+         <Header/>
+
         <div>
 
             <div class="my-12">
@@ -117,5 +119,5 @@ Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos 
 
 
         </div>
-    </div>
+    </main>
 </template>

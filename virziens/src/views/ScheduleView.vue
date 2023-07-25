@@ -11,10 +11,10 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 
 </script>
 <template>
-    <Header class="bg-black " />
-    <div class="  bg-slate-200 ">
-      
-        <div class="w-full  bg-gradient-to-r from-blue-700 to-pink-600   ">
+  
+    <main class="  bg-gradient-to-r from-blue-700 to-pink-600  ">
+        <Header/>
+        <div class="w-full    ">
             <div class="f w-full ">
                 <div>
                     <ScheduleHeading />
@@ -28,5 +28,5 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 
         </div>
 
-    </div>
+    </main>
 </template>

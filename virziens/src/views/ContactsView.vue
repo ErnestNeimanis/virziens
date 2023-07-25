@@ -22,9 +22,9 @@ function telSeparate(phone: string | undefined): string {
 
 </script>
 <template>
-  <Header class="bg-black" />
-  <div class=" min-h-screen">
 
+  <div class=" min-h-screen">
+      <Header/>
     <main class="flex justify-center items-center  min-h-screen min-w-screen pt-8">
       <img :src="topImage" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
       <div class="n flex justify-center items-center mb-12 fixe  ">
