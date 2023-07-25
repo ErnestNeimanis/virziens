@@ -64,12 +64,17 @@ function resize() {
 
 </script>
 <template>
-  <div ref="header" class="flex sticky  pt-12   min-h-[8vh] z-[100] w-full overflow-hidden"
+  <div ref="header" class="flex sticky  pt-8   min-h-[8vh] z-[100] w-full overflow-hidden"
     :class="{ '-top-10 pb-3': !smallWindow, 'top-0 pb-12': smallWindow }">
 
 
-    <LogoSmall class=" fixed  left-8  " :class="logoSizeClass" />
-
+    <RouterLink to="/">
+  
+        <!-- <div class="ml-8  ">
+          <span class="christmas  text-white text-center " :class="logoSizeClass">Virziens</span>
+        </div> -->
+    
+    </RouterLink>
 
     <div class="flex justify-end w-full pl-[33%] relative bord">
 
@@ -80,3 +85,7 @@ function resize() {
     </div>
   </div>
 </template>
+
+.christmas {
+    font-family: 'Christmas Wish Calligraphy', sans-serif;
+}
