@@ -25,6 +25,10 @@ function handleScroll() {
       windowY.value = currentScrollPos;
 }
 
+function telHref(phone: string | undefined) {
+  if (!phone) return ""
+  return `tel:${phone}`
+}
 
 onMounted(() => {
       if (!props.show) {
@@ -38,17 +42,17 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
             :class="{ 'translate-y-24': !show }">
             <div class="flex justify-between " :class="{'w-full px-3':smallWindow || !device.isDesktop,'w-1/6 min-w-[300px]':!smallWindow}">
                   <div class="pointer-events-auto">
-                        <a href="https://www.facebook.com/dejustudijavirziens?locale=de_DE">
+                        <a href="https://www.facebook.com/dejustudijavirziens">
                               <i class="bi bi-facebook text-white hover:text-gray-400 text-5xl"></i>
                         </a>
                   </div>
                   <div class="pointer-events-auto">
-                        <a href="https://www.instagram.com/dejustudijavirziens/?hl=de">
+                        <a href="https://www.instagram.com/dejustudijavirziens">
                               <i class="bi bi-instagram text-white text-5xl hover:text-gray-400"></i>
                         </a>
                   </div>
                   <div class="pointer-events-auto">
-                        <a href="https://www.instagram.com/dejustudijavirziens/?hl=de">
+                        <a :href="telHref('+37129445989')">
                               <i class="bi bi-telephone-outbound text-white text-5xl hover:text-gray-400"></i>
                         </a>
                   </div>
