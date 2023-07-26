@@ -124,6 +124,9 @@ Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos 
 
 
         </div>
+         <div class="h-[15vh]">
+
+        </div>
       <SocialIcons class="z-[999]"  />
     </main>
     

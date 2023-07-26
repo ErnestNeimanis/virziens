@@ -326,10 +326,12 @@ const section3 = [
             </div>
         </section>
 
+        <div class="h-[10vh]">
 
+        </div>
 
       
-        <div class="max-w-4xl mx-auto"></div>
+        
         <SocialIcons />
     </main>
 </template>
