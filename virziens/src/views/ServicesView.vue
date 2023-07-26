@@ -299,6 +299,8 @@ const section3 = [
                 <p class="0 text-black ">
                     Labprāt priecēsim Jūsu acis ar krāšņiem, dejiskiem, tehniskiem priekšnesumiem Jūsu pasākumos, piemēram, uzstāšanos jubilejās, ceremonijās, ballēs, dažādos svētkos, reklāmas videoklipu uzņemšanai vai jebkurā citā notikumā. Lai nodrošinātu augstvērtīgu kvalitāti, pielāgojam individuālu pieeju katram pasūtījumam atbilstoši Jūsu prasībām un vajadzībām. Esam atvērti jebkurai idejai!
                 </p>
+                <div class="max-w-4xl mx-auto my-12 h-[2px] bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 w-full "></div>
+
                 <p class="text-black mt-4 font-extrabold  ">
                     Vienmēr esam atvērti gan nacionāla, gan starptautiska mēroga sadarbībām!
                 </p>
@@ -306,7 +308,6 @@ const section3 = [
 
         </section>
 
-<div class="max-w-4xl mx-auto my-12 h-[2px] bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 w-full "></div>
 
 
 
