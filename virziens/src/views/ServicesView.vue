@@ -132,15 +132,8 @@ const services: Service[] = [
                 amount: "70.00 €",
                 description: "dejo, cik vēlies",
             },
-            {
-                amount: "",
-                description: "VAI",
-                nodisc:true
-            },
-            {
-                amount: "10.00 €",
-                description: "par katru apmeklēto nodarbību un pasākumu",
-            },
+          
+           
         ],
     },
 ];
@@ -268,6 +261,9 @@ const section3 = [
                             </div>
                             <div v-if="service.prices" class="ml-12  font-bold">
                                 <Prices :prices="service.prices" /> 
+                                    <span class="ml-12">VAI</span>
+                                <Prices :prices="[ { amount: '10.00 €', description: 'par katru apmeklēto nodarbību un pasākumu',},]" />
+                               
                             </div>
                         </div>
                     </div>
