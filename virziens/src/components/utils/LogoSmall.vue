@@ -24,7 +24,7 @@ onUnmounted(() => scrollHandler.remove());
 
  <div class="  "  >
   
-  <div class="fixed  left-6 transition-opacity duration-1000 h-[38px]  z-[999] bg-black rounded  text-center" 
+  <div @click="$router.push({path:'/'})" class="fixed  left-6 transition-opacity duration-1000 h-[38px]  z-[999] bg-black hover:bg-slate-900 cursor-pointer rounded  text-center" 
   
   :class="{'opacity-0':scrolling,
           'top-5 h-[70px] w-[120px] ':!smallWindow,
