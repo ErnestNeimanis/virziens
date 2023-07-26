@@ -6,6 +6,7 @@ import Schedule from '@/components/Schedule/Schedule.vue';
 import ScheduleMobile from '@/components/Schedule/ScheduleMobile.vue';
 import ScheduleHeading from '@/components/Schedule/ScheduleHeading.vue';
 import Header from "@/components/Header.vue";
+import SocialIcons from "@/components/SocialIcons.vue";
 
 const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 

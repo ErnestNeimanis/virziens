@@ -4,6 +4,7 @@ import ColabList from "@/components/services/ColabList.vue";
 import NavBar from "@/components/navbar/NavBar.vue";
 import Header from "@/components/Header.vue";
 import LogoSmall from "@/components/utils/LogoSmall.vue";
+import SocialIcons from "@/components/SocialIcons.vue";
 import { useDeviceStore } from "@/stores/device.store";
 import router from "@/router";
 import type LogoSmallVue from "@/components/utils/LogoSmall.vue";
@@ -329,6 +330,7 @@ const section3 = [
 
       
         <div class="max-w-4xl mx-auto"></div>
+        <SocialIcons />
     </main>
 </template>
 

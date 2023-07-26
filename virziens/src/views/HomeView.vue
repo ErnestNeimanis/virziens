@@ -18,6 +18,7 @@ import ContactCard from "@/components/ContactCard.vue";
 import HomeGallery from "@/components/home-gallery/HomeGallery.vue";
 import SocialIcons from "@/components/SocialIcons.vue";
 import { useInView, useNotInView } from "@/composables/in-view";
+import SocialIconsHome from "@/components/SocialIconsHome.vue";
 
 
 const apiTest = ref("");
@@ -45,32 +46,38 @@ function showIcons() {
 function hideIcons() {
   iconsVisible.value = false;
 }
-function handleScroll() {
-  const element = homeSection2.value;
-  if (!element) return;
-  const elementPosition = element.getBoundingClientRect();
-  const halfViewportHeight = window.innerHeight / 2;
 
-  if (
-    elementPosition.top <= window.innerHeight - halfViewportHeight &&
-    elementPosition.bottom >= halfViewportHeight
-  ) {
-  } else {
-  }
-}
-window.addEventListener("scrol", () => {
-  console.log("click");
-});
+const wrapperY = ref();
+
+
+    function handleScroll() {
+    
+      if(!wrapper.value ) return
+      if(!wrapperY.value) wrapperY.value = wrapper.value?.scrollTop;
+      const currentScrollPos = wrapper.value?.scrollTop;
+    
+      if (wrapperY.value < wrapper.value?.scrollTop) {
+     
+       showIcons();
+      } else {
+  
+      hideIcons();
+      }
+
+      // Update the previous scroll position
+      wrapperY.value = currentScrollPos;
+    }
+
+
 onMounted(() => {
-  wrapper.value?.addEventListener("scroll", handleScroll);
-  if (bottomSection.value) {
-    useInView(bottomSection.value, showIcons, 0.1);
-    useNotInView(bottomSection.value, hideIcons, 0.1);
-  }
+   wrapper.value?.addEventListener("scroll", handleScroll);
+  
 });
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll);
+
 });
+
+
 </script>
 <template>
 
@@ -82,7 +89,6 @@ onBeforeUnmount(() => {
 
 
 
-      <SocialIcons :show="iconsVisible" class="fixed bottom-0 z-[100] w-full bg-black" />
 
 
 
@@ -119,6 +125,8 @@ onBeforeUnmount(() => {
       </div>
     </div>
   </div>
+
+    <SocialIconsHome :show="iconsVisible" class="" />
 </template>
 
 <style>

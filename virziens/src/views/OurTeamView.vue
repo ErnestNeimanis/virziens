@@ -8,6 +8,7 @@ import karlinaImg from "@/assets/images/Karlina.jpg"
 import AnnijaImg from "@/assets/images/annija-placinda.jpg"
 import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
+import SocialIcons from "@/components/SocialIcons.vue"
 
 import { useWindowSize } from "@/composables/window"
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
@@ -123,5 +124,11 @@ Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos 
 
 
         </div>
+      <SocialIcons class="z-[999]"  />
     </main>
+    
+          
+           
+    
+    
 </template>

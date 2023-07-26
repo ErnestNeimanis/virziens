@@ -10,6 +10,10 @@ const route =  useRoute();
 
 <template>
   <LogoSmall v-if="route.path !== '/'" />
+  
+  
   <RouterView />
+  
+    
 </template>
 

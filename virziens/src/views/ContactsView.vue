@@ -5,6 +5,7 @@ import Header from '@/components/Header.vue';
 import topImage from '@/assets/images/dancing-in-water.jpg'
 import { contacts, generalContactData } from '@/composables/contacts';
 import ContactListCard from '@/components/contacts/ContactListCard.vue';
+import SocialIcons from '@/components/SocialIcons.vue';
 import GeneralContactsCard from '@/components/contacts/GeneralContactsCard.vue';
 function telHref(phone: string | undefined) {
   if (!phone) return ""
@@ -40,7 +41,7 @@ function telSeparate(phone: string | undefined): string {
 
       </div>
 
-    
+      <SocialIcons class="z-[999]" />
     </main>
   </div>
 </template>
