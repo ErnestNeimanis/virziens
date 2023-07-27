@@ -40,7 +40,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 <template>
       <div class="fixed bottom-0 z-[100] w-full flex justify-center gap-8 transition-all duration-1000 bg-black py-2 pointer-events-none"
             :class="{ 'translate-y-24': !show }">
-            <div class="flex justify-between " :class="{'w-full px-3':smallWindow || !device.isDesktop,'w-1/6 min-w-[300px]':!smallWindow}">
+            <div class="flex justify-between px-14" :class="{'w-full px-3':smallWindow || !device.isDesktop,'w-1/6 min-w-[300px]':!smallWindow}">
                   <div class="pointer-events-auto">
                         <a href="https://www.facebook.com/dejustudijavirziens">
                               <i class="bi bi-facebook text-white hover:text-gray-400 text-5xl"></i>

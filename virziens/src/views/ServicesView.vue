@@ -334,5 +334,7 @@ const section3 = [
 </template>
 
 <style>
-main-bg {}
+main-bg {
+    
+}
 </style>
