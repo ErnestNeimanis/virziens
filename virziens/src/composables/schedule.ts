@@ -141,7 +141,7 @@ export const schedule = [
 
   {
     name: "friday",
-    title: "piekdiena",
+    title: "piektdiena",
     bgColor: "#000",
     entries: [
       {},
@@ -175,7 +175,7 @@ export const schedule = [
   },
   {
     name: "saturday",
-    title: "setdiena",
+    title: "sestdiena",
     bgColor: "#000",
     entries: [
       {
