@@ -179,7 +179,7 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {
-        title: "PIAUGUŠIE IESĀCĒJI",
+        title: "PIEAUGUŠIE IESĀCĒJI",
         time: "10:15 - 11:30",
         bgColor: "#B3D7FF",
         textColor: "#000",
