@@ -25,7 +25,7 @@ const galleryElements = ref([
         image:dejoJauniesi,
     },
     {
-        title:"pieagušie",
+        title:"pieaugušie",
       image:dejoPieaugusie,  
     },
 
@@ -36,7 +36,7 @@ const galleryElements = ref([
 
 </script>
 <template>
-    <div class="w-screen  pt-8 ">
+    <div class="w-screen pt-8 ">
         <div class="flex flex-col gap-[10vh]  ">
 
             
