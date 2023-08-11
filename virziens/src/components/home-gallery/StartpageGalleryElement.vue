@@ -95,13 +95,13 @@ onMounted(() =>{
 
 </script>
 <template>
- <div class="flex justify-center  w-full  ">
-                <div ref="contentContainer" class="flex flex-col gap-4 w-10/12  ">
-                    <div ref="headingContainer" class="w-full flex justify-center overflow-hidden  ">
-                        <h2 class="text-[15vw] font-extrabold text-white  transition-all duration-1000 uppercase ease-in-out" :style="t" >{{ props.title }}</h2>
+ <div class="flex justify-center w-full ">
+                <div ref="contentContainer" class="flex flex-col w-10/12 gap-4 ">
+                    <div ref="headingContainer" class="flex justify-center w-full overflow-hidden ">
+                        <h2 class="text-[13vw] font-extrabold text-white  transition-all duration-1000 uppercase ease-in-out" :style="t" >{{ props.title }}</h2>
                     </div>
                     <div ref="imageContainer" class="w-full rounded-3xl max-h-[80vh] overflow-clip image-opacity " :class="{'initial-state-img':!imageVisible,'shadow':true}" >
-                        <img :src="props.image" class="  object-cover " alt="">
+                        <img :src="props.image" class="object-cover " alt="">
                     </div>
                 </div>
             </div>
