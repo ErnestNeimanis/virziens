@@ -81,12 +81,12 @@ onMounted(() => {
 onBeforeUnmount(() => {
 
 });
-console.log(route.path)
+
 
 </script>
 <template>
   <div v-if="!smallWindow" class="w-full  flex justify-end  right-4 z-[100]">
-    <nav class="flex justify-end flex-wrap  gap-3 pr-8 pt-4">
+    <nav class="flex flex-wrap justify-end gap-3 pt-4 pr-8">
     
         <RouterLink v-for="item in navMenu" :to="item.link">
           <div class="menu-item">
@@ -100,10 +100,10 @@ console.log(route.path)
 
     <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4" />
     <div :class="menuClass"
-      class=" transition-transform duration-500 rounded-tr-md flex flex-col w-fulll bg-black h-screen pt-48  ">
+      class="flex flex-col  w-full h-screen pt-48 transition-transform duration-500 bg-black  rounded-tr-md">
       <nav  class=" flex flex-col pl-[30%]  gap-4  xs:text-2xl  ">
         <RouterLink v-for="(item,i) in navMenu" :to="item.link">
-        <div  class="w-full flex items-center   font-extrabold text-white px-2 cursor-pointer underline ">
+        <div  class="flex items-center w-full px-2 font-extrabold text-white underline cursor-pointer ">
           <span >{{ item.title }}</span>
         </div>
         </RouterLink>

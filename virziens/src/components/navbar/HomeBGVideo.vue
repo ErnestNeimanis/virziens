@@ -73,16 +73,6 @@ function getUniqueRandomIntegers(n:number) {
 
 
 
-
-function move() {
-
-
-}
-
-
-//move()
-
-
 async function removelbtOpacity() {
     const randInts = getUniqueRandomIntegers(logoBottomText.value.length)
     for (let i = 0; i < logoBottomText.value.length; i++) {
@@ -173,10 +163,6 @@ const videoRef = ref(null);
 <template>
     <div class="relative w-full h-[55vw] min-h-[270px] max-h-[700px] z-[-200]  overflow-hidden " >
 
-       
-
-      
-
         <div :class="[blackBgTranslate,]"
             class="absolute top-0 left-0 w-full  h-full  transition-transform duration-1000 z-[-104] ">
         </div>
@@ -218,11 +204,6 @@ const videoRef = ref(null);
 
             </div>
         </div>
-
-
-
-
-
 
     </div>
 
