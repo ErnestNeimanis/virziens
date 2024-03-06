@@ -79,23 +79,6 @@ Nozīmīgākie panākumi:
 2022. gadā dalība Smart Art Cabaret 36/37/38 deju izrādē.
 Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un citos pasākumos, piemēram, bagātinot mūzikas grupas Mazais princis priekšnesumu. Māksliniece regulāri pilnveido savas zināšanas profesionālu dejotāju un horeogrāfu vadītajos semināros un meistarklasēs. </article>`,
         },
-        {
-            name: "Melānija Vaivode-Šulte",
-            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
-            image: melanijaImg,
-            text: `<article> Melānija Vaivode-Šulte jau no četru gadu vecuma apmeklēja baleta nodarbības pie pasniedzējas Intas Karules-Teikmanes un paralēli Jūrmalas Sporta skolā nodarbojās ar mākslas vingrošanu. Uzsākot skolas gaitas, jaunā censone apguva arī tautas dejas.
-Deju studijai VIRZIENS Melānija Vaivode-Šulte pievienojās vecumā, kad sāka mācīties trešajā klasē. Tas viņai ir devis iespēju attīstīt savas dejotprasmes dažādos grupu deju stilos, kā arī pievērsties Sacensību solo dejām. Regulāri piedaloties konkursos un koncertos, Melānija Vaivode-Šulte deviņu gadu laikā Sacensību solo dejās ir sasniegusi Advanced līmeni.
-Dejotāja ir guvusi ievērojamus panākumus starptaustiskās sacensībās ārvalstīs, piemēram, Dānijā, Zviedrijā, Austrijā, Vācijā un Lietuvā. Melānijai Vaivodei-Šultei pieder 2019. gada pasaules čempiones tituls WorldCDF Novice youth kategorijā, kā arī māksliniece izpelnījusies pasaules čempiones godu 2022. gada GOLD sacensībās Intermediate Youngster kategorijā.
-Prasmes deju mākslā Melānija Vaivode-Šulte jau no agra vecuma ir pilnveidojusi pie cienījamiem treneriem un horeogrāfiem, piemēram, Reiņa Dāga Zvirgzdiņa, Artūra Fatjkina, Dārtas Ģīles, Elīzas Kaijas Kažemakas un citiem.
-No 12 gadu vecuma Melānija Vaivode-Šulte deju studijā VIRZIENS darbojas kā treneru asistente, salīdzinoši īsā laika periodā uzkrājot pietiekami daudz noderīgu zināšanu, lai 16 gadu vecumā sāktu strādāt par pastāvīgu treneri Kids ll un Juniori l grupām. Paralēli nodarbību vadīšanai, dejotāja veido horeogrāfijas, piemēram, šova dejām, ar kurām tiek gūti ievērības cienīgi panākumi deju sacensībās. </article>`,
-        },
-        {
-            name: "Annija Plačinda",
-            subtitle: "deju studijas VIRZIENS dejotāja, treneru asistente un horeogrāfe",
-            image: AnnijaImg,
-            text: `<article>  Annija Plačinda deju gaitas uzsāka piecu gadu vecumā. Pirmā viņas gūtā pieredze bija Sporta dejās, bet astoņu gadu vecumā viņa pievērsās Modernajām dejām. Pēc diviem gadiem Annija Plačinda guva ieskatu arī Tautas dejās, ar kurām nodarbojās līdz 11 gadu vecumam. Turpmāk viņa apmeklēja nodarbības mākslas vingrošanā, un trīs gadi pagāja nemanot. 14 gadu vecumā Annija Plačinda tomēr atsāka nodarboties ar dejām, iestājoties deju studijā VIRZIENS, kur viņa aktīvi turpina augt un attīstīties.
-Tā kā Annija Plačinda bieži mainīja deju stilus, studijas un nodarbošanos kopumā, deju sacensībās viņa reiz spēja vien sapņot par pirmo vietu, bet māksliniece to uztver no pozitīvās puses. Dejotāja vienmēr izsakās, ka tas sniedz tikai papildus motivāciju strādāt vēl cītīgāk, pie tam viņai lieliski izdodas arī iedvesmot un motivēt citus dejotājus. </article>`,
-        },
     ]
 
 </script>
