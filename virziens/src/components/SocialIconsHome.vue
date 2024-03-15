@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useWindowSize } from "@/composables/window";
-import { useDeviceStore } from "@/stores/device.store";
+import { useWindowSize } from "../composables/window";
+import { useDeviceStore } from "../stores/device.store";
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 
 
