@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
-import { useWindowSize } from "@/composables/window";
-import { useDeviceStore } from "@/stores/device.store";
+import { useWindowSize } from "../composables/window";
+import { useDeviceStore } from "../stores/device.store";
 const props = defineProps<{
       show?: boolean;
 }>();
