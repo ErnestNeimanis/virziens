@@ -4,7 +4,7 @@ import NavBar from "@/components/navbar/NavBar.vue";
 import Hamburger from "@/components/navbar/Hamburger.vue";
 import Header from "@/components/Header.vue";
 import Logo from "@/components/navbar/Logo.vue";
-import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import HomeSection1 from "@/components/home/HomeSection1.vue";
 import HomeSection2 from "@/components/home/HomeSection2.vue";
 import HomeSection3 from "@/components/home/HomeSection3.vue";
@@ -71,12 +71,22 @@ const wrapperY = ref();
 
 onMounted(() => {
    wrapper.value?.addEventListener("scroll", handleScroll);
+   setTimeout(()=>{
+    iconsVisible.value = true
+   },2000)
   
 });
 onBeforeUnmount(() => {
 
 });
 
+watch(iconsVisible,async()=>{
+  if(iconsVisible.value === false){
+   setTimeout(()=>{
+      iconsVisible.value = true
+    },2000)
+  }
+})
 
 </script>
 <template>
