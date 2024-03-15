@@ -45,7 +45,7 @@ const socialLinks = ref([
 </script>
 <template>
      <div class="fixed top-24 right-0 z-[100]  flex flex-col items-end justify-center gap-3 transition-all duration-1000 b py-2 pointer-events-none"
-            :class="{ 'translate-y-24': !props.show }">
+            :class="{ 'translate-x-24': !props.show }">
             <div v-for="icon in socialLinks" :key="icon" class="flex justify-between px-14 bg-red-950 rounded-sm p-1 mr-1" :class="{'w-full px-3':smallWindow || !device.isDesktop,'w-1/6  min-w-[300px]':!smallWindow}">
                   <div class="pointer-events-auto">
                         <a :href="icon.link">

@@ -57,11 +57,11 @@ const wrapperY = ref();
       const currentScrollPos = wrapper.value?.scrollTop;
     
       if (wrapperY.value < wrapper.value?.scrollTop) {
+       hideIcons();
      
-       showIcons();
       } else {
   
-      hideIcons();
+      showIcons();
       }
 
       // Update the previous scroll position
