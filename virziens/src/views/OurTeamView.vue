@@ -16,8 +16,29 @@ import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
 import SocialIcons from "@/components/SocialIcons.vue"
 
+
+import {usePosts} from "@/stores/use-posts"
 import { useWindowSize } from "@/composables/window"
+import { onMounted, ref } from "vue"
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
+const posts = usePosts();
+
+const members = ref<{
+    name: string;
+    subtitle?: string;
+    image: string;
+    text?: any;
+
+}[]>([])
+
+onMounted(async () =>{
+    const response = await posts.get('team')
+    members.value = response.map(post => ({
+    name: post.title, 
+    image: post.featuredImg, 
+    text: post.content, 
+  }));
+})
 
 interface TeamMember {
     name: string;
@@ -199,7 +220,14 @@ klāstīt arī citiem.”</article>`,
 
         </div>
         <div class="md:px-36 px-4  flex flex-col gap-16">
-            <TeamMember v-for="member in teamMembers" :member="member" />
+
+            <!-- <div v-for="member in members" :key="member">
+                {{member.featuredImg}}
+            </div> -->
+         
+              
+            
+            <TeamMember v-for="m in members" :key="m.name" :member="m" />
 
 
         </div>
