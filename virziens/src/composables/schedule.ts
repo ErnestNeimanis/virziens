@@ -102,7 +102,7 @@ export const schedule = [
       },
       {
         title: "ADVANCED IZLASE",
-        time: "19:15 - 20:30",
+        time: "19:00 - 20:15",
         bgColor: "#7BE93F",
         textColor: "#000",
       },
@@ -167,7 +167,7 @@ export const schedule = [
       },
       {
         title: "ADULT (16+)",
-        time: "19:15 - 20:30",
+        time: "19:00 - 20:15",
         bgColor: "#C266FF",
         textColor: "#000",
       },
