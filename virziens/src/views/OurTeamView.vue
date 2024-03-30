@@ -6,6 +6,12 @@ import melanijaImg from "@/assets/images/MELANIJA.jpg"
 import montaImg from "@/assets/images/MONTA.jpg"
 import karlinaImg from "@/assets/images/Karlina.jpg"
 import AnnijaImg from "@/assets/images/annija-placinda.jpg"
+
+import LindaImg from "../assets/images/LindaKogana.jpeg"
+import MaijaImg from "../assets/images/MaijaAnnaDudzinska.jpeg"
+import ElinaImg from "../assets/images/ElinaEstereSlisane.jpeg"
+
+
 import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
 import SocialIcons from "@/components/SocialIcons.vue"
@@ -28,57 +34,147 @@ const teamMembers =
             subtitle: "deju studijas VIRZIENS dibinātāja, vadītāja, trenere un horeogrāfe",
             image: ligitaImg,
             text:
-                `<article>Ligita Apena jau no trīs gadu vecuma uzsāka nodarboties ar sporta dejām, tautas dejām un mākslas vingrošanu. 1977. gadā dejotāja ar izcilību beidza Leona Brunava Baleta studijas sešu gadu kursu mācību programmā Baleta mākslinieks.
-Vēlāk Ligitu Apenu uzņēma Tartu (Igaunijas) teātra <em>Vanemuine</em> baleta trupā, kur viņa nostrādāja deviņus gadus. Šajā laika posmā māksliniece savas prasmes pilnveidoja pie tādiem deju meistariem kā Ülo Vilimaa, Mäe Kaasik, Elena Poznjak-Kõlar, kā arī ieguva prestižo Igaunijas Kultūras ministrijas Balletiartist kvalifikāciju.
-1986. gadā Ligita Apena atgriezās Latvijā un strādāja Jūrmalas koncertu apvienībā, Rīgas koncertu apvienībā un MARK-SHOW. Ar krāšņām koncertprogrammām dejotāja uzstājās Somijā, Šveicē, Norvēģijā, Zviedrijā, Vācijā, Bulgārijā, Polijā, Krievijā un citās valstīs.
-Paralēli darbam koncerttrupās viņa absolvēja Latvijas Kultūras koledžu (LKA) studiju programmā Horeogrāfs, deju kolektīva vadītājs, kā arī Liepājas Universitātē ieguva kvalifikāciju pedagoģiskās darbības veikšanai.
-Profesionālās dejotājas gaitas Ligita Apena noslēdza 2000. gadā, kad dibināja deju studiju VIRZIENS. Viņa kļuva par Sacensību solo deju konkursu un pasākumu organizatori. Šajā stilā māksliniece arī apmācīja savu meitu Baibu Andersoni, kura ir Sacensību solo deju pasaules čempione, sasniedzot augstāko iespējamo World Country Dance Federation (WorldCDF) līmeni – MEGASTAR.
-Ligita Apena arī šobrīd izglīto dejotājus, kuri gūst ievērojamus panākumus nacionālos un starptautiskos Sacensību solo deju konkursos. Ar pieredzi bagātā dejotāja un trenere joprojām regulāri papildina savas zināšanas dažādās meistarklasēs, tālākizglītības kursos, kā arī profesionālās pilnveides semināros Latvijā un ārpus tās robežām.
-</article>`,
+                `<article>
+                Dejas dzīve sākās trīs gadu vecumā uzsākot sporta dejas, tautas dejas un mākslas vingrošanu.
+1977. gadā dejotāja ar izcilību beidza Leona Brunava Baleta studijas sešu gadu kursu mācību
+programmā “Baleta mākslinieks”. Vēlāk deviņus gadus nostrādāja Tartu (Igaunijas) teātra
+Vanemuine baleta grupā, kurā savas prasmes pilnveidoja pie tādiem deju meistariem kā Ülo
+Vilimaa, Mäe Kaasik, Elena Poznjak-Kõlar, kā arī ieguva prestižo Igaunijas Kultūras ministrijas
+Balletiartist kvalifikāciju.
+1986. gadā atgriezās Latvijā un sāka strādāt - Jūrmalas koncertu apvienībā, Rīgas koncertu
+apvienībā un MARK-SHOW. Ar krāšņām koncertprogrammām uzstājoties vairākas valstīs,
+piemēram, Somijā, Šveicē, Norvēģijā, Zviedrijā, Vācijā, Bulgārijā, Polijā un Krievijā. Paralēli
+darbam absolvēja Latvijas Kultūras koledžu (LKA) studiju programmu “Horeogrāfs, deju
+kolektīva vadītājs”, kā arī Liepājas Universitātē ieguva kvalifikāciju pedagoģiskās darbības
+veikšanai.
+Profesionālās dejotājas gaitas noslēdzās 2000. gadā, kad tika dibināta deju studija “Virziens”, un
+kļūstot par Sacensību solo deju konkursu un pasākumu organizatori.
+Šobrīd turpina izglītot dejotājus, kuri gūst ievērojamus panākumus nacionālos un starptautiskos
+Sacensību solo deju konkursos. Regulāri papildina savas zināšanas dažādās meistarklasēs,
+tālākizglītības kursos, kā arī profesionālās pilnveides semināros Latvijā un ārpus tām robežām.
+                </article>`,
         },
         {
-            name: "Baiba Andersone",
+            name: "Baiba Apena",
             subtitle: "deju studijas VIRZIENS līdzvadītāja, dejotāja, trenere, horeogrāfe un Serificēta Sacensību solo deju tiesnese",
             image: baibaImg,
-            text: `<article> Baiba Andersone ar deju iepazinās četru gadu vecumā, jo nebija jau īsti variantu - mamma bijusi profesionāla balerīna un izveidojusi deju studiju. Tur arī Baiba bērnībā pavadīja visu savu brīvo laiku, dejojot bērnu grupā un ar interesi vērojot lielos dejotājus.
-Radošās gaitas un nozīmīgākie panākumi:
-·         Dalība bērnu un jauniešu deju festivālā Ungārijā 2004. gadā
-·         Aizvadīts pirmais starptautiska mēroga Sacensību solo deju konkurss Vācijā, Berlīnē 2007. gadā
-·         Dalība Agra Daņiļeviča programmā Satikšanās dejā 2009. gadā
-·         Iegūts WorldCDF pasaules vicečempiones tituls Sacensību solo deju konkursā Novice Teen grupā 2010. gadā
-·         Dalība meistarklasēs un privātstundās pie pasaules mēroga Sacensību solo deju zvaigznēm - Roy Verdonk, Daniel Trepat, Roy Hadisubroto un citiem
-·         Ar lieliskiem panākumiem pārstāvēts Latvijas gods starptautiskos Sacensību solo deju konkursos Eiropā: Lietuvā, Nīderlandē, Vācijā, Beļģijā, Dānijā, Zviedrijā, Norvēģijā, Šveicē, Apvienotajā Karalistē, Čehijā un citās valstīs
-·         Iegūts WorldCDF RISING STAR tituls 2014. gadā
-·         Iegūts WorldCDF MEGASTAR tituls 2015. gadā
-·         Absolvēta Latvijas Kultūras koledža studiju programmā Deju kolektīva vadītājs ar specializāciju mūsdienu dejā, kā arī iegūts pedagoga sertifikāts
-·         Dalība koncertprogrammā Latvijai 100, sešu mēnešu garumā uzstājoties uz kruīza kuģa Tallink Romantika
- 
-·         Kopā ar mammu Ligitu Apenu ir deju studiju VIRZIENS vadītāja, kā arī trenē dejotājus vecumā no 4 līdz 84 gadiem
-·         Serificēta Sacensību solo deju tiesnese Global Organisation of Line Dance (GOLD) asociācijā, kas sniedz iespēju vērtēt dejotāju sniegumu sacensībās un piedalīties šovos visā pasaulē
-·         Sadarbība ar dažādiem Latvijas māksliniekiem un horeogrāfiem
-·         Regulāri tiek aicināta tiesāt sacensības Latvijā un ārpus tās robežām </article>`,
+            text: `<article> 
+                Dejas ceļš aizsākās četru gadu vecumā, dejojot dažādu deju stilus bērnu grupā, savas mammas
+Ligitas Apenas dibinātajā deju studijā “Virziens”. Sevi ir pilnveidojusi un piedalījusies vairākos
+nozīmīgos pasākumos - “Bērnu un jauniešu deju festivāls” (Ungārijā 2004. gadā), starptautiskā
+mēroga Sacensību solo deju konkursā (Vācijā, Berlīnē 2007.), Agra Daņiļeviča programmā
+“Satikšanās dejā” (2009.), koncertprogrammā “Latvijai 100”, uzstājoties sešu mēnešu garumā uz
+kruīza kuģa Tallink Romantika, kā arī vairākās meistarklasēs un privātstundās pie pasaules
+mēroga Sacensību solo deju zvaigznēm - Roy Verdonk, Daniel Trepat, Roy Hadisubroto un
+citiem.
+Ar lieliskiem panākumiem ir pārstāvējusi Latviju starptautiskos Sacensību solo deju konkursos -
+Lietuvā, Vācijā, Beļģijā, Norvēģijā, Šveicē, Apvienotajā Karalistē, Čehijā un citās valstīs.
+Ieguvusi vairākus World Country Dance Federation (WorldCDF) titulus - pasaules
+vicečempiones tituls Sacensību solo deju konkursā Novice Teen grupā (2010.), RISING STAR
+(2014.) un visaugstāko titulu MEGASTAR (2015.).
+Absolvējusi Latvijas Kultūras koledžas (LKA) studiju programmu “Deju kolektīva vadītājs ar
+specializāciju mūsdienu dejā” un ieguvusi pedagoga sertifikātu, kā arī ir sertificēta Sacensību
+solo deju tiesnese Global Organisation of Line Dance (GOLD) asociācijā. Sadarbojas ar
+dažādiem Latvijas māksliniekiem un horeogrāfiem, kā arī regulāri tiek aicināta tiesāt sacensības
+Latvijā un ārpus tām robežām.
+            </article>`,
         },
         {
             name: "Karlīna Savicka",
-            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
+            subtitle: "trenere un horeogrāfe",
             image: karlinaImg,
             
-            text: `<article>Karlīna Savicka ir jutekliska dejotāja, kura ar deju nodarbojas kopš 2012. gada, un ir deju studijas VIRZIENS Adult grupas sastāvā. Dejotāja ir apguvusi vairākus deju stilus, tai skaitā Laikmetīgo deju, Šova deju, HipHop, Fusion, DanceHall, Waacking un citus. Karlīna Savicka vienmēr aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīva pasākumos. 2023. gada janvārī māksliniece uzņēmās lomu Martas Grigales priekšnesumā televīzijas raidījuma Muzikālā banka finālā.
-Paralēli Mūsdienu dejām Karlīna Savicka kopš astoņu gadu vecuma nodarbojas ar Sacensību solo dejām. Viņa ir apguvusi Valša, Čačas, West Coast Swing, Džaiva un Sambas deju elementus šajā stilā, savas zināšanas regulāri pilnveidojot meistarklasēs pie slaveniem deju horeogrāfiem un pasniedzējiem, piemēram, Daniel Trepat un Roy Verdonk.
-Piedaloties Sacensību solo deju konkursos Karlīna Savicka regulāri iegūst godalgotas vietas gan Latvijā, gan ārvalstīs, tostarp Lietuvā, Igaunijā, Šveicē, Vācijā un Dānijā, sasniedzot Intermediate līmeni. 2019. gadā dejotāja izcīnīja pirmo vietu Novice grupā WorldCDF pasaules čempionātā Vācijā.
-Deju studijā VIRZIENS Karlīna Savicka iesaistās ne tikai kā dejotāja, bet arī aktīvi asistē pasniedzējus un veido horeogrāfijas deju priekšnesumiem un videoklipiem. Regulāri piedaloties treniņu procesā, dejotājas mērķis ir palīdzēt komandai attīstīties par vēl labākiem dejotājiem.</article>`,
+            text: `<article>
+            
+                Karlīna Savicka ir jutekliska dejotāja, kura ar dejošanu nodarbojas kopš 2012. gada. Apguvusi
+vairākus deju stilus, tai skaitā laikmetīgo deju, šova deju, hiphop, fusion, dancehall, waacking un
+citus. Kopš astoņu gadu vecuma nodarbojas ar Sacensību solo dejām, apgūstot valša, čačas, west
+coast swing, džaiva un sambas deju elementus. Regulāri savas zināšanas pilnveido meistarklasēs
+pie slaveniem deju horeogrāfiem un pasniedzējiem, piemēram, pie Daniel Trepat un Roy
+Verdonk. Piedaloties Sacensību solo deju konkursos regulāri iegūst godalgotas vietas gan
+Latvijā, gan ārpus tās, tostarp Lietuvā, Igaunijā, Šveicē, Vācijā un Dānijā, sasniedzot
+Intermediate līmeni. 2019. gadā Vācijā dejotāja izcīnīja pirmo vietu Novice grupā WorldCDF
+pasaules čempionātā. Aktīvi iesaistās deju videoklipu filmēšanā un dažādos korporatīvajos
+pasākumos. Uzstājusies 2023. gadā televīzijas raidījuma Muzikālās bankas finālā Martas
+Grigales priekšnesumā, bet 2024. gadā Starptautiskās Eirovīzijas dziesmu konkursa Latvijas
+nacionālās atlases “Supernova” Edvarda Strazdiņa priekšnesumos kā viena no horeogrāfēm un
+dejotājām.
+Deju studijā “Virziens” aktīvi asistē pasniedzējus un veido horeogrāfijas deju priekšnesumiem
+un videoklipiem. Regulāri piedaloties treniņu procesā, Karlīnas mērķis ir palīdzēt komandai
+attīstīties par vēl labākiem dejotājiem.
+            
+            </article>`,
         },
      {
             name: "Monta Markus",
-            subtitle: "deju studijas VIRZIENS dejotāja, trenere un horeogrāfe",
+            subtitle: "trenere un horeogrāfe",
             image: montaImg,
-            text: `<article>Monta Markus deju pasaulē atrodas no sešu gadu vecuma, un ir apguvusi dažādus deju stilus: Mūsdienu deju, Latin Jazz, Hip-Hop, Comtemporary Jazz, Sacensību solo dejas un Laikmetīgo deju. Māksliniece deju studijas VIRZIENS sastāvā piedalījusies dažādos nacionāla un starptautiska mēroga konkursos gan deju grupu sastāvā, gan individuāli, Sacensību solo deju stilā.
-Nozīmīgākie panākumi:
-2019. gadā WorldCDF rīkotajā Sacensību solo deju pasaules čempionātā Vācijā izcīnīta pirmā vieta Newcomer kategorijā.
-2022. gadā dalība Līgas Libertes dejas teātra Mentoringa programmā, kur tika gūtas prasmes baletā, akrobātikā, Laikmetīgās un Džeza dejas tehnikā.
-2022. gadā dalība Smart Art Cabaret 36/37/38 deju izrādē.
-Monta Markus kā dejotāja piedalījusies visdažādākajos korporatīva un citos pasākumos, piemēram, bagātinot mūzikas grupas Mazais princis priekšnesumu. Māksliniece regulāri pilnveido savas zināšanas profesionālu dejotāju un horeogrāfu vadītajos semināros un meistarklasēs. </article>`,
+            text: `<article>
+            Monta Markus deju pasaulē atrodas no sešu gadu vecuma, un ir apguvusi dažādus deju stilus -
+mūsdienu deju, latin jazz, hip-hop, comtemporary jazz, Sacensību solo dejas un laikmetīgo deju.
+Māksliniece deju studijas “Virziens” sastāvā ir piedalījusies dažādos nacionāla un starptautiska
+mēroga konkursos gan deju grupu sastāvā, gan Sacensību solo deju stilā individuāli. Par saviem
+nozīmīgākajiem panākumiem atzīst - 2019. gada Vācijā WorldCDF rīkotajā Sacensību solo deju
+pasaules čempionātā izcīnīto pirmo vietu Newcomer kategorijā, 2022. gadā uzsāka dalību Līgas
+Libertes dejas teātra Mentoringa programmā, kur praktizēja savas prasmes baletā, akrobātikā,
+laikmetīgās un džeza dejas tehnikā, kā arī 2022. gadā piedalījās “Smart Art Cabaret 36/37/38”
+deju izrādē. Kopumā ir piedalījusies un piedalās visdažādākajos korporatīvajos un cita veida
+pasākumos, piemēram, bagātinot mūzikas grupas Mazais princis priekšnesumus. Patstāvīgi
+pilnveido savas zināšanas un dejas tehniku profesionālu dejotāju un horeogrāfu vadītāju
+semināros un meistarklasēs.
+
+            </article>`,
         },
+        {
+            name: "Elīna Estere Slišāne",
+            subtitle: "trenere un horeogrāfe akrobātikā",
+            image: ElinaImg,
+            text: `<article>Latvijas Kultūras koledžas absolvente - deju kolektīva vadītāja ar specializāciju laikmetīgajā
+dejā.
+Jau četru gadu vecumā sāka nodarboties ar mākslas vingrošanu. Vēlāk pievērsās tieši mūsdienu,
+šova un laikmetīgās dejas apguvei, attīstot prasmes gan Rīgas, gan Liepājas deju studijās.
+Tā kā dejošana un bērni ir Elīnas sirdslieta, Elīna saprata, ka viņas aicinājums ir kļūt par
+pedagogu, treneri un horeogrāfu. </article>`,
+        },
+
+            {
+            name: "Linda Kogana",
+            subtitle: "deju studijas “Virziens” dejotāja, trenere un horeogrāfe",
+            image: LindaImg,
+            text: `<article>Lindas deju dzīve aizsākās jau piecu gadu vecumā, dejojot tautas dejas un mākslas vingrošanu.
+Pēc pāris gadiem pievienojās deju studijā “Virziens”, pilnveidojot sevi ne tikai dejojot grupā, bet
+arī Sacensību solo dejās. Piedalījusies vairākos konkursos gan Latvijā, gan ārpus dzimtās valsts,
+sacenšoties ar visdažādākajiem deju māksliniekiem.
+Aktīva un dzīvespriecīga meitene, kurai vienmēr ir paticis būt uz skatuves, kā pati apgalvo:
+“Vienmēr esmu sev teikusi, ka es dejoju, jo man tas patīk,” tāpēc ļoti intensīvi strādā ar sevi, lai
+pilnveidotu, sasniegtu labus rezultātus un mācītu citus dejot, lai tie iemīl deju tik pat ļoti kā viņa
+pati.
+Lindas mērķis ir atvērt cilvēkiem acis deju pasaulē, radīt vēlmi nākt dejot, nebaidīties un izbaudīt
+katru sekundi no tās. Redzot dejotāju smaidus un prieku, Lindai dod tikai lielāku motivāciju
+turpināt vēl vairāk strādāt šajā sfērā. Vienmēr ir zinājusi, ka savu nākotni saistīs ar mākslu, un ir
+pieņēmusi lēmumu iegūt Deju pedagoga grādu, iestājoties Latvijas Kultūras Akadēmijas
+Latvijas kultūras koledžā.</article>`,
+        },
+
+         {
+            name: "Maija Anna Dudzinska",
+            subtitle: "deju studijas “Virziens” dejotāja, trenere un horeogrāfe",
+            image: MaijaImg,
+            text: `<article>Maija ar tautas dejām un sporta dejām sāka nodarboties no piecu gadu vecuma, dejojot trīs gadus
+tautas dejas, bet septiņus gadus (2011. – 2018.) sporta dejas. Paralēli savu dejas tehniku attīstīja,
+dodoties uz privātnodarbībām. Pēc sporta dejām, Maija uzsāka savas deju gaitas mūsdienu deju
+stilu un Sacensību solo deju apgūšanā deju studijā “Virziens”, tomēr tautas dejas dejotājai bija
+neatņemama sastāvdaļa, ka paralēli deju studijas “Virziens” nodarbībām, uzsāka dejot jauniešu
+tautas deju kolektīvā “Pumpuri”. Uzstājoties ievērojamākajos tautas deju koncertos – 2022. gada
+koncertuzvedumā “Dziesma dejo, deja skan” un 2023. gadā “Vispārējos latviešu dziesmu un
+deju svētkos”.
+Dejotāja regulāri piedalās deju koncertos, sacensībās, skatēs, pasākumos un meistarklasēs, kā
+Maija pati saka: “Deja ir māksla, kuru var izveidot jebkurš un jebkur. Ar deju var izstāstīt veselu
+stāstu, nepasakot ne vārda. Tajā var atslēgt prātu un domas un nodoties kustības vaļai, un tajā
+brīdī justies labi un patiesi. Dejošana ir mans prieka avots, un tā ir nodarbošanās, kuru vēlos
+klāstīt arī citiem.”</article>`,
+        },
+        
     ]
 
 </script>
