@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import axios from "axios";
 
 const BASE_URL =
-  "https://public-api.wordpress.com/rest/v1.2/sites/neimanisernests7.wordpress.com/posts/";
+  "https://public-api.wordpress.com/rest/v1.1/sites/evijass.wordpress.com/posts/";
 
 interface Post {
   title: string;
