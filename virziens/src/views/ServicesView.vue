@@ -220,11 +220,11 @@ const section3 = [
 
         <Header/>
 
-        <section id="section1" class="max-w-4xl mx-auto mb-8  ">
+        <section id="section1" class="max-w-4xl mx-auto mb-8 pt-8   ">
 
        
                 <div 
-                    class="bg-rose-700 text-white text-center text-2xl font-extrabold py-2 px-4  w-full uppercase"
+                    class=" text-center text-3xl  font-extrabold py-2 px-4       w-full uppercase"
                    >
                     DEJU NODARBĪBAS
                 </div>
