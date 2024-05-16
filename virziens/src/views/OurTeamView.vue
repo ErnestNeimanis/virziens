@@ -4,7 +4,7 @@ import TeamMember from "@/components/our-team/TeamMember.vue"
 import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
 import SocialIcons from "@/components/SocialIcons.vue"
-import whitemarble from "@/assets/images/whitemarble.jpg"
+
 
 import {usePosts} from "@/stores/use-posts"
 import { useWindowSize } from "@/composables/window"

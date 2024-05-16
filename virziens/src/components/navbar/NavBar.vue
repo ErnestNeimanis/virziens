@@ -7,7 +7,7 @@ import HomeBGVideo from './HomeBGVideo.vue'
 import Hamburger from './Hamburger.vue';
 import { useWindowSize } from '@/composables/window';
 import { useRoute } from 'vue-router';
-
+import whiteMarble from "@/assets/images/whitemarble.jpg";
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
 const route =  useRoute();
 
@@ -98,12 +98,13 @@ onBeforeUnmount(() => {
 
   <div v-else class="z-[999] w-full  fixed  top-8 right-4">
 
-    <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4" />
+    <Hamburger @open="openMenu" @close="closeMenu" class="fixed right-4 z-20" />
     <div :class="menuClass"
-      class="flex flex-col  w-full h-screen pt-48 transition-transform duration-500 bg-black  rounded-tr-md">
-      <nav  class=" flex flex-col pl-[30%]  gap-4  xs:text-2xl  ">
+      class="flex flex-col  w-full h-screen pt-48 transition-transform duration-500  relative rounded-tr-md overflow-clip">
+      <img :src="whiteMarble" class="-z-10 absolute top-0 right-0 w-full h-full" alt="">
+      <nav  class=" flex flex-col pl-[20%]  gap-4  xs:text-2xl   z-20  ">
         <RouterLink v-for="(item,i) in navMenu" :to="item.link">
-        <div  class="flex items-center w-full px-2 font-extrabold text-white underline cursor-pointer ">
+        <div  class="flex items-center w-full px-2 font-extrabold text-black text-3xl underline cursor-pointer ">
           <span >{{ item.title }}</span>
         </div>
         </RouterLink>
