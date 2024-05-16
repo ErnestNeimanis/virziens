@@ -39,8 +39,7 @@ onMounted(async () =>{
 
   
     <main class="min-h-screen"
-    style=" background-image: url('https://images.pexels.com/photos/4286932/pexels-photo-4286932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
+    style="
     "
     >
          <Header/>
