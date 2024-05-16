@@ -7,6 +7,7 @@ import { contacts, generalContactData } from '@/composables/contacts';
 import ContactListCard from '@/components/contacts/ContactListCard.vue';
 import SocialIcons from '@/components/SocialIcons.vue';
 import GeneralContactsCard from '@/components/contacts/GeneralContactsCard.vue';
+import whiteMarble from "@/assets/images/whitemarble.jpg";
 function telHref(phone: string | undefined) {
   if (!phone) return ""
   return `tel:${phone}`
@@ -27,7 +28,7 @@ function telSeparate(phone: string | undefined): string {
   <div class=" min-h-screen">
       <Header/>
     <main class="flex justify-center items-center  min-h-screen min-w-screen pt-8">
-      <img :src="topImage" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
+      <img :src="whiteMarble" alt="" class="min-h-screen object-cover fixed top-0 z-[-1] ">
       <div class="n flex justify-center items-center mb-12 fixe  ">
         <div class="flex justify-center items-center flex-wrap gap-20 w-full px-4 ">
           <div class=" md:w-[25vw] md:h-[25vw] w-[90vw] h-[90vw]   shadow-black shadow-xl min-w-[360px] min-h-[360px] ">
