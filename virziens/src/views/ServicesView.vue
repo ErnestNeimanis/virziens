@@ -7,6 +7,7 @@ import LogoSmall from "@/components/utils/LogoSmall.vue";
 import SocialIcons from "@/components/SocialIcons.vue";
 import { useDeviceStore } from "@/stores/device.store";
 import router from "@/router";
+import whiteMarble from "@/assets/images/whitemarble.jpg"
 import type LogoSmallVue from "@/components/utils/LogoSmall.vue";
 
 const device = useDeviceStore();
@@ -215,9 +216,8 @@ const section3 = [
 
 
    
-    <main class=" relative " style="
-    ">
-
+    <main class=" relative " >
+      <img class="absolute top-0 right-0 -z-10 w-full h-full " :src="whiteMarble" alt="">
         <Header/>
 
         <section id="section1" class="max-w-4xl mx-auto mb-8 pt-8   ">

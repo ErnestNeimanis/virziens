@@ -4,11 +4,12 @@ import TeamMember from "@/components/our-team/TeamMember.vue"
 import NavBar from "@/components/navbar/NavBar.vue"
 import Header from "@/components/Header.vue"
 import SocialIcons from "@/components/SocialIcons.vue"
-
+import whitemarble from "@/assets/images/whitemarble.jpg"
 
 import {usePosts} from "@/stores/use-posts"
 import { useWindowSize } from "@/composables/window"
 import { onMounted, ref } from "vue"
+import whiteMarble from "@/assets/images/whitemarble.jpg";
 const {smallWindow,mediumWindow,largeWindow} = useWindowSize();
 const posts = usePosts();
 
@@ -38,10 +39,11 @@ onMounted(async () =>{
 
 
   
-    <main class="min-h-screen"
+    <main class="min-h-screen relative"
     style="
     "
     >
+      <img class="absolute top-0 right-0 -z-10 w-full h-full " :src="whiteMarble" alt="">
          <Header/>
 
         <div>
