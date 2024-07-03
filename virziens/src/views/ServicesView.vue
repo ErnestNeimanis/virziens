@@ -253,20 +253,27 @@ const section3 = [
             <div class="bg-blue-950 text-white   shadow shadow-fuchsia-900 shadow-6xl p-8 ">
 
                 <div>
-                    <div v-for="service in services" class="mb-4">
-                        <div>
-                            <div class="mb-2">
-                                <h4 class="text-lg font-semibold">{{ service.title }}</h4>
-                            </div>
-                            <div v-if="service.prices" class="ml-12  font-bold">
-                                <Prices :prices="service.prices" /> 
-                                    <span class="ml-12">VAI</span>
-                                <Prices :prices="[ { amount: '10.00 €', description: 'par katru apmeklēto nodarbību un pasākumu',},]" />
-                               
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="text-lg font-extrabold">Mēneša maksa par 2024./2025. gada deju sezonu:</h2>
+                  <ul class="list-disc pl-5 mt-2 ">
+                    <li>35.00 EUR 1 nodarbība nedēļā</li>
+                    <li>55.00 EUR 2 nodarbības nedēļā</li>
+                    <li>65.00 EUR 3 nodarbības nedēļā</li>
+                    <li>75.00 EUR neierobežots apmeklējums</li>
+                    <li>10.00 EUR 1 apmeklējums par katru nodarbību un pasākumu</li>
+                  </ul>
+
                 </div>
+
+              <div class="mt-5 ">
+                <h2 class="text-lg font-extrabold">Maksa par deju nodarbībām grupā – PIEAUGUŠIE:</h2>
+                <ul class="list-disc pl-5 mt-2 ">
+                  <li>65.00 EUR abonements uz 8 nodarbībām (bez laika ierobežojuma)</li>
+                  <li>10.00 EUR 1 nodarbības apmeklējums</li>
+                  <li>5.00 EUR izmēģinājuma nodarbība</li>
+
+                </ul>
+
+              </div>
             </div>
 
         </section>
