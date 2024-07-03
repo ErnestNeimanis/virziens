@@ -26,18 +26,18 @@ export const schedule = [
     textColor: "#fff",
     entries: [
       {},
-      {},
+
       {},
       {
         title: "JUNIORI I (9+)",
-        time: "16:30 - 17:45",
+        time: "17:00 - 18:15",
         bgColor: "#ffb6c1",
         textColor: "#000",
       },
       {},
       {
-        title: "PIEAUGUŠIE AR LABĀM ZINĀŠANĀM",
-        time: "18:30 - 20:00",
+        title: "PIEAUGUŠIE AR  ZINĀŠANĀM",
+        time: "18:30 - 21:00",
         bgColor: "#00AAFF",
         textColor: "#000",
       },
@@ -50,29 +50,32 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {},
-      {},
-      {},
+
+
       {
         title: "JUNIORI II (11+)",
-        time: "16:00 - 17:15",
+        time: "16:45 - 18:00",
         bgColor: "#FF80B7",
         textColor: "#000",
       },
-      {
-        title: "TĪŅI (13+)",
-        time: "17:15 - 18:30",
-        bgColor: "#FFB433",
-        textColor: "#000",
-      },
+      {},
       {
         title: "KIDS I (4+)",
-        time: "18:30 - 19:15",
+        time: "18:00 - 18:45",
         bgColor: "#FFFCA3",
         textColor: "#000",
       },
+
+      {
+        title: "TĪŅI (13+)",
+        time: "18:45 - 20:00",
+        bgColor: "#FFB433",
+        textColor: "#000",
+      },
+
       {
         title: "ADULT (16+)",
-        time: "19:15 - 20:30",
+        time: "20:00 - 21:15",
         bgColor: "#C266FF",
         textColor: "#000",
       },
@@ -86,23 +89,22 @@ export const schedule = [
     entries: [
       {},
       {},
-      {},
       {
         title: "JUNIORI I (9+)",
-        time: "16:30 - 17:45",
+        time: "17:00 - 18:15",
         bgColor: "#ffb6c1",
         textColor: "#000",
       },
       {},
       {
         title: "KIDS II (6+)",
-        time: "18:00 - 19:00",
+        time: "18:15 - 19:15",
         bgColor: "#D6E600",
         textColor: "#000",
       },
       {
-        title: "ADVANCED IZLASE",
-        time: "19:00 - 20:15",
+        title: "IZLASE",
+        time: "19:15 - 20:45",
         bgColor: "#7BE93F",
         textColor: "#000",
       },
@@ -115,27 +117,32 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {},
-      {},
-      {},
       {
         title: "JUNIORI II (11+)",
-        time: "16:00 - 17:15",
+        time: "16:45 - 18:00",
         bgColor: "#FF80B7",
+        textColor: "#000",
+      },
+      {},
+      {
+        title: "KIDS I (4+)",
+        time: "18:00 - 18:45",
+        bgColor: "#FFFCA3",
         textColor: "#000",
       },
       {
         title: "TĪŅI (13+)",
-        time: "17:15 - 18:30",
+        time: "18:45 - 20:00",
         bgColor: "#FFB433",
         textColor: "#000",
       },
       {
-        title: "PIEAUGUŠIE AR NELIELĀM ZINĀŠANĀM",
-        time: "18:30 - 20:00",
+        title: "ADULT(16+)",
+        time: "20:00 - 21:15",
         bgColor: "#9AFEFF",
         textColor: "#000",
       },
-      {},
+
     ],
   },
 
@@ -145,32 +152,26 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {},
-      {},
       {
         title: "AKROBĀTIKA I",
-        time: "15:30 - 16:30",
+        time: "16:00 - 17:00",
         bgColor: "#E5E4E2",
         textColor: "#000",
       },
       {
         title: "AKROBĀTIKA II",
-        time: "16:30 - 17:30",
+        time: "17:00 - 18:00",
         bgColor: "#BFBFBF",
         textColor: "#000",
       },
       {},
       {
         title: "KIDS II (6+)",
-        time: "18:00 - 19:00",
+        time: "18:15 - 19:15",
         bgColor: "#D6E600",
         textColor: "#000",
       },
-      {
-        title: "ADULT (16+)",
-        time: "19:00 - 20:15",
-        bgColor: "#C266FF",
-        textColor: "#000",
-      },
+      {},
     ],
   },
   {
@@ -184,12 +185,6 @@ export const schedule = [
         bgColor: "#B3D7FF",
         textColor: "#000",
       },
-      {
-        title: "KIDS I (4+)",
-        time: "12:00 - 12:45",
-        bgColor: "#FFFCA3",
-        textColor: "#000",
-      },
       {},
       {},
       {},
@@ -197,11 +192,13 @@ export const schedule = [
       {},
     ],
   },
+
   {
     name: "sunday",
     title: "svētdiena",
     bgColor: "#000",
     entries: [
+
       {
         time: "",
         title: `SACENSĪBU SOLO DEJAS`,
@@ -210,18 +207,24 @@ export const schedule = [
       },
       {
         title: "STARTER",
-        time: "14:00",
+        time: "13:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "FREE STYLE STARTER",
-        time: "15:00",
+        time: "14:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "NEWCOMER",
+        time: "14:30",
+        bgColor: "#2EFFAF",
+        textColor: "#000",
+      },
+      {
+        title: "DUO",
         time: "15:30",
         bgColor: "#2EFFAF",
         textColor: "#000",
@@ -239,8 +242,14 @@ export const schedule = [
         textColor: "#000",
       },
       {
-        title: "INTERMEDIATE ADVANCED",
+        title: "INTERMEDIATE",
         time: "18:00",
+        bgColor: "#2EFFAF",
+        textColor: "#000",
+      },
+      {
+        title: "ADVANCED SHOWCASE",
+        time: "19:30",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
