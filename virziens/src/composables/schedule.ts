@@ -154,13 +154,13 @@ export const schedule = [
       {},
       {
         title: "AKROBĀTIKA I",
-        time: "16:00 - 17:00",
+        time: "15:30 - 16:30",
         bgColor: "#E5E4E2",
         textColor: "#000",
       },
       {
         title: "AKROBĀTIKA II",
-        time: "17:00 - 18:00",
+        time: "16:30 - 17:30",
         bgColor: "#BFBFBF",
         textColor: "#000",
       },

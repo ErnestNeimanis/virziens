@@ -32,6 +32,10 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
                           LINEDANCE</h2>
                         <ul class="space-y-[1vw] text-[1.3vw] ">
                           <li>
+                            11:30 – 12:45
+                            LADY STYLE (25+)
+                          </li>
+                          <li>
                             13:00 STARTER
                           </li>
                           <li>
