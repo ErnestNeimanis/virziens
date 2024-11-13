@@ -44,10 +44,10 @@ function telSeparate(phone: string | undefined): string {
       <div class="w-full   ">
         <div class="max-w-md mx-auto p-8 bg-white shadow-black shadow-xl ">
 
-          <h2 class="text-xl font-bold text-gray-800 text-cyan-900 mb-2">Biedrība "Deju studija Virziens"</h2>
-          <p class="text-lg text-gray-700 mb-1">Reģ. Nr.: 50008289011</p>
-          <p class="text-lg text-gray-700 mb-1">Jur. adrese: Vanagu iela 9-2, Jūrmala, LV-2015</p>
-          <p class="text-lg text-gray-700">Swedbank: LV04HABA0551046971419</p>
+          <h2 class="text-xl font-bold  text-cyan-900 mb-2">Biedrība "Deju studija Virziens"</h2>
+          <p class="text-lg text-gray-700 mb-1">Reģ. Nr.: <strong>50008289011</strong> </p>
+          <p class="text-lg text-gray-700 mb-1">Jur. adrese: <strong>Vanagu iela 9-2, Jūrmala, LV-2015</strong> </p>
+          <p class="text-lg text-gray-700">Swedbank: <strong>LV04HABA0551046971419</strong> </p>
         </div>
 
 
