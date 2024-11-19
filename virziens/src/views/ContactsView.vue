@@ -41,8 +41,8 @@ function telSeparate(phone: string | undefined): string {
         </div>
 
       </div>
-      <div class="w-full   ">
-        <div class="max-w-md mx-auto p-8 bg-white shadow-black shadow-xl ">
+      <div class="w-full pb-32 max-w-screen  ">
+        <div class="max-w-md mx-auto p-8 bg-white shadow-black shadow-xl  ">
 
           <h2 class="text-xl font-bold  text-cyan-900 mb-2">Biedrība "Deju studija Virziens"</h2>
           <p class="text-lg text-gray-700 mb-1">Reģ. Nr.: <strong>50008289011</strong> </p>
