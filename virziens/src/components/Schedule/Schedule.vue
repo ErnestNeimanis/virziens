@@ -27,14 +27,17 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
 
                     <ScheduleEntryBox v-if="day.name !== 'sunday'" v-for="(entry, j) in day.entries" :entry="entry" class="h-[6vw] " :class="{'grow-button':entry.bgColor}" />
                     <div v-else  class="bg-white rounded-lg font-extrabold  h-[44.85vw] text-center">
+                      <div class="text-[1.3vw] border p-1  border-black rounded-lg m-2 ">
+                        11:30 – 12:45
+                        LADY STYLE (25+)
+                      </div>
+
                       <div >
+
                         <h2 class="my-[1vw] text-[1.8vw]">  SPORT
                           LINEDANCE</h2>
                         <ul class="space-y-[1vw] text-[1.3vw] ">
-                          <li>
-                            11:30 – 12:45
-                            LADY STYLE (25+)
-                          </li>
+
                           <li>
                             13:00 STARTER
                           </li>

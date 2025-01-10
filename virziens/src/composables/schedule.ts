@@ -198,10 +198,15 @@ export const schedule = [
     title: "svētdiena",
     bgColor: "#000",
     entries: [
-
       {
-        time: "",
-        title: `SACENSĪBU SOLO DEJAS`,
+        title: "LADY STYLE (25+)",
+        time: " 11:30 – 12:45",
+        bgColor: "#2EFFAF",
+        textColor: "#000",
+      },
+      {
+        time: " ",
+        title: `SPORT LINE DANCE`,
         bgColor: "#000",
         textColor: "#fff",
       },
@@ -211,6 +216,9 @@ export const schedule = [
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
+
+
+
       {
         title: "FREE STYLE STARTER",
         time: "14:00",
