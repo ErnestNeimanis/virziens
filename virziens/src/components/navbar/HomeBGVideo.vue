@@ -32,6 +32,21 @@ const logoBottomText = ref(['d', 'e', 'j', 'u', ' ', 's', 't', 'u', 'd', 'i', 'j
 
 const lbtOpacityArray = ref<string[]>([]);
 
+const customFont = ref<any>(null);
+
+onMounted(()=>{
+  const font = new FontFace(
+      'Christmas Wish Calligraphy',
+      `url(${new URL('@/assets/fonts/ChristmasWishCalligraphyCalligraphy-yKzZ.ttf', import.meta.url)})`
+  );
+
+  font.load().then(() => {
+    document.fonts.add(font);
+    customFont.value = 'Christmas Wish Calligraphy';
+  }).catch((err) => {
+    console.error('Font loading failed:', err);
+  });
+})
 
 
 
@@ -176,8 +191,9 @@ const videoRef = ref(null);
 
         <div
             class="aboslute top-0 left-0 flex justify-center flex-col items-center w-full h-full  bg-black transparent-mode ">
-            <div class=" ">
-                <span :class="logoMainTextSize" class=" text-white christmas " style="">Virziens
+            <div class="transition-opacity duration-500 " :class="customFont ? 'opacity-100' : 'opacity-0'">
+                <span v-if="customFont"  :class="logoMainTextSize" class=" text-white christmas "
+                      :style="{fontFamily:customFont}">Virziens
                 </span>
             </div>
 
@@ -267,6 +283,15 @@ animation-name: grow-dot;
         width: 3000px;
         height: 3000px;
     }
+}
+
+.logo-fade-in{
+  animation: animate-logo-fade-in 2s ease-in;
+}
+
+@keyframes animate-logo-fade-in {
+
+  
 }
 
 
