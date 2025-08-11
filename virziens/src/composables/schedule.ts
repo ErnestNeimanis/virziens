@@ -51,31 +51,31 @@ export const schedule = [
     entries: [
       {},
 
-
-      {
-        title: "JUNIORI II (11+)",
-        time: "16:45 - 18:00",
-        bgColor: "#FF80B7",
-        textColor: "#000",
-      },
       {},
       {
-        title: "KIDS I (4+)",
-        time: "18:00 - 18:45",
-        bgColor: "#FFFCA3",
+        title: "JUNIORI II (11+)",
+        time: "16:00 - 17:15",
+        bgColor: "#FF80B7",
         textColor: "#000",
       },
 
       {
         title: "TĪŅI (13+)",
-        time: "18:45 - 20:00",
+        time: "17:15 - 18:30",
+        bgColor: "#FFFCA3",
+        textColor: "#000",
+      },
+
+      {
+        title: "KIDS I",
+        time: "18:30 - 19:15",
         bgColor: "#FFB433",
         textColor: "#000",
       },
 
       {
         title: "ADULT (16+)",
-        time: "20:00 - 21:15",
+        time: "19:15 - 20:30",
         bgColor: "#C266FF",
         textColor: "#000",
       },
@@ -89,13 +89,13 @@ export const schedule = [
     entries: [
       {},
       {},
+      {},
       {
         title: "JUNIORI I (9+)",
         time: "17:00 - 18:15",
         bgColor: "#ffb6c1",
         textColor: "#000",
       },
-      {},
       {
         title: "KIDS II (6+)",
         time: "18:15 - 19:15",
@@ -117,28 +117,29 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {},
+      {},
+
       {
         title: "JUNIORI II (11+)",
-        time: "16:45 - 18:00",
+        time: "16:00 - 17:15",
         bgColor: "#FF80B7",
-        textColor: "#000",
-      },
-      {},
-      {
-        title: "KIDS I (4+)",
-        time: "18:00 - 18:45",
-        bgColor: "#FFFCA3",
         textColor: "#000",
       },
       {
         title: "TĪŅI (13+)",
-        time: "18:45 - 20:00",
+        time: "17:15 - 18:30",
+        bgColor: "#FFFCA3",
+        textColor: "#000",
+      },
+      {
+        title: "KIDS I (4+)",
+        time: "18:30 - 19:15",
         bgColor: "#FFB433",
         textColor: "#000",
       },
       {
-        title: "ADULT(16+)",
-        time: "20:00 - 21:15",
+        title: "ADULT (16+)",
+        time: "19:15 - 20:30",
         bgColor: "#9AFEFF",
         textColor: "#000",
       },
@@ -171,7 +172,13 @@ export const schedule = [
         bgColor: "#D6E600",
         textColor: "#000",
       },
-      {},
+      {
+        title: "LADY STYLE IESĀCĒJI (25+)",
+        time: "19:15 - 20:30",
+        bgColor: "#f5134f",
+        textColor: "#fff",
+      },
+
     ],
   },
   {
