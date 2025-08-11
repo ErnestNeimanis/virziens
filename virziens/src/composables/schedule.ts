@@ -238,33 +238,28 @@ export const schedule = [
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
-      {
-        title: "DUO",
-        time: "15:30",
-        bgColor: "#2EFFAF",
-        textColor: "#000",
-      },
+
       {
         title: "NOVICE",
-        time: "16:30",
+        time: "16:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "FREE STYLE EXPERIENCED",
-        time: "17:30",
+        time: "17:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "INTERMEDIATE",
-        time: "18:00",
+        time: "17:30",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
       {
         title: "ADVANCED SHOWCASE",
-        time: "19:30",
+        time: "19:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
       },
