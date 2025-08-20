@@ -115,22 +115,22 @@ const courses: CourseList[] = [
 const services: Service[] = [
     {
         title:
-            "Mēneša maksa deju studijā VIRZIENS 2023./2024:",
+            "Mēneša maksa deju studijā VIRZIENS 2025./2026. :",
         prices: [
             {
                 amount: "35.00 €",
                 description: "1x nedēļā",
             },
             {
-                amount: "50.00 €",
+                amount: "55.00 €",
                 description: "2x nedēļā",
             },
             {
-                amount: "60.00 €",
+                amount: "65.00 €",
                 description: "3x nedēļā",
             },
             {
-                amount: "70.00 €",
+                amount: "75.00 €",
                 description: "dejo, cik vēlies",
             },
           
@@ -253,7 +253,7 @@ const section3 = [
             <div class="bg-blue-950 text-white   shadow shadow-fuchsia-900 shadow-6xl p-8 ">
 
                 <div>
-                    <h2 class="text-lg font-extrabold">Mēneša maksa par 2024./2025. gada deju sezonu:</h2>
+                    <h2 class="text-lg font-extrabold">Mēneša maksa par 2025./2026. gada deju sezonu:</h2>
                   <ul class="list-disc pl-5 mt-2 ">
                     <li>35.00 EUR 1 nodarbība nedēļā</li>
                     <li>55.00 EUR 2 nodarbības nedēļā</li>
@@ -265,10 +265,10 @@ const section3 = [
                 </div>
 
               <div class="mt-5 ">
-                <h2 class="text-lg font-extrabold">Maksa par deju nodarbībām grupā – PIEAUGUŠIE:</h2>
+                <h2 class="text-lg font-extrabold">Maksa par deju nodarbībām grupā – PIEAUGUŠIE un LADY STYLE:</h2>
                 <ul class="list-disc pl-5 mt-2 ">
-                  <li>65.00 EUR abonements uz 8 nodarbībām (bez laika ierobežojuma)</li>
-                  <li>10.00 EUR 1 nodarbības apmeklējums</li>
+                  <li>70.00 EUR abonements uz 8 nodarbībām (bez laika ierobežojuma)</li>
+                  <li>12.00 EUR 1 nodarbības apmeklējums</li>
                   <li>5.00 EUR izmēģinājuma nodarbība</li>
 
                 </ul>
@@ -299,12 +299,12 @@ const section3 = [
         
             <div class="d p-4 mb-8  text-white  text-cente  text-[1.4rem]  font-serif  white ">
                 <p class="0 text-black ">
-                    Labprāt priecēsim Jūsu acis ar krāšņiem, dejiskiem, tehniskiem priekšnesumiem Jūsu pasākumos, piemēram, uzstāšanos jubilejās, ceremonijās, ballēs, dažādos svētkos, reklāmas videoklipu uzņemšanai vai jebkurā citā notikumā. Lai nodrošinātu augstvērtīgu kvalitāti, pielāgojam individuālu pieeju katram pasūtījumam atbilstoši Jūsu prasībām un vajadzībām. Esam atvērti jebkurai idejai!
+                    Piedāvājam deju priekšnesumus dažādiem pasākumiem – jubilejām, ceremonijām, ballēm, svētkiem, reklāmas projektiem un citiem notikumiem. Katram pasūtījumam pieejam individuāli, pielāgojot programmu Jūsu vēlmēm un iecerei. Nodrošinām vizuāli iespaidīgu un profesionāli izpildītu uzstāšanos, kas piešķirs Jūsu pasākumam īpašu noskaņu.
                 </p>
                 <div class="max-w-4xl mx-auto my-12 h-[2px] bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 w-full "></div>
 
                 <p class="text-black mt-4 font-extrabold  ">
-                    Vienmēr esam atvērti gan nacionāla, gan starptautiska mēroga sadarbībām!
+                    Esam atvērti sadarbībai gan nacionālā, gan starptautiskā mērogā! 
                 </p>
             </div>
 
