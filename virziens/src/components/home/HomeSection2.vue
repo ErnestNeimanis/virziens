@@ -5,7 +5,7 @@ import { useInView } from '@/composables/in-view';
 
 
 const secondTextContent = ref<string>(`
-"Uzskatu, ka ar katru sasniegumu, mazāku vai lielāku, spējam iedvesmot, un ne tikai mūsu deju studijas audzēkņus, ne tikai mūsu mīļās Latvijas iedzīvotājus," stāsta trenere Baiba Apena.
+"Es ticu, ka ar katru sasniegumu – lielu vai mazu – mēs spējam iedvesmot ne tikai savus deju studijas audzēkņus, bet arī plašāku sabiedrību visā Latvijā," stāsta trenere Baiba Apena.
 
 `)
 
