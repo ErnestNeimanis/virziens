@@ -67,7 +67,7 @@ export const schedule = [
       },
 
       {
-        title: "KIDS I",
+        title: "KIDS I (4+)",
         time: "18:30 - 19:15",
         bgColor: "#FFB433",
         textColor: "#000",
@@ -187,7 +187,7 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {
-        title: "PIEAUGUŠIE IESĀCĒJI",
+        title: "PIEAUGUŠIE IESĀCĒJI (40+)",
         time: "10:15 - 11:30",
         bgColor: "#B3D7FF",
         textColor: "#000",
