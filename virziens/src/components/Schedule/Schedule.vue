@@ -63,7 +63,7 @@ const { smallWindow, mediumWindow, largeWindow } = useWindowSize();
                             INETRMEDIATE
                           </li>
                           <li>
-                            19:30
+                            19:00
                             ADVANCED &amp;
                             SHOWCASE
                           </li>
