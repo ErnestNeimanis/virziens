@@ -265,11 +265,11 @@ const section3 = [
                 </div>
 
               <div class="mt-5 ">
-                <h2 class="text-lg font-extrabold">Maksa par deju nodarbībām grupā – PIEAUGUŠIE un LADY STYLE:</h2>
+                <h2 class="text-lg font-extrabold">Maksa par deju nodarbībām grupā – LADY STYLE:</h2>
                 <ul class="list-disc pl-5 mt-2 ">
                   <li>70.00 EUR abonements uz 8 nodarbībām (bez laika ierobežojuma)</li>
                   <li>12.00 EUR 1 nodarbības apmeklējums</li>
-                  <li>5.00 EUR izmēģinājuma nodarbība</li>
+                  <li>BEZ MAKSAS - pirmā izmēģinājuma nodarbība</li>
 
                 </ul>
 
