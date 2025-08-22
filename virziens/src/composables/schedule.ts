@@ -38,7 +38,7 @@ export const schedule = [
       {
         title: "PIEAUGUŠIE AR  ZINĀŠANĀM",
         time: "18:30 - 21:00",
-        bgColor: "#00AAFF",
+        bgColor: "#B3D7FF",
         textColor: "#000",
       },
       {},
@@ -76,7 +76,7 @@ export const schedule = [
       {
         title: "ADULT (16+)",
         time: "19:15 - 20:30",
-        bgColor: "#C266FF",
+        bgColor: "#9AFEFF",
         textColor: "#000",
       },
     ],
@@ -176,7 +176,7 @@ export const schedule = [
         title: "LADY STYLE IESĀCĒJI (25+)",
         time: "19:15 - 20:30",
         bgColor: "#f5134f",
-        textColor: "#fff",
+        textColor: "#000",
       },
 
     ],
@@ -208,7 +208,7 @@ export const schedule = [
       {
         title: "LADY STYLE (25+)",
         time: " 11:30 – 12:45",
-        bgColor: "#2EFFAF",
+        bgColor: "#f5134f",
         textColor: "#000",
       },
       {
