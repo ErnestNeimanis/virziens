@@ -37,7 +37,7 @@ export const schedule = [
       {},
       {
         title: "PIEAUGUŠIE AR  ZINĀŠANĀM",
-        time: "18:30 - 21:00",
+        time: "18:30 - 20:00",
         bgColor: "#B3D7FF",
         textColor: "#000",
       },
@@ -89,9 +89,14 @@ export const schedule = [
     entries: [
       {},
       {},
-      {},
       {
-        title: "JUNIORI I (9+)",
+       title: "JUNIORI I (9+) 1.GRUPA",
+       time: "16:00 - 17:15",
+       bgColor: "#ffb6c1",
+       textColor: "#000", 
+      },
+      {
+        title: "JUNIORI I (9+) 2.GRUPA",
         time: "17:00 - 18:15",
         bgColor: "#ffb6c1",
         textColor: "#000",
@@ -165,9 +170,14 @@ export const schedule = [
         bgColor: "#BFBFBF",
         textColor: "#000",
       },
-      {},
       {
-        title: "KIDS II (6+)",
+      title: "KIDS II (6+) 1.GRUPA",
+        time: "17:30 - 18:30",
+        bgColor: "#D6E600",
+        textColor: "#000",  
+      },
+      {
+        title: "KIDS II (6+) 2.GRUPA",
         time: "18:15 - 19:15",
         bgColor: "#D6E600",
         textColor: "#000",
@@ -187,12 +197,17 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {
-        title: "PIEAUGUŠIE IESĀCĒJI (40+)",
+        title: "PIEAUGUŠIE IESĀCĒJI (45+)",
         time: "10:15 - 11:30",
         bgColor: "#B3D7FF",
         textColor: "#000",
       },
-      {},
+      {
+       title: "PIEAUGUŠIE AR  PRIEKŠZINĀŠANĀM (45+)",
+        time: "11:30 - 12:45",
+        bgColor: "#B3D7FF",
+        textColor: "#000", 
+      },
       {},
       {},
       {},
@@ -206,7 +221,7 @@ export const schedule = [
     bgColor: "#000",
     entries: [
       {
-        title: "LADY STYLE (25+)",
+        title: "LADY STYLE AR ZINĀŠANĀM (25+)",
         time: " 11:30 – 12:45",
         bgColor: "#f5134f",
         textColor: "#000",
@@ -258,7 +273,7 @@ export const schedule = [
         textColor: "#000",
       },
       {
-        title: "ADVANCED SHOWCASE",
+        title: "ADVANCED & SHOWCASE",
         time: "19:00",
         bgColor: "#2EFFAF",
         textColor: "#000",
