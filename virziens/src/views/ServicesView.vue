@@ -115,7 +115,7 @@ const courses: CourseList[] = [
 const services: Service[] = [
     {
         title:
-            "Mēneša maksa deju studijā VIRZIENS 2025./2026. :",
+            "Mēneša maksa deju studijā VIRZIENS 2026./2027. :",
         prices: [
             {
                 amount: "35.00 €",
@@ -253,7 +253,7 @@ const section3 = [
             <div class="bg-blue-950 text-white   shadow shadow-fuchsia-900 shadow-6xl p-8 ">
 
                 <div>
-                    <h2 class="text-lg font-extrabold">Mēneša maksa par 2025./2026. gada deju sezonu:</h2>
+                    <h2 class="text-lg font-extrabold">Mēneša maksa par 2026./2027. gada deju sezonu:</h2>
                   <ul class="list-disc pl-5 mt-2 ">
                     <li>35.00 EUR 1 nodarbība nedēļā</li>
                     <li>55.00 EUR 2 nodarbības nedēļā</li>
